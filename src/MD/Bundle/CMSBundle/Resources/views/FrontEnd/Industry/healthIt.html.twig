@@ -1,0 +1,136 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Health IT{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}"><span>Financial services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li class="active"><a href="{{ path('fe_health-care') }}"><span>Health care <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_health-it') }}">Health IT</a></li>
+                                <li><a href="{{ path('fe_health-plans') }}">Health plans</a></li>
+                                <li><a href="{{ path('fe_providers') }}">Providers</a></li>
+                                <li><a href="{{ path('fe_transaction-activity') }}">Transaction activity</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Rev cycle success earns award for SUNY</h2>
+                                    <p> Collaboration with SUNY produces new financial structure</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Two-businessman-front.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Health IT: Trust, then growth</h2>
+                                    <p>Action-oriented solutions to help your organization take the lead in building trust in the health care industry.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_11_health care IT_new.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> EHR helps hospital stay open </h2>
+                                    <p> Epic implementation includes customizing and practical training for staff.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-African-American-male-doctor-among-group-of-doctors.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Trust increases in cloud providers</h2>
+                                    <p> Survey results show that cloud providers know that customer trust is critical � and that for the most part, they are earning that trust.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Hands-On-Keyboard.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Confidentiality, privacy concerns with data vendors</h2>
+                                    <p>Internal auditors get answers to questions about vendors and confidential data.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_09_HealthCare_DrWithFiles.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Need help making your data "intelligent"?</h2>
+                <p>
+                    There's no shortage of rich data issued from investments in EHR and EMR systems. But true use of valuable data has yet to be made across the industry.
+                    <br/>
+                    Data analysis produces revelations and the route to performance improvements within your organization. Analysis can:
+                </p>
+                <ul class="lists">
+                    <li> Transform core patient, episode and service line information into meaningful insights</li>
+                    <li> Improve the quality and consistency of key patient and operational data</li>
+                    <li> Help you assess patient and enterprise risk, and integrate with the revenue cycle</li>
+                </ul>
+                <p>We have analytical solutions that work with the systems you already have in place. We call our approach RxIQ.</p>
+                <p>
+                    <strong>Population health (RxPH)</strong><br/>
+                    We help you evaluate your patient population based on specific health risk categories, and align clinical resources and processes to show how to manage patient health and mitigate risk. With the RxPH accelerator, you can create and apply predictive models to determine costs and identify where to make future investments. 
+                    <br/><br/>
+                    <strong>Costing informatics (RxCI)</strong><br/>
+                    RxCI's costing model, integration points, prebuilt reports and dashboards, and proven methodologies combine with Grant Thornton's change management and Health Care Advisory Services to give providers actionable information with fast time-to-value.
+                    <br/><br/>
+                    <strong>Performance analytics (RxPA)</strong><br/>
+                    The RxPA framework uses advanced analytics to leverage data across a system's operations. Clinical and financial dimensions offer better management of value, margins and performance.  
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>ERM Q&A</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Group-Working-At-Table-With-Chart.jpg') }}"/>
+                            <h2>Systems That Got It Right</h2>
+                            <p>Health care internal auditors gain answers to questions about ERM benefits and successful implementation methods.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>HIPAA rules</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Male-Hands-Working-At-Desk.jpg') }}"/>
+                            <h2>Penalties have increased</h2>
+                            <p>The HIPAA Omnibus Rule (Final Rule) raises the stakes for covered entities and their business associates.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>New code sets</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Male-doctor-pointing-to-document.jpg') }}"/>
+                            <h2>Report via ICD-10 </h2>
+                            <p>Assess ICD-10 readiness, train and adopt before this fall's deadline.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

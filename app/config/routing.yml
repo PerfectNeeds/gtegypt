@@ -1,0 +1,37 @@
+user_admin:
+  resource: "@UserBundle/Controller/Administration/"
+  type:    annotation
+  prefix: /admin/user
+
+dashboard:
+    pattern:   admin/
+    defaults:  { _controller: ServiceBundle:Administration/Dashboard:Dashboard }
+
+cms_admin:
+  resource: "@CMSBundle/Controller/Administration/"
+  type:    annotation
+  prefix: /admin/cms
+
+recruit_admin:
+  resource: "@RecruitBundle/Controller/Administration/"
+  type:    annotation
+  prefix: /admin/recruit
+
+cms:
+  resource: "@CMSBundle/Controller/FrontEnd/"
+  type:    annotation
+  prefix: /
+  
+login:
+    pattern:   /login
+    defaults:  { _controller: UserBundle:FrontEnd/Account:login }
+    
+download:
+    pattern:   /download
+    defaults:  { _controller: ServiceBundle:Download:Download }
+    
+login_check:
+    pattern:   /login_check
+
+logout:
+    pattern: /logout

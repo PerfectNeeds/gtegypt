@@ -1,0 +1,115 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Banking{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li class="active"><a href="{{ path('fe_financial-services') }}"><span>Financial services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_asset-management') }}">Asset Management</a></li>
+                                <li class="active"><a href="{{ path('fe_banking') }}">Banking</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>2015 banking outlook</h2>
+                                    <p>Organic growth will remain elusive, but banks can boost performance by focusing on honing operational efficiencies and shoring up risk management.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2015_01_Banking-year-end-report.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Effective model risk management</h2>
+                                    <p>Models play a critical role in estimating capital adequacy and conducting stress tests. Yet most orgs don't have a robust framework.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_12_Model Risk Mgmt.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Banks: Start planning now for rev. rec </h2>
+                                    <p>Although the new standard won't be effective until Jan. 1, 2017, banks should prepare now for adoption. This overview can help you get started.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_10_RevRec article.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> What's next for prepaid cards? </h2>
+                                    <p>With consumers fueling swift growth of prepaid cards, banks need to understand the risks and be prepared for ongoing regulation.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_07_Prepaid-cards-to-NPSG.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Banking</h2>
+                <h3>Real-world industry know how to help your firm succeed.</h3>
+                <p>
+                    In this time of increased public scrutiny and complex regulatory demands, banks, thrifts and other financial institutions need straightforward business guidance, delivered ethically and professionally. At Grant Thornton, we go beyond the traditional compliance and reporting aspects of audit and tax, providing services that offer real value. We offer:
+                </p>
+                <ul>
+                    <li><strong>Global reach </strong>- with dedicated industry practices in the major financial centers around the world.  We stand ready to be a resource.</li>
+                    <li><strong>Strong Industry Qualifications</strong> - we have an extensive knowledge and experience in serving banks.</li>
+                    <li><strong>Broad service capabilities</strong> - We offer a full complement of industry-tailored audit, tax, risk, advisory and accounting consulting solutions.</li>
+                </ul>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Cybersecurity</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2014_12_Going Public.jpg') }}"/>
+                            <h2>Are you protected?</h2>
+                            <p>Cybersecurity is a top-line concern for banks big and small. It's not a question of if you'll be hacked - it's a question of when.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Content library</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2014_01_icon_globe_shaking hands.jpg') }}"/>
+                            <h2>Our latest thinking</h2>
+                            <p>Check out our newest white papers, surveys, articles and reports spanning top-of-mind issues in the financial services industry.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>2015 webcast series</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2014_02_NFP_Higher_Education_icon.jpg') }}"/>
+                            <h2>Save the date</h2>
+                            <p>Join us for webcasts exploring the latest hot topics, from regulatory compliance, to performance improvement, to managing risk.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

@@ -1,0 +1,13 @@
+{% if websites %}
+    <div class="marketing">
+        <form style="float:right;margin:7px auto;">
+            <select name="global_reach" id="global_reach">
+                <option value="" selected="">Global reach</option>
+                {% for website in websites %}
+                    <option value="{{ website.url }}">{{ website.name }}</option>
+                {% endfor %}
+            </select>
+            <input type="button" name="Submit" id="Submit" value="Go!">
+        </form>
+    </div>
+{% endif %}

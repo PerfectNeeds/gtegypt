@@ -1,0 +1,54 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}{{ blog.title }}{% endblock %}
+
+{% block metaTag %}{{ blog.htmlMeta }}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper dm-shadow clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="{{ path('fe_partner') }}">People</a></li>
+                        <li class="active"><a href="{{ path('fe_blog') }}">Blogs</a></li>
+                    </ul>
+                    <a href="{{ path('fe_contact') }}" class="btn-primary btn-xs butt">Contact us <i class="fa fa-angle-right"></i></a>
+                    <a href="{{ path('fe_submit-rfp') }}" class="btn-primary btn-xs butt">Submit RFP <i class="fa fa-angle-right"></i></a>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div class="blog_container clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <article class="blog-wrap">
+                            <div class="post-date">
+                                <span class="day">{{ blog.created|date('d') }}</span>
+                                <span class="month">{{ blog.created|date('M') }}</span>
+                            </div><!-- end post-date -->
+
+                            <div class="post-content">
+                                <h2>{{ blog.title }}</h2>
+                                {#{% if blog.getMainImage  %}
+                                <div class="ImageWrapper blog-media">
+                                    <div id="slider" class="flexslider clearfix">
+                                        <ul class="slides">
+                                            <li><img class="img-responsive img-thumbnail pull-right" style="width:200px;" src="{{ asset("uploads/blog/" ~ blog.id ~ "/"  ~ blog.getMainImage.id) }}" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- end blog media -->
+                            {% endif %}#}
+                                {{ blog.content.description|raw }}
+                            </div><!-- post-content -->
+                        </article><!-- end blog wrap -->
+                    </div><!-- end col-lg-6 -->
+
+                </div><!-- end row -->
+            </div><!-- end content -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

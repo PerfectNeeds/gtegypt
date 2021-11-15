@@ -1,0 +1,81 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Tax Accounting{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_compensation-and-benefits-consulting') }}">Compensation and benefits consulting</a></li>
+                                <li><a href="{{ path('fe_international-tax') }}">International tax</a></li>
+                                <li><a href="{{ path('fe_private-wealth-services') }}">Private wealth services</a></li>
+                                <li><a href="{{ path('fe_state-and-local-tax') }}">State and local tax</a></li>
+                                <li class="active"><a href="{{ path('fe_tax-accounting') }}">Tax accounting/risk advisory</a></li>
+                                <li><a href="{{ path('fe_tax-compliance') }}">Tax compliance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Strengthen your corporate tax function</h2>
+                                    <p> Companies need to apply the same approaches to tax processes that they use in other areas of the finance department to reduce risk.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Man-and-woman-talking-with-laptop-phone.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Tax accounting quarterly update</h2>
+                                    <p>Learn about developments and significant issues that can affect your financial statements, including accounting for income and nonincome taxes.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Portion-Of-Blank-Calculator.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>TFO survey shows split in use of software </h2>
+                                    <p> In quantifying spreadsheets used in tax provision preparation, most respondents used either 1-10 spreadsheets or more than 30 spreadsheets.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Middle-aged-woman-sitting-with-laptop.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Tax Accounting/Risk Advisory</h2>
+                <p>
+                    Our Tax Accounting/Risk Advisory support falls into the following areas:
+                </p>
+                <ul class="lists">
+                    <li>Accounting for income taxes - Our accounting for income taxes support can reduce potential review comments by your external auditor on accounting for income tax matters, allowing for more timely financial statement closings. We can improve integration of your tax compliance and accounting functions, allowing you to use your internal resources in other areas.</li>
+                    <li>
+                        Tax function optimization - You strive to achieve a high-quality and efficient tax function while working against a backdrop of legislative and regulatory complexity. You try to gather and process data efficiently but use some manual processes and have data issues. Compliance requires significant time, and you need to use analytics effectively to manage risk and reduce taxes. Grant Thornton's Tax Function Optimization services can help you to enhance the performance of a single tax function or all functions in your tax organization. Our team members use leading tax software tools and effective processes, working with you to create a highly performing tax organization that fits your objectives, risk profile, environment and budget. Our professionals provide value at multiple levels:
+                        <ul>
+                            <li>Board, CEO and CFO - Efficient collection and use of data to analyze business performance, drive planning, establish technology-enabled standardized processes and strengthen controls.</li>
+                            <li>Controller and tax function - Integrated processes to manage risk, support planning and taxing authority requirements, enhance tax function collaboration with other departments and improve completeness and timeliness of reporting.</li>
+                            <li>Tax staff - Automated tools that provide access to timely and complete data and assistance with responsibilities like entity reporting, aligning multiple charts of account, provision/compliance automation and integration, tax account analysis, workflow calendars and document management.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

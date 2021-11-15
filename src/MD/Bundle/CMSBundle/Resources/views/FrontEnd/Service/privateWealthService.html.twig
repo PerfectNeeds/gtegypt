@@ -1,0 +1,76 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Private Wealth Service{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_compensation-and-benefits-consulting') }}">Compensation and benefits consulting</a></li>
+                                <li><a href="{{ path('fe_international-tax') }}">International tax</a></li>
+                                <li class="active"><a href="{{ path('fe_private-wealth-services') }}">Private wealth services</a></li>
+                                <li><a href="{{ path('fe_state-and-local-tax') }}">State and local tax</a></li>
+                                <li><a href="{{ path('fe_tax-accounting') }}">Tax accounting/risk advisory</a></li>
+                                <li><a href="{{ path('fe_tax-compliance') }}">Tax compliance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Tips to manage net investment income </h2>
+                                    <p> The 3.8% Medicare tax on net investment income applies if your adjusted gross income exceeds certain thresholds. Smart planning can help you reduce that burden.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Hands-On-Keyboard.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>The business of bonuses</h2>
+                                    <p> Businesses spend time designing bonus plans for employees, yet they need to consider how bonus arrangements affect their year-end income tax obligations.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_11_Business_people_reviewing_expenses.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Private Wealth Services</h2>
+                <p>
+                    Our Private Wealth Services professionals design, financially model and implement solution options to support quality and efficiency. We help you develop the most appropriate strategies by:
+                </p>
+                <ul class="lists">
+                    <li>Focusing on the business asset as the essential element of your plan</li>
+                    <li>Describing estate planning vehicles and tools including trusts</li>
+                    <li>Reviewing current and projected cash flows of the business to identify affordable and practical strategies</li>
+                    <li>Considering strategies for the business that make sense related to personal and family issues</li>
+                    <li>Providing year-round advice that responds to changes in your business, goals or family circumstances, or to changes in the tax laws</li>
+                </ul>
+                <p>Our services include the following: </p>
+                <ul class="lists">
+                    <li><strong>Planning for corporate executives</strong> - Through our planning for corporate executives, we can review current wills and trusts and the implementation of sophisticated income tax or estate planning strategies.</li>
+                    <li><strong>Planning for business owners</strong> - Our planning for business owners includes understanding your objectives regarding the future ownership and management of the business, the roles of family members and other business dynamics. We will recommend specific planning vehicles and techniques that address critical components of the business and wealth preservation equation.</li>
+                    <li><strong>Planning for individuals and family groups</strong> - Through our planning for individuals and family groups, we will guide you through obstacles to financial planning including tax laws, volatile economic conditions and business succession issues. We will support you with strategic income tax planning and consulting, estates and trusts, record-keeping and transaction analysis, and financial planning and tax advisory services.</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

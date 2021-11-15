@@ -1,0 +1,113 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Software Internet Aud IT{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}">Financial services <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li class="active"><a href="{{ path('fe_technology') }}"><span>Technology <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_software-internet-and-it') }}">Software, internet and IT</a></li>
+                            </ul>
+                        </li>
+                        {#<li class="active"><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_internationalgrowth') }}">International growth</a></li>
+                            </ul>
+                        </li>#}
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Getting revenue recognition right </h2>
+                                    <p>  The new standard won�t be effective until Jan. 1, 2017, but the time to prepare is now.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_06_FIS-Hedge-fund-shadowing.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Tax landscape matures for digital products</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-hand-pointing-at-cell-phone.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Time to modify R&D tax credit</h2>
+                                    <p>Learn how the research credit may impact your company's growth strategy.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_US-Congress-Building.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Protect from transfer pricing storm</h2>
+                                    <p> 3 ways to help tech companies manage tax risks </p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_09_BusinessSunnyOutlook.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Software, Internet and IT</h2>
+                <p>
+                    In our dynamic world, your company must evolve in order to grow. To meet rapidly changing market demands in the software and Internet arena, you must apply foresight and sharp responsive business skills as you deal with new challenges, including:
+                </p>
+                <ul class="lists">
+                    <li><strong>Innovation</strong> - Cloud computing, social networking and mobile applications are only some of the new developments that demand constant, focused innovation. You must determine what resources should be committed to developing competitive products and services for the short and long terms, as well as how to leverage these technologies to create efficiencies and bring value in your own operations.</li>
+                    <li><strong>Customer experience</strong> - Customer trust is everything. Today, your customers must have confidence in the functionality of your products, the reliability of your services, and the security of their data. Your mandate is to quickly build relevant, content-rich user technology, determine the optimal delivery channels for your products and services, and apply the appropriate safeguards and controls.</li>
+                    <li><strong>Globalization</strong> - As you develop your go-to market strategy, you must account for the global nature of our economy. You must consider expansion into new international markets as a key component in your growth strategy. In addition, you must account for competition from developing markets.</li>
+                    <li><strong>Enterprise management</strong> - You must manage your business for long-term profitability and stakeholder value while attracting and retaining a quality workforce, minimizing corporate risk, and successfully complying with increasingly restrictive domestic and international regulations.</li>
+                </ul>
+                <p>
+                     Grant Thornton's Technology Industry practice brings unparalleled industry understanding and the technical capability to help you achieve sustained strategic advantage. We provide the business and financial knowledge that your organization needs to succeed in the dynamic, highly competitive software and Internet sectors, today and tomorrow.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>TIP on Tax</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Hands-Signing-Document.jpg') }}"/>
+                            <h2>Tax issues for tech. companies</h2>
+                            <p>Series from Technology Industry Practice</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Replay webcast</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Male-hands-typing-on-tablet.jpg') }}"/>
+                            <h2>Rev. rec. impact on software</h2>
+                            <p>Webcast explains the key features of ASC 606 that affect software and SaaS companies.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

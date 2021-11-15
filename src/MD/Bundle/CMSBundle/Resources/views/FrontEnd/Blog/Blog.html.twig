@@ -1,0 +1,70 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}News{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper dm-shadow clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="{{ path('fe_partner') }}">People</a></li>
+                        <li class="active"><a href="{{ path('fe_blog') }}">Blogs</a></li>
+                    </ul>
+                    <a href="{{ path('fe_contact') }}" class="btn-primary btn-xs butt">Contact us <i class="fa fa-angle-right"></i></a>
+                    <a href="{{ path('fe_submit-rfp') }}" class="btn-primary btn-xs butt">Submit RFP <i class="fa fa-angle-right"></i></a>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div class="blog_container clearfix">
+                        {% for blog in blogs %}
+                    <div class="col-md-12">
+                        <article class="blog-wrap">
+                            {#{% if blog.getMainImage %}
+                            <div class="ImageWrapper blog-media">
+                                <img class="img-responsive" style="height:169px;width:100%;" src="{{ asset("uploads/blog/" ~ blog.id ~ "/"  ~ blog.getMainImage.id) }}" alt="{{ blog.title }}" title="{{ blog.title }}">
+                                <div class="ImageOverlayH"></div>
+                                <div class="Buttons StyleMg">
+                                    <span class="WhiteSquare"><a class="fancybox" href="{{ asset("uploads/blog/" ~ blog.id ~ "/"  ~ blog.getMainImage.id) }}"><i class="fa fa-search"></i></a></span>
+                                    <span class="WhiteSquare"><a href="{{ path('fe_show_blog',{'htmlSlug':blog.htmlSlug}) }}"><i class="fa fa-link"></i></a></span>
+                                </div>
+                            </div><!-- end blog media -->
+                            {% else %}
+                            <div class="ImageWrapper blog-media">
+                                <img class="img-responsive" style="height:169px;width:100%;" src="{{ asset('bundles/fe/images/placeholder.png') }}" alt="">
+                            </div><!-- end blog media -->
+                            {% endif %}#}
+                            <div class="post-date">
+                            </div><!-- end post-date -->
+
+                            <div class="post-content">
+                                <h2><a href="{{ path('fe_show_blog',{'htmlSlug':blog.htmlSlug}) }}">{{ blog.title }}</a></h2>
+                                <span>{{ blog.created|date('d') }} - {{ blog.created|date('M') }}</span>
+                                <p>{{ blog.content.brief|slice(0,100) }} ...</p>
+                            </div><!-- post-content -->
+                        </article><!-- end blog wrap -->
+                    </div><!-- end col-lg-6 -->
+                        {% endfor %}
+                </div><!-- end row -->
+                    {#<div class="pagination_wrapper clearfix">
+                        <!-- Pagination Normal -->
+                        <ul class="pagination">
+                            <li><a href="#">«</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li class="disabled"><a href="#">»</a></li>
+                        </ul>
+                    </div>#}
+            </div><!-- end content -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

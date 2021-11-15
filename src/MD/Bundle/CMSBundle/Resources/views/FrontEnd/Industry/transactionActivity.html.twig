@@ -1,0 +1,93 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Transaction activity{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}"><span>Financial services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li class="active"><a href="{{ path('fe_health-care') }}"><span>Health care <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_providers') }}">Providers</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Hidden risks of health care M&A</h2>
+                                    <p>Deals are moving in tandem with PPACA implementation; due diligence can help identify obstacles and strategies.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Stethoscope-Tablet.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Hospital guided in major savings, acquisition</h2>
+                                    <p> A nonprofit hospital was guided to $15 million in recurring net benefit and improvements to continue operating until acquisition.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Man-And-Woman-Talking-In-Stairwell-Overhead-View.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Joint ventures for health systems, physicians</h2>
+                                    <p> As shrinking resources meet increasing health care demands and regulations, ancillary joint ventures appeal to health systems and doctors.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Male-And-Female-Medical-Professionals-In-Scrubs-Talking.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Business planning determines challenge, opportunity decisions</h2>
+                <p>
+                    Effective due diligence focuses on bringing together industry sector knowledge and special resources to provide a deep understanding of the past, present and future. We take you through the entire process, from a buy-side search to merger integration services to sell-side assistance in a variety of business situations:
+                    <br/><br/>
+                    <srong>When integrating a physician practice</srong>
+                    <br/><br/>
+                    Before health systems start down the road toward physician integration, they benefit from thinking through the wider implications of policies, processes, technologies and economics. Based on our years of experience working with physician relationships, we help you balance the quality of care and financial dimensions of change.
+                    <br/>
+                    To mitigate tax exposure and engage physicians to fulfill your enterprise strategy, our tax professionals recommend the best structure for the integration.
+                    <br/>
+                    Mutual advantage through alignment of compensation and benefits is key to successful integration. We help establish competitive pay levels for base salaries, annual incentive plans and long-term equity plans, and guide you in tax-effective methods of deferred compensation, and health and welfare plans.
+                    <br/><br/>
+                    <srong>When consolidation and partnerships are considered</srong>
+                    <br/><br/>
+                    Organizations develop thoughtful M&A plans - including quality, talent, operational and financial due diligence - to realize the benefits of partnerships and avoid significant risk in this new and competitive environment. 
+                    <br/>
+                    Engage our help in restructuring operations and capital position; we can provide an independent and objective assessment of your organization, and recommend the best options for moving forward.
+                    <br/>
+                    To avoid valuation risks, we work with you to develop a well-structured foundation and accurate reporting for compliance - analyzing business practices, fair market value and physician compensation, tangible and intangible assets, and physician alignment.
+                    <br/>
+                    Whether the goal is to turn around and sell operations or to consider bankruptcy, our Corporate Advisory and Restructuring Services team facilitates an orderly transition.
+                </p>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

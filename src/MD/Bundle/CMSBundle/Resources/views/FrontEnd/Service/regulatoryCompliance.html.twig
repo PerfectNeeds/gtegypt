@@ -1,0 +1,100 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Regulatory Compliance{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_business-consulting') }}">Business consulting <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Forensic, investigative and dispute services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li class="active"><a href="{{ path('fe_governance-risk-and-compliance') }}">Governance, risk and compliance <i class="fa fa-angle-down pull-right"></i></a>
+                                    <ul>
+                                        <li><a href="{{ path('fe_cybersecurity') }}">Cybersecurity</a></li>
+                                        <li><a href="{{ path('fe_enterprise-risk-management') }}">Enterprise risk management</a></li>
+                                        <li><a href="{{ path('fe_internal-audit') }}">Internal Audit</a></li>
+                                        <li class="active"><a href="{{ path('fe_regulatory-compliance') }}">Regulatory compliance</a></li>
+                                        <li><a href="{{ path('fe_service-organization') }}">Service organization reports</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ path('fe_restructuring') }}">Restructuring and turnaround <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Technology solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_transaction-advisory') }}">Transaction advisory <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Valuation <i class="fa fa-angle-right pull-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Proactively manage third-party compliance </h2>
+                                    <p> Companies must be vigilant in managing how emerging risks affect their third-party relationships.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Packet-On-Table.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> CAEs create value despite compliance burden</h2>
+                                    <p>Chief audit executives find ways to continue adding strategic value even in the current compliance-heavy environment.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_11_Business_people_reviewing_expenses.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Monitoring and regulatory settlements </h2>
+                                    <p> When a settlement agreement is reached between an organization and regulators, a third party is engaged to assess compliance with the settlement agreement.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Man-talking-in-a-meeting.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Meet the challenges of the conflict minerals rule </h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Machine-Coolant-Spray.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Review and assess your regulatory compliance processes and address improvements</h2>
+                <p>
+                    Our Grant Thornton Advisory consultants can help organizations understand the myriad of rules and regulations across all industries that affect compliance efforts today. Whether your concerns are related to HIPAA, PCI, FISMA, ISO, or any other number of compliance mandates, our advisors can help.
+                    <br/><br/>
+                    Some examples of regulations that are impacting our clients include:
+                    <br/><br/>
+                    Anti-corruption and Foreign Corrupt Practices Act compliance<br/>
+                    Globalization and competitive pressure have increased the potential for fraud, bribery and corruption. In response to this issue, the rules established by the leading governments of the world are changing to level the regulatory playing field. Robust and stringent anti-corruption and anti-bribery regulation and laws such as the Foreign Corrupt Practices Act (FCPA) pose significant compliance requirements for both public and private corporations either operating or looking to expand internationally.
+                    <br/><br/>
+                    Conflict minerals<br/>
+                    The conflict minerals provision of the Dodd-Frank Wall Street Reform and Consumer Protection Act (Section 1502), as well as the SEC’s Final Rule implementing that provision, are among the latest regulations to sweep the manufacturing, electronics, automotive and retail industries. The Final Rule addresses concerns that the exploitation and trade of conflict minerals is funding the armed groups responsible for extreme violence in the Democratic Republic of the Congo and neighboring countries.
+                    <br/><br/>
+                    <strong>Contract compliance</strong><br/>
+                    As organizations increase their reliance on contract-based relationships to gain a competitive advantage, the fulfillment of those contractual obligations has become more critical and challenging. Grant Thornton’s team of experienced accounting professionals are preeminent leaders in contract compliance and investigation. They are well versed in regulations, compliance systems and customized methods to evaluate and recover revenue or costs and to maximize the return of your program. We can help you with contract compliance issues related to royalty, licensing, government, distribution, reseller, franchising and pricing.
+                    <br/><br/>
+                    <strong>HIPAA HITECH</strong><br/>
+                    Modifications to the Health Insurance Portability and Accountability Act of 1996 (HIPAA) became effective February 17, 2010, as required by the Health Information Technology for Economic and Clinical Health (HITECH) Act signed into law in 2009. The modifications require HIPAA covered entities (health care providers, health plans, or health care clearinghouses) to notify the Department of Health and Human Services (HHS) in the event of a breach of records in excess of 500. In addition, business associates (which perform functions that involve the use or disclosure of protected health information on behalf of, or provide services to, a covered entity) now must comply with HIPAA and are directly regulated by HHS.
+                    <br/><br/>
+                    <strong>PCI DSS</strong><br/>
+                    In September 2006, American Express, Discover Financial Services, JCB, MasterCard Worldwide and Visa International formed the PCI Security Standards Council. This council developed the PCI Data Security Standard, to which all payment card merchants and service providers will be held accountable. Grant Thornton LLP's advisory professionals can help your organization prepare for the standard. We are also one of the largest accounting firms in the United States that is a Qualified Security Assessor Company (QSAC) and that offers PCI Report on Compliance (RoC) services. Grant Thornton has many experienced, certified QSAs throughout the nation who can assess your compliance with the PCI DSS standards and provide you with an RoC that can be given to your merchant bank.
+                </p>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

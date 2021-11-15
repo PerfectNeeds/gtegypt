@@ -1,0 +1,97 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Audit{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_fainancial-audit') }}">Financial Audit</a></li>
+                                <li><a href="{{ path('fe_ifrs-reporting') }}">IFRS reporting</a></li>
+                                <li><a href="{{ path('fe_fresh-start-accounting') }}">Fresh start accounting</a></li>
+                                <li><a href="{{ path('fe_public-finance') }}">Public finance </a></li>
+                                <li><a href="{{ path('fe_employee-plan-audit') }}">Employee plan audit</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>What audit committees need to know about tax</h2>
+                                    <p>  Tax provision complexity requires audit committee members to be proficient enough to help manage tax risk and talk tax with staff and the auditor.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-At-Table-Wide-Shot.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>TRG for rev rec meets for the third time </h2>
+                                    <p> The Joint Transition Resource Group (TRG) for Revenue Recognition, formed by the FASB and the IASB to consider issues related to the new revenue standard, met for the third time.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Laptop-Binder-Coffee-Cup.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Share-based payments accounting</h2>
+                                    <p> The FASB is ready to draft a proposed ASU on improvements to share-based payments accounting.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-Meeting-In-Building-Lobby_R.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Audit Services</h2>
+                <p>
+                    Grant Thornton understands how important audited financial statements are to businesses, shareholders/owners, lenders, investors and other stakeholders. We work with some of the country's most successful private and public companies. Our approach is to first understand the business and the risks it faces, and then to focus our efforts where they matter most. This method is effective and cost-efficient.
+                    <br/><br/>
+                    Ultimately, we see our audit as more than numbers and compliance. We work with clients to improve their overall financial reporting processes and to help them better understand their business. We also consider it our job to continually inform our clients about accounting, financial and regulatory developments that may affect their business.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Guide to going public</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_09_BusinessSunnyOutlook.jpg') }}"/>
+                            <h2>Benefits and drawbacks</h2>
+                            <p>See when going public might make sense -- and when it doesn't -- plus some alternatives.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Technical developments</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Typing-hands-on-laptop.jpg') }}"/>
+                            <h2>New Developments Summary</h2>
+                            <p>Read a detailed summary of a recent technical development or accounting pronouncement.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Weekly updates</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Group-Looking-At-Report.jpg') }}"/>
+                            <h2>On the Horizon</h2>
+                            <p>Check out our weekly update on announcements, meetings and proposals from accounting standards-setting bodies and industry regulators.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

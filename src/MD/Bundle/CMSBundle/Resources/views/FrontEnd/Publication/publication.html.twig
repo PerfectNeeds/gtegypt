@@ -1,0 +1,29 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Publications{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper dm-shadow clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="{{ path('fe_partner') }}">People</a></li>
+                    </ul>
+                    <a href="{{ path('fe_contact') }}" class="btn-primary btn-xs butt">Contact us <i class="fa fa-angle-right"></i></a>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data" style="margin-top: 20px;">
+                <img src="{{ asset('bundles/fe/images/gt1.jpg') }}" alt="publications" class="pull-left" style="width: 200px;margin-right: 15px">
+                <p>Grant Thornton Mohamed Hilal is the only firm selected by General Authority for Investment (GAFI) which the organization responsible of regulating the business in Egypt to enhance their corporate governance system. As a result of our success, GAFI awarded us a new contract in 2015 to provide technical assistant to upgrade and improve the internal audit department. This was announced in all new papers in Egypt.</p>
+            </div><!-- end content -->
+
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

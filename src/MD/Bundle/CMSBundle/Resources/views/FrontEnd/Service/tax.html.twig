@@ -1,0 +1,107 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Tax{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_compensation-and-benefits-consulting') }}">Compensation and benefits consulting</a></li>
+                                <li><a href="{{ path('fe_international-tax') }}">International tax</a></li>
+                                <li><a href="{{ path('fe_private-wealth-services') }}">Private wealth services</a></li>
+                                <li><a href="{{ path('fe_state-and-local-tax') }}">State and local tax</a></li>
+                                <li><a href="{{ path('fe_tax-accounting') }}">Tax accounting/risk advisory</a></li>
+                                <li><a href="{{ path('fe_tax-compliance') }}">Tax compliance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>2014-15 tax guide: Tips and strategies</h2>
+                                    <p> Whether you're preparing to file your 2014 taxes or starting to plan for 2015 or both, find the numbers and guidance you need at your fingertips.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2015_02_Tax-guide.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>What audit committees need to know about tax</h2>
+                                    <p> Tax provision complexity requires audit committee members to be proficient enough to help manage tax risk and talk tax with staff and the auditor.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-At-Table-Wide-Shot.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>10 SALT predictions for 2015</h2>
+                                    <p> See if you agree with our state and local tax predictions based on our professionals' reasoning.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_09_BusinessSunnyOutlook.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Tax compliance and advisory services</h2>
+                <p>
+                    Grant Thornton LLP's responsive, partner-led Tax Services teams help dynamic companies navigate complexity and grow with insightful, practical tax advice. In addition to tax professionals in more than 50 offices around the United States, our Washington National Tax Office provides deep technical knowledge and responsive support in local, state, federal and international tax.
+                    <br/><br/>
+                    We help our clients manage a wide range of domestic and global income and nonincome tax compliance burdens as well as analyze and take advantage of appropriate planning opportunities in the following areas: - See more at: http://www.grantthornton.com/services/tax-services.aspx#sthash.ZMqsaRk0.dpuf
+                </p>
+                <ul class="lists">
+                    <li>Compensation and Benefits Consulting - Through in-depth understanding of the complex accounting and tax rules governing compensation and benefit plans, executive compensation and more, our Compensation and Benefits Consulting professionals help you manage costs, improve your business effectiveness and meet regulatory compliance requirements.</li>
+                    <li>International Tax - From establishing new operations abroad to understanding the latest transfer pricing regulations, to structuring cross-border transactions, to managing your expatriate workforce taxation, we can advise you on how best to develop and implement planning strategies to enhance tax savings at home and abroad.</li>
+                    <li>Private Wealth Services - By developing an in-depth understanding of your objectives regarding future ownership and management of the business, the roles of family members and other business dynamics, our Private Wealth Services professionals help private business owners and families meet their goals of growing, protecting, preserving, transferring and perpetuating family wealth.</li>
+                    <li>State and Local Tax - With experience across most jurisdictions in the United States and in a broad range of industries, our State and Local Tax professionals provide a complete range of services to help you deal with the increasing aggressiveness of many taxing authorities and manage your taxes at your operating locations.</li>
+                    <li>Strategic Federal Tax - Working with our Washington National Tax Office, our teams of Strategic Federal Tax professionals help you stay current about the impact of the latest tax laws and regulations so that you can develop and implement appropriate strategies to meet your organization's business objectives.</li>
+                    <li>Tax Accounting and Risk Advisory Services - From loan staffing to tax compliance and accounting process improvement to software selection and implementation, our Tax Accounting and Risk Advisory Services professionals can help you enhance your tax function, identify risks and manage audits of complex tax provisions.</li>
+                    <li>Tax Compliance - No matter what your level of internal tax resources, we can help with tax filings. Our services include tax accrual preparation under SFAS 109, federal income tax returns and multistate tax returns.</li>
+                </ul>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Employment tax</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Group-At-Table-Overhead.jpg') }}"/>
+                            <h2>Jan. 31 deadline</h2>
+                            <p>The Department of Labor announced that additional federal unemployment tax will be due on Jan. 31, 2015, from certain employers.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Affordable Care Act</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Hands-Signing-Document.jpg') }}"/>
+                            <h2>Customized resources </h2>
+                            <p>Use your own numbers to see how your decisions will affect your business's finances, and learn why you need to factor in common law employees.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Service delivery approach</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Typing-hands-on-laptop.jpg') }}"/>
+                            <h2>Tune up with Tax Symphony</h2>
+                            <p>Learn about Grant Thornton's tax compliance and consulting delivery methodology through a demo, a client testimonial or a quick-start card.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

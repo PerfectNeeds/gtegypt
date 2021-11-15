@@ -1,0 +1,97 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Advisory Services{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="#">Corporate Finance Services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Business & Management Services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Technology Solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Fraud and forensic services</a></li>
+                                <li><a href="{{ path('fe_governance-risk-and-compliance') }}">Corporate governance and risk compliance</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>2014 Acquisition Policy Survey</h2>
+                                    <p> A Closing Window: Are we missing the opportunity for change?</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-Meeting-In-Building-Lobby_R.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Manage your data</h2>
+                                    <p>Are you controlling your data or is it controlling you? Let good data governance practices put you in the driver's seat.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_12_ADV_DRM.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Raising the bar for fairness opinions</h2>
+                                    <p> A fairness opinion is an important step toward greater transparency and protection of stakeholder interests.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Busniessman-Business-woman-group.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Unlock your potential for growth</h2>
+                <p>
+                    You need a full-service Advisory capability, and we're here to help dynamic organizations. We focus on our client's market their industry, their issues. Through clear insights, practical solutions and an unmatched commitment to quality, we help clients solve problems, manage risk and seize opportunities to unlock their potential for growth.
+                    <br/><br/>
+                    In working with us to reach your growth objectives, you can benefit from:
+                    <br/><br/>
+                    <strong>Unmatched quality and the scores to prove it</strong> - Featuring senior-level partner access and attention, our superior client service is built on deep relationships that increase our understanding of your industry and your business , resulting in clear communication.
+                    <br/><br/>
+                    <strong>Full-service Advisory portfolio that's easy to access</strong> - We bring breadth of services and capabilities to match the largest firms, address your complex challenges and help you at every stage of growth for your organization.
+                    <br/><br/>
+                    <strong>Deep specialization to get to the root of the issue</strong> - We assemble the right team of subject matter specialists , they know your industry and understand your specific challenges. Our business and financial acumen pinpoints the right solution to help you achieve measurable results.
+                    <br/><br/>
+                    <strong>Global reach with local know-how</strong> - We help you go wherever growth leads you , through Grant Thornton International Ltd member firms operating in more than 100 countries. You gain access to insight on international business issues, but never without intimate knowledge of local culture, laws and regulatory requirements.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Revenue recognition</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Male-Hands-Working-At-Desk.jpg') }}"/>
+                            <h2>Think beyond financial reporting</h2>
+                            <p>Are you prepared for the new revenue rule and the impact to other areas of your business?</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Cloud-based BI</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2014_09_ADV_Cloud_Computing_Max_Growth.jpg') }}"/>
+                            <h2>Prepare for the future </h2>
+                            <p>Transitioning to cloud? Find out how to address the 5 key challenges to enterprise cloud-based BI while reaping its benefits.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

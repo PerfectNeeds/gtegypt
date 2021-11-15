@@ -1,0 +1,80 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}for Students{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="{{ path('fe_career') }}">CAREERS</a></li>
+                        <li><a href="{{ path('fe_why-grant-thornton') }}"><span>Why Grant Thornton</span></a></li>
+                        <li class="active"><a href="{{ path('fe_for-students') }}"><span>Students</span></a></li>
+                        <li><a href="{{ path('fe_for-professionals') }}"><span>Experienced professionals</span></a></li>
+                        <li><a href="{{ path('fe_our-stories') }}"><span>Our stories</span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Internship program</h2>
+                                    <p>  Take us for a test drive. </p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/2014_07-IntershipProgram.jpg') }}" alt="Careers">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Leadership and development program</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/2014_07-Leadership_development.jpg') }}" alt="Careers">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Your journey begins here.</h2>
+                <p>
+                    We know that starting your career on the right foot is important to you. You want to grow with a firm that's interested in your long-term professional development. You want to learn the technical skills that will grow your career, and you want guidance and inspiration along the way. Grant Thornton's collaborative work environment, vibrant culture and supportive leadership can help you get there.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Search jobs</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_SearchJobs.jpg') }}"/>
+                            <h2>Ready to grow with us?</h2>
+                            <p>Submit your resume and create a personal profile to get started.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Student recruitment</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_StudentRecruitment.jpg') }}"/>
+                            <h2>Resume ready? Let's go.</h2>
+                            <p>Our student hiring process gives you - and our professionals - a chance to talk, explore and decide if there's a good fit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>What are you waiting for?</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_ItsMoreThanAJob.jpg') }}"/>
+                            <h2>Why now is the time to join Grant Thornton</h2>
+                            <p>Find out what it's like to work in an environment that supports all of you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

@@ -1,0 +1,109 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}IFRS-reporting{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_fainancial-audit') }}">Financial Audit</a></li>
+                                <li class="active"><a href="{{ path('fe_ifrs-reporting') }}">IFRS reporting</a></li>
+                                <li><a href="{{ path('fe_fresh-start-accounting') }}">Fresh start accounting</a></li>
+                                <li><a href="{{ path('fe_public-finance') }}">Public finance </a></li>
+                                <li><a href="{{ path('fe_employee-plan-audit') }}">Employee plan audit</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2> IFRS News Quarter 1 </h2>
+                                    <p> Read about some issues companies will address during their reporting seasons, new standards issued by the IASB and exposure drafts issued.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Hands-On-Keyboard.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Hear the latest on IFRS </h2>
+                                    <p> Replay our webcast to understand how new and proposed IFRS may affect your company and how to best address them.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Laptop-Binder-Coffee-Cup.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Conversion support </h2>
+                                    <p>  See eight services we offer to support IFRS conversion.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-Working-At-Table-With-Chart.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>IFRS Reporting and Resources</h2>
+                <p>
+                    More than 100 countries have adopted International Financial Reporting Standards (IFRS), either as issued by the International Accounting Standards Board or as endorsed by a particular jurisdiction. SEC rule-making suggests that U.S. capital markets will likely have made the transition to IFRS within the next few years.
+                    <br/><br/>
+                    Grant Thornton International member firms combine broad international experience with technical know-how in audits of IFRS-based financial statements. We can also help clients convert to or from U.S. GAAP and IFRS.
+                    <br/><br/>
+                    IFRS conversion services include the following:
+                </p>
+                <ul class="lists">
+                    <li>Assisting management with selecting IFRS accounting policy alternatives such as voluntary exemptions provided by IFRS 1, First-time Adoption of International Financial Reporting Standards, including the implications of selecting such alternatives</li>
+                    <li>Identifying client-specific differences between U.S. GAAP and IFRS</li>
+                    <li>Identifying information requirements for converting to or from U.S. GAAP and IFRS</li>
+                    <li>Determining adjustments necessary to align financial reporting with the appropriate basis of accounting</li>
+                    <li>Preparing financial statements and disclosures to meet requirements</li>
+                    <li>Assisting with accounting systems and internal controls design and implementation</li>
+                    <li>Assisting with stakeholder communications</li>
+                    <li>Providing targeted training for accounting personnel</li>
+                </ul>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>On the Horizon for IFRS</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Standing-Woman-Leading-Meeting-Men-At-Table.jpg') }}"/>
+                            <h2>IASB issues November 2014 IFRIC meeting highlights</h2>
+                            <p>The IFRS Interpretations Committee has issued an update summarizing the deliberations during its meeting in London on Nov. 11.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Revenue recognition</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_09_MoneyOnTable_IconVer.jpg') }}"/>
+                            <h2>Digging into new rev. rec. standard </h2>
+                            <p>Read about the key features of the new revenue revenue standard, ASC 606, including practical insights into its application and impact.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Comparison</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Phone-Clocks-Time-Around-World.jpg') }}"/>
+                            <h2>GAAP versus IFRS</h2>
+                            <p>Check out the similarities and differences between U.S. GAAP and IFRS standards.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

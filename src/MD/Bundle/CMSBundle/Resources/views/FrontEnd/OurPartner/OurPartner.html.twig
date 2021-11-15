@@ -1,0 +1,91 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Our Partner{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper dm-shadow clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="{{ path('fe_partner') }}">People</a></li>
+                        {#<li class="active"><a href="{{ path('fe_blog') }}">Blogs</a></li>#}
+                    </ul>
+                    <a href="{{ path('fe_contact') }}" class="btn-primary btn-xs butt">Contact us <i class="fa fa-angle-right"></i></a>
+                    <a href="{{ path('fe_submit-rfp') }}" class="btn-primary btn-xs butt">Submit RFP <i class="fa fa-angle-right"></i></a>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            {#<li>
+                                <img src="{{ asset('bundles/fe/images/team.jpg') }}" alt="Issues">
+                            </li>
+                            <li>
+                                <img src="{{ asset('bundles/fe/images/team2.jpg') }}" alt="Issues">
+                            </li>#}
+                            <li>
+                                <img src="{{ asset('bundles/fe/images/team3.jpg') }}" alt="Issues">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <div class="large" style="display: none;overflow: hidden;">
+                    <ul style="margin-top: 30px;position: relative;">
+                        <li class="par" style="overflow:hidden;cursor: pointer;">
+                            <img style="float:left;margin: 0 10px 10px 0;background: #fff;" src="">
+                            <h2></h2>
+                            <span class="position"></span>
+                            <span class="content"></span><br>
+                            <span class="telephone"></span><br>
+                            <span class="email"><a href="" style="color:#656565;"></a></span><br>
+                            <a href="" class="more"> More details</a>
+                        </li>
+                    </ul>
+                </div><!-- large -->
+                <div class="small">
+                    <ul style="overflow: hidden;">
+                            {% for ourPartner in ourPartners %}
+                        <li>
+                                    {% if ourPartner.getMainImage != false %}
+                            <img src="{{ asset("uploads/ourpartners/" ~ ourPartner.id ~ "/"  ~ ourPartner.getMainImage.id) }}" style="float:left;margin: 0 10px 10px 0">
+                                    {% endif %}
+                            <h2 style="margin-bottom: 0px;">{{ ourPartner.title }}</h2>
+                            <span class="position">{{ ourPartner.position }}</span>
+                            <p>
+                                <span class="content">{{ ourPartner.content.description|raw|striptags|slice(0, 230) }} ...</span>
+                                <span class="telephone">T: {{ ourPartner.telephone }}</span>
+                                <span class="email">E: <a href="mailto:{{ ourPartner.email }}">{{ ourPartner.email }}</a></span>
+                            </p>
+                            <a href="{{ path('fe_show_partner', {'htmlSlug':ourPartner.htmlSlug}) }}"> More details</a>
+                        </li>
+                            {% endfor %}
+                    </ul>
+                </div><!-- small -->
+            </div><!-- end content -->
+
+                {#<div id="right_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 last clearfix">
+                    <div class="widget clearfix">
+                        <div class="agents_widget" style="background-color: #f0f0f0;padding: 15px;">
+                            <div class="title"><h3><i class="fa fa-phone"></i> Contact Details</h3></div>
+                            <p><i class="fa fa-external-link"></i> Grant Thornton (Mohamed Hilal) <br/> 
+                                87 Ramsis Street, Cairo, Egypt</p>
+                            <p><i class="fa fa-envelope"></i> <a href="mailto:info@gtegypt.org">info@gtegypt.org</a> <br/>
+                                <i class="fa fa-phone-square"></i> +2 (02) 25770785<br/>
+                                <i class="fa fa-phone-square"></i> +2 (02) 25744810 </p>
+                        </div><!-- end of agents_widget -->
+                    </div><!-- end of widget -->
+                </div><!-- end sidebar -->#}
+
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

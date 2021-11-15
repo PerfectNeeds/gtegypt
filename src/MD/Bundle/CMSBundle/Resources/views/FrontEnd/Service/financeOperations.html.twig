@@ -1,0 +1,79 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Finance Operations{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_business-consulting') }}">Business consulting <i class="fa fa-angle-down pull-right"></i></a>
+                                    <ul>
+                                        <li><a href="{{ path('fe_business-analytics') }}">Business analytics</a></li>
+                                        <li><a href="{{ path('fe_enterprise-transformation') }}">Enterprise transformation</a></li>
+                                        <li class="active"><a href="{{ path('fe_finance-operations') }}">Finance operations</a></li>
+                                        <li><a href="{{ path('fe_performance-improvement') }}">Performance improvement</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Forensic, investigative and dispute services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_governance-risk-and-compliance') }}">Governance, risk and compliance <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_restructuring') }}">Restructuring and turnaround <i class="fa fa-angle-down pull-right"></i></a></li>
+                                <li><a href="#">Technology solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_transaction-advisory') }}">Transaction advisory <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Valuation <i class="fa fa-angle-right pull-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Transform finance function to enable growth</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/SLC_2013_05_African-American-Male-Looks-Away-From-Camera-Right.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Finance operations</h2>
+                <p>
+                    With the rapid pace of change in the business landscape, economic and regulatory climate and technology innovation – the role of the CFO has continued to evolve to meet the needs of this dynamic environment. Today’s finance organizations are dealing with more complexity and facing challenges they've never encountered before – and that is not likely to change.
+                    <br/><br/>
+                    To be successful in this new and ever-changing environment, the finance function must change its focus from managing transactions to analyzing information and delivering value to the business. The ultimate objective is to bring the finance function into alignment with the organizations’ strategy to drive business outcomes. Grant Thornton advises clients on how to optimize finance function operations and to provide a complete solution for reporting historical, current and future performance. 
+                    <br/><br/>
+                    Our Finance Operations services are designed for organizations that want to optimize their finance function, drive business outcomes, and shift the finance organization to become a strategic partner to drive the organization’s growth.
+                    <br/><br/>
+                    <strong>Finance function improvement</strong>: Helps clients to improve the efficiency and accuracy of forecasting, planning, analysis, close and financial reporting processes; ultimately enabling the focus to shift to higher value activities to drive business growth.
+                    <br/><br/>
+                    <strong>Enterprise performance management</strong>: Provides clients with actionable information and robust tracking capabilities to manage corporate performance, enhance management reporting, and improve decision making to drive growth while streamlining the budgeting, planning and forecasting processes.
+                    <br/><br/>
+                    <strong>Business process improvement</strong>: Improves the finance organization’s processing efficiency to increase the value of the finance function. The approach may be to leverage existing service model, adopt a shared services strategy, or outsource key business processes, the result is the same – increased efficiency and reduced cost.
+                    <br/><br/>
+                    The Grant Thornton approach to finance transformation is characterized as:
+                </p>
+                <ul>
+                    <li><strong>Business-driven</strong>: Aligning organization design, technology and performance metrics to support your strategic business goals</li><br/>
+                    <li><strong>Adaptive</strong>: Bringing the right approach based on your needs - from optimizing functionality of existing financial systems and processes, or implementing entirely new ones</li><br/>
+                    <li><strong>Pragmatic and rapid</strong>: Focusing on identifying quick wins by tackling existing bottlenecks and issues faced by current business processes and systems and leveraging existing investments wherever possible to meet the business needs.</li><br/>
+                    <li><strong>Collaborative</strong>: Working with your team to improve the finance function’s processes, technology, talent and organizational structure</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

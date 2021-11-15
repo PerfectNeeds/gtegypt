@@ -1,0 +1,89 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Hospitality And Restaurants{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}">Financial services <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li class="active"><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                        {#<li class="active"><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_internationalgrowth') }}">International growth</a></li>
+                            </ul>
+                        </li>#}
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2> How to get ready for new market entry </h2>
+                                    <p> When the grass is greener abroad, savvy restaurant franchisors always prepare before making the leap. This step-by-step guide will help you ask the right questions.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_03_Broker-dealer.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Joint-employer status ruling may change franchising industry</h2>
+                                    <p> Unions' cases against McDonald's stand to alter franchisor-franchisee relationships in fast food business and many other industries.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_08_Gavel_Profile.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>IRS to restaurants: No imposition</h2>
+                                    <p> The IRS decided not to impose the simplified production method on restaurants.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Server-arm-with-a-silver-platter.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Sell-side due diligence for restaurants </h2>
+                                    <p> When the time comes to sell your restaurant, you want to make your sales pitch as appetizing as your food.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Waiter-Serving-Plate.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Serving up growth for restaurants and hospitality</h2>
+                <p>
+                    As customers feel more confident about the economy, restaurants and hotels are once again becoming regular stops. We can show you how to keep growing, while addressing complex issues like cybersecurity, price controls, supply chain efficiency, regulatory compliance, M&A and more. Our specialized restaurant and hospitality industry team can help companies:
+                </p>
+                <ul class="lists">
+                    <li>Position franchises for success - underreported sales, mismanaged advertising programs, employee theft and tax noncompliance may be costing you.</li>
+                    <li>New market entry - prepare to expand overseas by considering such issues as tax withholding and global intellectual property tax planning.</li>
+                    <li>Access capital - brands and franchisors that may have delayed capital improvements in the past are ready to go forward.</li>
+                    <li>Address payment card data security and prevent fraud - identify and evaluate illicit activity, design controls to help prevent or detect fraud, and monitor compliance.</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

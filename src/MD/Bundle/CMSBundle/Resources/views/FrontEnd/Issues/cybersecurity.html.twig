@@ -1,0 +1,79 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Cyber Security{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">ISSUES</a></li>
+                        <li><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_managingrisk') }}">Managing risk <i class="fa fa-angle-down pull-right"></i></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_cybersecurityy') }}">Cybersecurity</a></li>
+                                <li><a href="{{ path('fe_thirdpartyrisk') }}">Third-party risk</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_mergersandacquisitions') }}">Mergers and acquisitions</a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Protecting information<br/>in the enterprise</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HCM_2013_05_Hands-On-Keyboard.jpg') }}" alt="Issues" style="width: 100%">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <p>
+                    Businesses in every industry depend upon information systems for nearly all aspects of their financial and operational functions. Meanwhile, the cybersecurity regulatory and enforcement landscape is dynamic and rapidly evolving. Organizations must comply with a myriad of industry standards while managing the security of both their proprietary, customer data and data transmitted to third-parties, not to mention the possibility of unknown breaches and leaks.
+                    <br/><br/>
+                    Grant Thornton's cybersecurity consultants bring business and financial acumen to match larger firms while offering greater connectivity across service lines. At Grant Thornton, we believe cybersecurity and privacy strategy should support your business strategy. We bring a holistic approach, which considers impact across your organization and leverages our breadth of experience.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Prepare for cyberattacks</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Reduce-risk-pen-drawing.jpg') }}"/>
+                            <h2>Breaches cost unprepared companies more money</h2>
+                            <p>You can’t just sit around and hope a breach won’t happen. You must be proactive.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Webcast replay</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Male-hands-typing-on-tablet.jpg') }}"/>
+                            <h2>Align your business</h2>
+                            <p>Develop a framework for reducing cybersecurity risks to your organization while adhering to ever-changing industry regulations.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>General Counsel Survey</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Diverse-business-people-smiling.jpg') }}"/>
+                            <h2>Resource struggle</h2>
+                            <p>The 2014 Corporate General Counsel Survey reveals how resource-strapped in-house counsel battle regulations, cybercrime and litigation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

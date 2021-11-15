@@ -1,0 +1,102 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Career{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix" style='background: #fff;height: 300px;'>
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="{{ path('fe_career') }}">CAREERS</a></li>
+                        <li><a href="{{ path('fe_why-grant-thornton') }}"><span>Why Grant Thornton</span></a></li>
+                        <li><a href="{{ path('fe_for-students') }}"><span>Students</span></a></li>
+                        <li><a href="{{ path('fe_for-professionals') }}"><span>Experienced professionals</span></a></li>
+                        <li><a href="{{ path('fe_our-stories') }}"><span>Our stories</span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Want the job of a lifetime?</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_07_REC_Anthem_Video.jpg') }}" alt="Careers">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Be inspired.Grow your whole self.</h2>
+                                    <p>Find out what it means to bring your whole self to work.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/Carousel_BeInspiredGrowYourWholeSelf_140625.jpg') }}" alt="Careers">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>It’s more than a job. It’s an experience.</h2>
+                                    <p> Find out why you should choose us. </p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/780_WhatAreYouWaitingFor.jpg') }}" alt="Careers">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Why join Grant Thornton?</h2>
+                                    <p> Sal Fira makes a tangible impact on his clients’ businesses, while keeping his clients and his family happy.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06_Fira_Sal_VIDEO.jpg') }}" alt="Careers">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+<section class="secondwrapper dm-shadow clearfix home-news" style="margin-bottom: 10px;">
+    <div class="container">       
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <article class="blog-wrap">
+                        <h2>Students</h2>
+                        <div class="ImageWrapper blog-media">
+                            <img class="img-responsive" src="{{ asset('bundles/fe/images/3B_Students.jpg') }}" alt="">
+                        </div><!-- end blog media -->
+                        <a href="{{ path('fe_for-students') }}" class="btn-primary btn-xs" style="margin-top: 5px;display: inline-block">Reply To grow with us <i class="fa fa-angle-right"></i></a>
+                    </article><!-- end blog wrap -->
+                </div><!-- end col-lg-4 -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <article class="blog-wrap">
+                        <h2>Experienced professionals</h2>
+                        <div class="ImageWrapper blog-media">
+                            <img class="img-responsive" src="{{ asset('bundles/fe/images/3B_ExperiencedProfessional.jpg') }}" alt="">
+                        </div><!-- end blog media -->
+                        <a href="{{ path('fe_for-professionals') }}" class="btn-primary btn-xs" style="margin-top: 5px;display: inline-block">Build your career path <i class="fa fa-angle-right"></i></a>
+                    </article><!-- end blog wrap -->
+                </div><!-- end col-lg-4 -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <article class="blog-wrap">
+                        <h2>Your career starts here</h2>
+                        <div class="ImageWrapper blog-media">
+                            <img class="img-responsive" src="{{ asset('bundles/fe/images/3B_ItsAnExcitingTime.jpg') }}" alt="">
+                        </div><!-- end blog media -->
+                    </article><!-- end blog wrap -->
+                </div><!-- end col-lg-4 -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <article class="blog-wrap links">
+                        <h2>Explore</h2>
+                        <a href="{{ path('fe_recruit') }}" class="btn-block btn-primary btn-xs">Submit your CV <i class="fa fa-angle-right pull-right"></i></a>
+                    </article><!-- end blog wrap -->
+                </div><!-- end col-lg-4 -->
+            </div><!-- end col7 -->
+        </div><!-- end row -->
+    </div><!-- end dm_container -->  
+</section><!-- end secondwrapper -->
+
+{% endblock %}
+

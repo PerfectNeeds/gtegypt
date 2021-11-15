@@ -1,0 +1,112 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Cybersecurity{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_business-consulting') }}">Business consulting <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Forensic, investigative and dispute services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li class="active"><a href="{{ path('fe_governance-risk-and-compliance') }}">Governance, risk and compliance <i class="fa fa-angle-down pull-right"></i></a>
+                                    <ul>
+                                        <li class="active"><a href="{{ path('fe_cybersecurity') }}">Cybersecurity</a></li>
+                                        <li><a href="{{ path('fe_enterprise-risk-management') }}">Enterprise risk management</a></li>
+                                        <li><a href="{{ path('fe_internal-audit') }}">Internal Audit</a></li>
+                                        <li><a href="{{ path('fe_regulatory-compliance') }}">Regulatory compliance</a></li>
+                                        <li><a href="{{ path('fe_service-organization') }}">Service organization reports</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ path('fe_restructuring') }}">Restructuring and turnaround <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Technology solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_transaction-advisory') }}">Transaction advisory <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Valuation <i class="fa fa-angle-right pull-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Protecting information in the enterprise</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HCM_2013_05_Hands-On-Keyboard.jpg') }}" alt="Services" style="width: 100%;">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Cybersecurity</h2>
+                <p>
+                    Businesses in every industry depend upon information systems for nearly all aspects of their financial and operational functions. Meanwhile, the cybersecurity regulatory and enforcement landscape is dynamic and rapidly evolving. Organizations must comply with a myriad of industry standards while managing the security of both their proprietary, customer data and data transmitted to third-parties, not to mention the possibility of unknown breaches and leaks.
+                    <br/><br/>
+                    <strong>Cybersecurity experience</strong><br/>
+                    Grant Thornton is well-versed in both current privacy laws, regulations, and guidance. Our experienced consultants deliver a holistic approach to managing cybersecurity threat, response and recovery, drawing from their knowledge and experience in:
+                </p>
+                <ul>
+                    <li>Enterprise Risk Management (ERM)</li><br/>
+                    <li>Data supply chain and privacy services</li><br/>
+                    <li>COBIT, COSO, ISO, PCI</li><br/>
+                    <li>IT operations and security strategy</li><br/>
+                    <li>Incident response investigations</li><br/>
+                    <li>Regulatory consulting</li><br/>
+                    <li>Forensic technology</li><br/>
+                    <li>Monitoring</li><br/>
+                </ul>
+                <p>
+                    <strong>NIST Cybersecurity Framework</strong><br/>
+                    The National Institute of Standards’ (NIST) February 2014 release of its first version of the Framework for Improving Critical Infrastructure Cybersecurity, a result of Presidential Executive Order 13636, has organizations wondering how to leverage and implement the framework to safeguard their data supply chain.
+                    <br/><br/>
+                    The NIST cybersecurity framework is a collection of best practices, procedures and guidelines developed in partnership by government and the private sector to manage cybersecurity risk in critical infrastructure industries. While the framework is voluntary, increasingly enforcement agencies are leveraging the NIST cybersecurity framework when evaluating an organization’s cybersecurity practices.
+                    <br/><br/>
+                    Grant Thornton’s cybersecurity methodology leverages the NIST cybersecurity recommendations as the benchmark to your privacy program. We will develop a privacy framework and controls that are best suited to your organization based on our experience of your business operations, ERM assessment results, and industry standard privacy frameworks.<br/>
+                    Following an initial assessment, we map the NIST Cybersecurity Framework to your organization’s current risk management processes and procedures, determine the organization’s current cybersecurity profile and leverage the framework as an overlay to your organization’s existing practices.
+                </p>
+                <img src="{{ asset('bundles/fe/images/Cybersecurity_Framework.jpg') }}" />
+                <p>
+                    <strong>Delivering value</strong><br/>
+                    Grant Thornton’s cybersecurity consultants bring business and financial acumen to match larger firms while offering greater connectivity across service lines. At Grant Thornton, we believe cybersecurity and privacy strategy should support your business strategy. We bring a holistic approach, based on the NIST cybersecurity framework, which considers impact across your organization and leverages our breadth of experience. Hallmarks of our methodology include:
+                </p>
+                <ul>
+                    <li>A pragmatic approach to cybersecurity focusing on implementing measures that are appropriately targeted at reducing risks specific to your organization.</li><br/>
+                    <li>Data-centric risk based investment in security, which protects high value assets and enables competitive success.</li><br/>
+                    <li>Application of a quantitative and qualitative risk reduction calculation that leverages and organization’s existing technology investments.</li>
+                </ul>
+                <p>
+                    These aspects are guided by embedding the NIST's Cybersecurity Framework and Grant Thornton's ERM methodology into an organization's culture, processes and practices.
+                    <br/><br/>
+                    We also employ regulatory and security professionals in Washington, D.C. to remain abreast of new regulatory developments and advise our service teams as imminent industry changes are addressed by government agencies.
+                    <br/><br/>
+                    When performing cybersecurity assessments and information security projects we consider the appropriate industry regulations, such as:
+                </p>
+                <ul>
+                    <li>Children’s Online Privacy Protection Act (COPPA)</li><br/>
+                    <li>Fair Credit Reporting Act (FCRA)</li><br/>
+                    <li>Federal Trade Commission (FTC)</li><br/>
+                    <li>Gramm-Leach-Bliley Act (GLBA)</li><br/>
+                    <li>Health Information Technology for Economic and Clinical Health (HITECH)</li><br/>
+                    <li>Health Insurance Portability and Accountability Act (HIPAA)</li><br/>
+                    <li>Privacy of Consumer Financial Information (Regulation P)</li><br/>
+                    <li>State Data Breach Laws</li><br/>
+                    <li>Unfair, Deceptive or Abusive Acts or Practices (UDAAP)</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

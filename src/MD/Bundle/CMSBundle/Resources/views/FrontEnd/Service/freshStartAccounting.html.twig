@@ -1,0 +1,62 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Fresh Start Accounting{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_fainancial-audit') }}">Financial Audit</a></li>
+                                <li><a href="{{ path('fe_ifrs-reporting') }}">IFRS reporting</a></li>
+                                <li class="active"><a href="{{ path('fe_fresh-start-accounting') }}">Fresh start accounting</a></li>
+                                <li><a href="{{ path('fe_public-finance') }}">Public finance </a></li>
+                                <li><a href="{{ path('fe_employee-plan-audit') }}">Employee plan audit</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Moving forward after bankruptcy </h2>
+                                    <p> Check out the four steps in preparing financial statements when emerging from bankruptcy.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Pen-On-Signature-Line.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Fresh Start Accounting</h2>
+                <p>
+                    Fresh start accounting helps companies emerging from bankruptcy to adopt  appropriate emergence accounting, as governed by the Financial Accounting Standards Board's Accounting Standards Codification (R) (ASC) 852, Reorganizations. The results of fresh start accounting resemble those of purchase accounting, but require the company to prepare financial statements using the following four steps:
+                </p>
+                <ul class="lists">
+                    <li>Prepare the books and records of the predecessor entity for audit.</li>
+                    <li>Record the effects of the plan of reorganization including the extinguishing of prepetition liabilities and of the common stock of the predecessor entity, recoveries to creditors and reorganization of gain/loss provided by the above activities.</li>
+                    <li>Complete the revaluation and balance sheet adjustment of the assets and liabilities of the entity.</li>
+                    <li>Prepare the financial statements of the new entity to reflect all adjustments made during this process.</li>
+                </ul>
+                <p>Grant Thornton's integrated approach, combining the skills of professionals in several of our areas, helps companies emerge from bankruptcy ready to move forward.</p>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

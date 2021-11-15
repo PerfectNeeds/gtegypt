@@ -1,0 +1,110 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}compensation-and-benefits{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_compensation-and-benefits-consulting') }}">Compensation and benefits consulting</a></li>
+                                <li><a href="{{ path('fe_international-tax') }}">International tax</a></li>
+                                <li><a href="{{ path('fe_private-wealth-services') }}">Private wealth services</a></li>
+                                <li><a href="{{ path('fe_state-and-local-tax') }}">State and local tax</a></li>
+                                <li><a href="{{ path('fe_tax-accounting') }}">Tax accounting/risk advisory</a></li>
+                                <li><a href="{{ path('fe_tax-compliance') }}">Tax compliance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Deadline ahead for special transit benefit</h2>
+                                    <p> Special procedure allows some employers to implement retroactive increase in excludible qualified transit benefits.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_10_Cars_Dealer.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>ACA resources for customized help</h2>
+                                    <p> Use your own numbers to see how your decisions will affect your or your business's finances, and learn why you need to factor common law employees into your calculations.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Male-Hands-Drawing-Tablet.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> DOL seeks brokerage window information </h2>
+                                    <p>  The Department of Labor wants to determine whether and to what extent guidance may be needed to adequately protect participants’ retirement savings.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Male-Female-Hands-At-Laptop-Woman-Gestures-To-Screen.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Compensation and Benefits Consulting</h2>
+                <p>
+
+                    Our Compensation and Benefits Consulting professionals will work with your company to develop customized action plans that support your business goals.
+                    <br/><br/>
+                    Benefits - You need benefit support that goes beyond plan design. No problem. We can assist with sourcing and selecting benefit plan vendors, communicating your benefit plans to employees and conducting best practices reviews.<br/>
+                    Representative services include qualified plan compliance review, Form 5500 filings and vendor sourcing and selection.
+                    <br/><br/>
+                    Compensation - As you consider the right compensation plan for your people, we can help you explore incentive, stock and nonqualified deferred compensation plans that reward and retain executives, managers, sales professionals and other employees. Representative services include executive compensation, incentive plan design and nonequalified deferred compensation.
+                    <br/><br/>
+                    Human resources - Comprehensive and cost-effective HR approaches will help you reward and retain your employees while achieving your financial and business goals. Representative services include best practice review, policies and procedures, interim human resource assistance, merger and acquisition support, and performance management.
+                    <br/><br/>
+                    Global mobility -  Keep your assignees informed and their assignments running smoothly. We go beyond tax return preparation, offering strategic tax planning to help companies manage the rising costs of international assignments.
+                    <br/><br/>
+                    We also offer services in employment tax.
+                    <br/><br/>
+                    Employment tax  - Stay in compliance with the various federal and state laws, with our support. We will look for ways to reduce your employment tax costs. Read about the employment tax leader.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Webcast</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_09_MoneyOnTable.jpg') }}"/>
+                            <h2>Golden parachutes</h2>
+                            <p>Understand the strategies to avoid the tax consequences associated with excess parachute payments, especially in preparing for M&A.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>IRS releases 2015 rates</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2014_02_car_coins.jpg') }}"/>
+                            <h2>Optional standard mileage rates</h2>
+                            <p>The IRS issued the 2015 optional standard mileage rates used to calculate the deductible costs of operating an automobile.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Unemployment tax</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_09_MoneyOnTable_IconVer.jpg') }}"/>
+                            <h2>Jan. 31 deadline</h2>
+                            <p>The Department of Labor announced that additional federal unemployment tax will be due on Jan. 31, 2015, from certain employers.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

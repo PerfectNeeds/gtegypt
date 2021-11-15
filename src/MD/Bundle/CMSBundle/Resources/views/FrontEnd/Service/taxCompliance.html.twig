@@ -1,0 +1,63 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Tax Compliance{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_compensation-and-benefits-consulting') }}">Compensation and benefits consulting</a></li>
+                                <li><a href="{{ path('fe_international-tax') }}">International tax</a></li>
+                                <li><a href="{{ path('fe_private-wealth-services') }}">Private wealth services</a></li>
+                                <li><a href="{{ path('fe_state-and-local-tax') }}">State and local tax</a></li>
+                                <li><a href="{{ path('fe_tax-accounting') }}">Tax accounting/risk advisory</a></li>
+                                <li class="active"><a href="{{ path('fe_tax-compliance') }}">Tax compliance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Tax filing support</h2>
+                                    <p> Find out about three areas where we can help with compliance, regardless of your internal resources.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-People-in-a-business-meeting.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Tax Compliance</h2>
+                <p>
+                    Some companies have no internal tax capabilities and turn to Grant Thornton to fully address all of their tax compliance needs. Others are capable of preparing federal returns, but don't have internal tax proficiency in specialized areas like state and local tax and international tax. No matter what your level of internal tax resources, we can help with tax filings.   
+                    <br/><br/>
+                    Our services include the following:
+                </p>
+                <ul class="lists">
+                    <li>Tax accrual preparation under ASC 740 </li>
+                    <li>Federal income tax returns</li>
+                    <li>Multistate tax returns</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

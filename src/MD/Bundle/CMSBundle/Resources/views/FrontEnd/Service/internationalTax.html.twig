@@ -1,0 +1,117 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}International Tax{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_compensation-and-benefits-consulting') }}">Compensation and benefits consulting</a></li>
+                                <li class="active"><a href="{{ path('fe_international-tax') }}">International tax</a></li>
+                                <li><a href="{{ path('fe_private-wealth-services') }}">Private wealth services</a></li>
+                                <li><a href="{{ path('fe_state-and-local-tax') }}">State and local tax</a></li>
+                                <li><a href="{{ path('fe_tax-accounting') }}">Tax accounting/risk advisory</a></li>
+                                <li><a href="{{ path('fe_tax-compliance') }}">Tax compliance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Mid-market CEOs need certainty </h2>
+                                    <p> Find out why Randy Robason, national managing partner for Tax Services, thinks mid-market CEOs planning for growth need an environment of certainty in tax policy.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06_Robason_Randy_VIDEO.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Use caution when considering inversions </h2>
+                                    <p> Companies considering inversions should carefully evaluate whether Treasury's new rules make them worth pursuing.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Building-Lobby.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> International tax change affects tech firms </h2>
+                                    <p> BEPS, FATCA, revised foreign country laws and increased focus on the permanent reinvestment assertion are international tax changes affecting tech companies.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Man-and-woman-talking-with-laptop-phone.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Increased risk to reinvesting earnings overseas </h2>
+                                    <p> Corporate reinvestment of earnings in foreign jurisdictions has spiked, and so have regulatory scrutiny and risks.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Businessman-looking-out-of-building.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>International Tax</h2>
+                <p>
+                    Grant Thornton's International Tax professionals can help you implement strategies and structure transactions to enhance your tax savings at home and abroad. Whatever level of overseas activity you pursue, we can create a tailored international tax planning and compliance program.  
+                    <br/><br/>
+                    Our services include the following: 
+                </p>
+                <ul class="lists">
+                    <li>Global tax compliance - We provide your company with an accessible single point of contact, easy access to information and seamless service delivery through a robust collaboration tool that provides online access to status tracking, shared document management, due-date calendars, customized workflows and approvals, centralized billing, and data analytics.</li>
+                    <li>Global mobility - We go beyond tax return preparation, offering strategic tax planning to help companies manage the rising costs of international assignments.</li>
+                    <li>Employee taxation - We can help you manage U.S. and host country tax benefits for expatriate employees.</li>
+                    <li>Transfer pricing - We can help you with transfer pricing documentation, IRS audit support, advance pricing agreements, qualified cost-sharing arrangements, intangible holding companies and licensing arrangements and effective tax rate planning.</li>
+                    <li>Foreign business investments - We can assist you with structuring investments in offshore businesses to manage U.S. and host country taxation by analyzing host country deductions, exemptions and incentives.</li>
+                </ul>
+                <p>In addition, Grant Thornton offers regional specialty consulting such as the following:</p>
+                <ul>
+                    <li>The Japan Business Group works with the professionals of Grant Thornton LLP to provide tax, audit and advisory services to U.S. subsidiaries of Japanese parents and to assist Japanese companies with structuring investments into the United States. We can help Japanese management in either the United States or Japan understand complicated audit and tax issues.</li>
+                    <li>The China Business Group is a collaborative initiative between the United States and China member firms of Grant Thornton International, offering services to U.S.-based clients with Chinese activities and operations. These services include market entry solutions, restructuring, business advisory, China tax planning, merger and acquisition assistance, transfer pricing, expatriate planning, project management and global audit coordination. Read China Business Insights.</li>
+                </ul>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Case study</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Reduce-risk-pen-drawing.jpg') }}"/>
+                            <h2>Reducing transfer pricing risk</h2>
+                            <p>This retail analytics innovator reduces transfer pricing risk as it grows in China and beyond.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Transfer pricing</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-EU-flags-ouside-building.jpg') }}"/>
+                            <h2>The comparable profits method: Keep it simple</h2>
+                            <p>Get tips on how to find comparable unrelated parties and analyze related information.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Final regs</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06_NFP-International-flags.jpg') }}"/>
+                            <h2>Reporting financial assets</h2>
+                            <p>The IRS released final regs relating to requirements for reporting specified foreign financial assets to the IRS.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

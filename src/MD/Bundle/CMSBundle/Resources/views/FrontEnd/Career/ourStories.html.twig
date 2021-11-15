@@ -1,0 +1,81 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Our Stories{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="{{ path('fe_career') }}">CAREERS</a></li>
+                        <li><a href="{{ path('fe_why-grant-thornton') }}"><span>Why Grant Thornton</span></a></li>
+                        <li><a href="{{ path('fe_for-students') }}"><span>Students</span></a></li>
+                        <li><a href="{{ path('fe_for-professionals') }}"><span>Experienced professionals</span></a></li>
+                        <li class="active"><a href="{{ path('fe_our-stories') }}"><span>Our stories</span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Be inspired. Grow your whole self. </h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/Carousel_BeInspiredGrowYourWholeSelf_140625.jpg') }}" alt="Careers">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Be inspired. Grow your whole self.</h2>
+                <p>
+                    As one of the fastest-growing professional services firms in the world, we are continuously seeking top talent. Exceptional talent is our best resource to drive continued growth and the achievement of our firm's success.
+                    <br/><br/>
+                    To attract and retain the best talent, we acknowledge the need to create a working environment where you can thrive professionally and personally. You're not just a consultant or an accountant, but a philanthropist, a parent or a runner. Maybe you're a singer, an outdoor enthusiast or an animal lover.
+                    <br/><br/>
+                    At Grant Thornton, we believe in creating an environment that will continue to shape and define you.
+                    <br/><br/>
+                    Our culture and people are like no other. Our collaborative, vibrant and inclusive culture sets us apart from our competitors. Our people exude a sense of responsibility, and are dedicated to delivering excellence and making a difference every day.
+                    <br/><br/>
+                    Imagine the possibilities of joining an organization that inspires you to bring your whole self to work.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Launching a career</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_Harber_Elizabeth.jpg') }}"/>
+                            <h2>Meet Elizabeth Harber</h2>
+                            <p>The firm's leaders are actively involved in giving back and have stayed involved with my growth over the course of my career.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Endless opportunity</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_Landi_Morris.jpg') }}"/>
+                            <h2>Meet Landi Morris</h2>
+                            <p>We get a wide variety of interesting clients, so we’re not focusing on the same issues every day.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Supportive leadership</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_Brandon_Hickey.jpg') }}"/>
+                            <h2>Meet Brandon Hickey</h2>
+                            <p>I'm talking to the senior managers and managers to ask advice, get feedback, and just shoot back and forth ideas on my career goals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

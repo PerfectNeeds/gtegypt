@@ -1,0 +1,105 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Third Party Risk{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">ISSUES</a></li>
+                        <li><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_managingrisk') }}">Managing risk <i class="fa fa-angle-down pull-right"></i></a>
+                            <ul>
+                                <li><a href="{{ path('fe_cybersecurityy') }}">Cybersecurity</a></li>
+                                <li class="active"><a href="{{ path('fe_thirdpartyrisk') }}">Third-party risk</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_mergersandacquisitions') }}">Mergers and acquisitions</a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/NFP-Internation-flags-slanted.jpg') }}" alt="Issues">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Third-party risk</h2>
+                <p>
+                    Many companies are gaining a competitive advantage in today's dynamic business environment by outsourcing critical business functions to third parties. But as more companies enter these relationships, their control environment is being relinquished to others. These partnerships can be critical to growth, but must be managed in an ongoing and proactive manner. Grant Thornton LLP professionals help clients address the process, technology, governance and culture to measure, mitigate and monitor third-party risk and grow their businesses with confidence.
+                </p>
+                <h4>How we can help</h4>
+                <p>
+                    <strong>Measure</strong><br/>
+                    Organizations need to establish a framework for risk assessment that is effective yet flexible enough to recognize that not all risks are created equal. The best approach is to perform due diligence on the front end when relationships are established, as well as continuing to monitor the relationship to ensure compliance with the agreement.
+                    <br/><br/>
+                    A good place to begin assessing risk is by defining the risk universe. It is important to formulate a complete picture of third-party relationships within an organization by including all relevant areas of the business-internal audit, finance, compliance, legal, procurement and business operations. The information that is gathered can also feed into other governance, risk and compliance efforts, which include the formulation of the internal audit risk universe and annual internal audit plan.
+                    <br/><br/>
+                    <strong>Mitigate</strong><br/>
+                    There are various techniques that can be used to mitigate risk when doing business with third-party vendors, but it is important to know what level of assurance is needed. The level of assurance depends on multiple factors, including the nature of the business, your risk appetite, type of relationship, and the industry, as well as other factors. Some risk mitigation techniques along this risk continuum are:
+                </p>
+                <ul class="lists">
+                    <li>Transaction monitoring</li>
+                    <li>Increased data analysis and reporting</li>
+                    <li>Contract renegotiation</li>
+                    <li>Independent reviews</li>
+                    <li>Audits</li>
+                    <li>Site visits</li>
+                    <li>Questionnaires</li>
+                    <li>Maintaining a good relationship with your third parties</li>
+                </ul>
+                <p>
+                    A Service Organization Control (SOC) report is a common risk mitigation technique used when an organization wants or needs a high level of assurance. In order for this report to be useful, it is critical to know what to look for and confirm that it addresses the right controls. It may be necessary to seek additional information regarding the services provided by your third parties, such as a right-to-audit clause, if a SOC report does not meet your needs.
+                    <br/><br/>
+                    <strong>Monitor</strong><br/>
+                    Continue to monitor these relationships to make sure the party is compliant with the agreement set forth or with any regulations with which you must also comply. It is critical to create a plan on how you will manage third-party relationships for the life of the contract.
+                    <br/><br/>
+                    Our fully integrated Third-party Integrity Framework offers a third-party onboarding process, including a risk assessment and due diligence process; a web-based tool to monitor transaction activity; training or ongoing management of the customized framework; and access to industry-leading specialists in fraud and corruption across a global network. It will leave you with the focus, visibility and confidence you need to continue growing your business.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Webcast replay</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-People-in-a-business-meeting.jpg') }}"/>
+                            <h2>Third-party risk management</h2>
+                            <p>Learn how to manage your third-party risk effectively, confidently and efficiently.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Third-party compliance</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2014_09_ADV_Prescriptive_Analytics_Report.jpg') }}"/>
+                            <h2>Take a proactive approach</h2>
+                            <p>Companies must be vigilant in managing emerging risks that affect their third-party relationships and contracts governing them.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Integrity</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2014_10_RevRec article.jpg') }}"/>
+                            <h2>Monitor third parties</h2>
+                            <p>We can help you mitigate the risk of third-party relationships and protect the integrity of your business while you pursue growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

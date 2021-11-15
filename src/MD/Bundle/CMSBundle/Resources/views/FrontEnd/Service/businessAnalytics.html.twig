@@ -1,0 +1,74 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Business Analytics{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_business-consulting') }}">Business consulting <i class="fa fa-angle-down pull-right"></i></a>
+                                    <ul>
+                                        <li class="active"><a href="{{ path('fe_business-analytics') }}">Business analytics</a></li>
+                                        <li><a href="{{ path('fe_enterprise-transformation') }}">Enterprise transformation</a></li>
+                                        <li><a href="{{ path('fe_finance-operations') }}">Finance operations</a></li>
+                                        <li><a href="{{ path('fe_performance-improvement') }}">Performance improvement</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Forensic, investigative and dispute services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_governance-risk-and-compliance') }}">Governance, risk and compliance <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_restructuring') }}">Restructuring and turnaround <i class="fa fa-angle-down pull-right"></i></a></li>
+                                <li><a href="#">Technology solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_transaction-advisory') }}">Transaction advisory <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Valuation <i class="fa fa-angle-right pull-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Drive growth with empowered decision-making</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Empty-hardrive-room.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Business analytics</h2>
+                <p>
+                    To succeed in today’s business environment, organizations must shift from analyzing past events to planning for the future. The right business analytics strategy can help you gain competitive advantage by enabling timely business decisions that respond to market conditions and improve operations. The best business intelligence efforts require true alignment with business strategy and the ability to provide transparency and integrity to information.
+                    <br/><br/>
+                    Our end-to-end business intelligence services are designed to help you enhance organizational capabilities, as well as support forecasting and forward-looking financial and customer models.
+                    <br/><br/>
+                    Business intelligence platform: It starts with creating a flexible enterprise reporting platform that enables access to financial and operational data sources and provides analytics through any device. Adaptable scorecards, strategy maps and dashboards provide depth to detail depending on the business need and key performance indicators (KPIs) to drive access to actionable intelligence and transform insight into action. Our approach at Grant Thornton enables the reuse of data across multiple business applications and processes while supporting further discovery and Big Data initiatives.
+                </p>
+                <ul>
+                    <li>Enterprise reporting strategy: Helping clients define a roadmap for consistently transforming data into business and operational insight. Built upon a foundation of policy and governance, leveraging available data no matter how disparate, accurately presented in a timeframe and medium mandated by the business, a comprehensive enterprise reporting strategy is critical element of any competitive business.</li><br/>
+                    <li>Performance management: Empowers financial decision-making and improved business performance through the financial close, planning and forecasting. Cost management and profitability analysis is provided along with business intelligence reporting.</li><br/>
+                    <li>Governance and integration: Enables alignment and consistency of measures for corporate reporting and the enterprise, while simultaneously providing the flexibility for local business unit specific metrics. The process to data governance is addressed with mastering data relationships. When done right, business processes are improved and applications are implemented and maintained with a lower cost of ownership.</li><br/>
+                    <li>Business operations: Our approach to data relationship management is rooted in a deep understanding of business operations and the underlying systems supporting those businesses. Complexity increases geometrically as systems grow and reporting become more interdependent. Experience rooted in the implementation and integration of these enterprise systems allow us to optimize benefits while minimizing the change impact on the organization.</li><br/>
+                    <li>Foundation analytics: Integrated platform delivering OLAP, mobile and dashboard visualization capabilities. Foundation delivers advanced data visualization, cross-domain analytics, scorecarding and strategy management, and the ability to create new analytic models.</li><br/>
+                    <li>Pre-built analytics: Provides a delivered data model to enable enterprise reporting across financial and operational data with a focus on industry, process and roles.</li><br/>
+                    <li>Information discovery: Enhances organizational performance by applying advanced modeling, data mining, and information discovery to create actionable insight to plan for future events that will drive business outcomes. Outcomes could include predicting customer behavior, anticipating cross-sell/up-sell opportunities, anticipating product demand, and reducing fraud.</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

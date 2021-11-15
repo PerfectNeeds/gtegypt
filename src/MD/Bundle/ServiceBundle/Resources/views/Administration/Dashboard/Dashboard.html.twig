@@ -1,0 +1,22 @@
+    {% extends 'AdminTemplateBundle::base.html.twig' %}
+{% set page_title %}Admin Panel{% endset %}
+{% block body -%}
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="the-box no-border bg-primary tiles-information text-center">
+                <a href="{{ path('cms_dashboard') }}">
+                    <i class="fa fa-file-o icon-lg-size"></i>
+                    <h4>CMS</h4>
+                </a>
+            </div><!-- /.tiles .facebook-tile -->
+        </div><!-- /.col-xs-6 -->
+        <div class="col-xs-6">
+            <div class="the-box no-border bg-warning tiles-information text-center">
+                <a href="{{ path('recruit_dashboard') }}">
+                    <i class="fa fa-users icon-lg-size"></i>
+                    <h4>Recruitment</h4>
+                </a>
+            </div><!-- /.tiles .twitter-tile -->
+        </div><!-- /.col-xs-6 -->
+    </div><!-- /.row -->
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends 'AdminTemplateBundle::base.html.twig' %}
+{% set page_title %}Menu Edit{% endset %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/admintemplate/assets/plugins/validator/bootstrapValidator.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body -%}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h6 class="panel-title"><i class="icon-bubble4"></i> {{ page_title }}</h6>
+        </div>
+        <div class="panel-body">
+            <form class="form bootstrap-validator-form" id="validation" action="{{ path('menu_update', { 'id': entity.id}) }}" role="form" method="POST">
+                <input type="hidden" name="_method" value="PUT" />                
+                {{ form_widget(edit_form) }}
+                <div class="form-group">
+                    <label for="md_bundle_cmsbundle_menu_url" class="required">Url</label>
+                    <input type="text" id="md_bundle_cmsbundle_menu_url" name="data[url]" maxlength="255" placeholder="http://example.com" class="form-control" {% if entity.getFirstMenuItems !=null %}value="{{ entity.getFirstMenuItems.url }}"{% endif %} />
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Internal or External
+                        <p class="help-block">Internal or External Website</p>
+                    </label>
+                    <div class="col-lg-5">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="data[target]" {% if entity.getFirstMenuItems !=null and entity.getFirstMenuItems.target ==  constant('MD\\Bundle\\CMSBundle\\Entity\\MenuItem::INTERNAL') %}checked=""{% endif %} value="{{ constant('MD\\Bundle\\CMSBundle\\Entity\\MenuItem::INTERNAL') }}" /> Internal
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="data[target]" {% if entity.getFirstMenuItems !=null and entity.getFirstMenuItems.target ==  constant('MD\\Bundle\\CMSBundle\\Entity\\MenuItem::EXTERNAL') %}checked{% endif %} value="{{ constant('MD\\Bundle\\CMSBundle\\Entity\\MenuItem::EXTERNAL') }}" /> External
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-right">
+                    <button class="btn btn-success" type="submit"><i class="fa fa-check"></i> Update</button>
+                    <button class="btn btn-danger" type="reset"><i class="fa fa-refresh"></i> Reset</button>
+                </div>
+            </form>
+            <div >
+                <a href="{{ path('menu') }}" class="btn btn-warning">Back to the list</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/admintemplate/assets/plugins/validator/bootstrapValidator.min.js') }}"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#validation').bootstrapValidator({
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    "md_bundle_cmsbundle_menu[name]": {
+                        message: 'The username is not valid',
+                        validators: {
+                            notEmpty: {
+                                message: 'This field is required and can\'t be empty'
+                            },
+                        }
+                    },
+                    {#"data[url]": {
+                        validators: {
+                            uri: {
+                                message: 'The input is not a valid URL'
+                            }
+                        },
+                    },#}
+                }
+            }).disableSubmitButtons();
+
+
+        });
+    </script>   
+{% endblock %}

@@ -1,0 +1,245 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+#cssmenu {
+    position: relative;
+    margin: 0;
+    font-family: 'Roboto Condensed';
+    line-height: 1;
+}
+.align-right {
+    float: right;
+}
+#cssmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+} 
+#cssmenu ul li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#cssmenu ul li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+#cssmenu > ul > li > a {
+    color: #dddddd;
+    text-transform: uppercase;
+    display: block;
+    padding: 20px;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    background: #222222;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 300;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    -ms-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    position: relative;
+}
+#cssmenu > ul > li:first-child > a {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+#cssmenu > ul > li:last-child > a {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    /*border-bottom: 1px solid #000000;*/
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.open > a,
+#cssmenu > ul > li.active > a {
+    background: #e8e3da;
+    color: #54287f;
+}
+#cssmenu ul > li.has-sub > a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 13px solid #e8e3da;
+    border-botom: 13px solid transparent;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    left: 0;
+    bottom: -13px;
+    bottom: 0px;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+#cssmenu ul > li.has-sub > a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 13px solid #e8e3da;
+    border-botom: 13px solid transparent;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    left: 0;
+    bottom: -12px;
+    bottom: -1px;
+    z-index: 3;
+    opacity: 0;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+#cssmenu ul > li.has-sub::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top-color: #dddddd;
+    z-index: 2;
+    right: 20px;
+    top: 24.5px;
+    pointer-events: none;
+}
+#cssmenu ul > li:hover::after,
+#cssmenu ul > li.active::after,
+#cssmenu ul > li.open::after {
+    border-top-color: #54287f;
+}
+#cssmenu ul > li.has-sub.open > a::after {
+    opacity: 1;
+    bottom: -13px;
+}
+#cssmenu ul > li.has-sub.open > a::before {
+    opacity: 1;
+    bottom: -12px;
+}
+#cssmenu ul ul {
+    display: none;
+}
+#cssmenu ul ul li {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+#cssmenu ul ul li a {
+    background: #f1f1f1;
+    display: block;
+    position: relative;
+    font-size: 15px;
+    padding: 14px 20px;
+    border-bottom: 1px solid #dddddd;
+    color: #777777;
+    font-weight: 300;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    -ms-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+}
+#cssmenu ul ul li:first-child > a {
+    padding-top: 18px;
+}
+#cssmenu ul ul ul li {
+    border: 0;
+}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li.open > a,
+#cssmenu ul ul li.active > a {
+    background: #e4e4e4;
+    color: #666666;
+}
+#cssmenu ul ul > li.has-sub > a::after {
+    border-top: 13px solid #dddddd;
+}
+#cssmenu ul ul > li.has-sub > a::before {
+    border-top: 13px solid #e4e4e4;
+}
+#cssmenu ul ul ul li a {
+    padding-left: 30px;
+}
+#cssmenu ul ul > li.has-sub::after {
+    top: 18.5px;
+    border-width: 6px;
+    border-top-color: #777777;
+}
+#cssmenu ul ul > li:hover::after,
+#cssmenu ul ul > li.active::after,
+#cssmenu ul ul > li.open::after {
+    border-top-color: #666666;
+}
+.blog-wrap h2{padding-bottom: 5px;}
+.links a{
+    background: #824bb0!important;
+    color: #fff;
+    display: block;
+    font: 16px/32px helvetica,arial,sans-serif;
+    height: 32px;
+    padding: 0 0 0 12px;
+    text-decoration: none;
+}
+.links a:hover{
+    background: #351d58!important;
+}
+.links i{margin: 7px 10px;}
+.footer-links-1, .footer-links-2{ font: bold 14px/22px helvetica,arial,sans-serif;}
+.footer-links-1 ul, .footer-links-2 ul{list-style: none;}
+.footer-links-1 ul li, .footer-links-2 ul li{display: inline-block;}
+.footer-links-1 ul li a, .footer-links-2 ul li a{color:#a271cc;margin-right: 16px;}
+.footer-links-1 ul li a:hover, .footer-links-2 ul li a:hover{color:#a271cc;text-decoration: underline;}
+.footers{
+    overflow: hidden; 
+    border-top: 1px solid #6c5095;
+    color: #a486d1;
+    font: 11px/15px helvetica,arial,sans-serif;
+    padding: 20px 0;
+}
+.pages-banner{position: relative}
+.pages-banner img{position: absolute;top:0px;left: 0px;z-index: 0;}
+.pages-banner .banner_data{position: absolute;top:0px;left: 25px;z-index: 1;}
+.pages-banner .banner_data h2{font: 40px/45px georgia,serif;padding: 20px 0 10px;}
+.pages-banner .banner_data a{
+    background: #8e9300;
+    color: #fff;
+    font: bold 13px/17px helvetica,arial,sans-serif;
+    padding: 7px 15px 7px 10px;
+}
+.pages-banner .banner_data a:hover{background: #616400;}
+.pages-data{margin-top: 320px;}
+.pages-data h2, .pages-data h3{color: #5f497a;font:33px/38px georgia,serif;}
+.lists > li {
+    font: 16px/24px georgia,serif;
+    margin-bottom: 15px;
+}
+.pages-data p{color: #444444;font:16px/24px georgia,serif;}
+.pages-data p span{color: #8e9300;margin: 10px;padding: 10px;}
+.pages-data ul{padding-left: 30px;}
+.pages-link{
+    background:#804cad;
+    color: #fff;
+    display: block;
+    padding: 17px 56px 17px 17px;
+    text-decoration: none;
+}
+.pages-link:hover{background: #351d58;color:#fff;}
+.ads{
+    border-top: 1px solid #999;
+    margin-top: 24px;
+    padding-top: 24px;
+}
+.ads h1{font:bold 16px/18px georgia,serif;}
+.ads h2{font:bold 16px/18px georgia,serif;color:#444;}
+.ads p{font:16px/24px georgia,serif;color:#444;}
+.pages-banner li{overflow: visible!important;}
+.pages-slides .flex-direction-nav li a{margin-top: 16%;}

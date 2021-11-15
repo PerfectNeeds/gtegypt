@@ -1,0 +1,88 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Mergers And Acquisitions{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">ISSUES</a></li>
+                        <li><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_managingrisk') }}">Managing risk <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li class="active"><a href="{{ path('fe_mergersandacquisitions') }}">Mergers and acquisitions</a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Raising the bar for fairness opinions</h2>
+                                    <p>A fairness opinion is an important step toward greater transparency and protection of stakeholder interests.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Busniessman-Business-woman-group.jpg') }}" alt="Issues">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Transaction disputes</h2>
+                                    <p>6 actions to take before the neutral accountant has the last word.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-Meeting-In-Building-Lobby_R.jpg') }}" alt="Issues">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Community banks take the lead in M&A</h2>
+                                    <p>Larger players are largely shut out of the M&A game for 2014. But for community banks, now is the ideal moment to pursue strategic acquisitions.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_05_banks globe.jpg') }}" alt="Issues">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>5 opportunity areas formanaging convergence risk</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-Meeting-In-Building-Lobby_R.jpg') }}" alt="Issues">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Growing through mergers and acquisitions</h2>
+                <p>
+                    Mergers and acquisitions can be a fast track to growth, but success in M&A is far from a sure thing. Grant Thornton helps high-growth, dynamic companies navigate complex transactions - whether buying or selling - with speed and agility. From deal strategy, through due diligence and to the integration of a new business, we help clients solve problems, manage risk and seize opportunities to unlock their potential for growth.
+                    <br/><br/>
+                    Time kills deals. Our Transactions team is accustomed to working at "deal speed" and is committed to delivering critical findings precisely when you need them. Each transaction is unique. We develop a customized approach and scope deliverable that addresses your specific needs.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Webcast replay</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Business-people-with-arms-crossed.jpg') }}"/>
+                            <h2>Gold parachute payments</h2>
+                            <p>Corporations planning for a merger or acquisition must understand the fundamental parachute payment rules and some of the more complex issues.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Global insurance M&A</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Standing-Woman-Leading-Meeting-Men-At-Table.jpg') }}"/>
+                            <h2>Latest global trends</h2>
+                            <p>Improved macroeconomic conditions in developed countries is having a positive effect on the global insurance M&A market.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

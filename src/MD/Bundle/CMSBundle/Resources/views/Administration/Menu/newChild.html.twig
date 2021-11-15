@@ -1,0 +1,86 @@
+{% extends 'AdminTemplateBundle::base.html.twig' %}
+{% set page_title %}Menu Child creation{% endset %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/admintemplate/assets/plugins/validator/bootstrapValidator.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body -%}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h6 class="panel-title"><i class="icon-bubble4"></i> {{ page_title }}</h6>
+        </div>
+        <div class="panel-body">
+            <form class="form bootstrap-validator-form" id="validation" action="{{ path('menu_create_child',{'id':pageId}) }}" role="form" method="POST">
+
+                <div class="form-group">
+                    <label for="md_bundle_cmsbundle_menu_name" class="required">Name</label>
+                    <input type="text" id="md_bundle_cmsbundle_menu_name" name="data[name]" required="required" maxlength="45" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="md_bundle_cmsbundle_menu_url" class="required">Url</label>
+                    <input type="text" id="md_bundle_cmsbundle_menu_url" name="data[url]" maxlength="255" placeholder="http://example.com" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Internal or External
+                        <p class="help-block">Internal or External Website</p>
+                    </label>
+                    <div class="col-lg-5">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="data[target]" value="{{ constant('MD\\Bundle\\CMSBundle\\Entity\\MenuItem::INTERNAL') }}" /> Internal
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="data[target]" value="{{ constant('MD\\Bundle\\CMSBundle\\Entity\\MenuItem::EXTERNAL') }}" /> External
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-right">
+                    <button class="btn btn-success" type="submit"><i class="fa fa-check"></i> Create</button>
+                    <button class="btn btn-danger" type="reset"><i class="fa fa-refresh"></i> Reset</button>
+                </div>
+            </form>
+            <div class="form-group text-right">
+                <a href="{{ path('menu_child',{'id':pageId}) }}" class="btn btn-warning">Back to the list</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/admintemplate/assets/plugins/validator/bootstrapValidator.min.js') }}"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#validation').bootstrapValidator({
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    "data[name]": {
+                        validators: {
+                            notEmpty: {
+                                message: 'This field is required and can\'t be empty'
+                            },
+                        }
+                    },
+                    {#"data[url]": {
+                        validators: {
+                            uri: {
+                                message: 'The input is not a valid URL'
+                            }
+                        },
+                    },#}
+                }
+            });
+
+
+        });
+    </script>   
+{% endblock %}

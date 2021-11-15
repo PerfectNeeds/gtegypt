@@ -1,0 +1,115 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Compliance in health care{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}"><span>Financial services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li class="active"><a href="{{ path('fe_health-care') }}"><span>Health care <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_compliance-in-health-care') }}">Compliance in health care</a></li>
+                                <li><a href="{{ path('fe_health-it') }}">Health IT</a></li>
+                                <li><a href="{{ path('fe_health-plans') }}">Health plans</a></li>
+                                <li><a href="{{ path('fe_providers') }}">Providers</a></li>
+                                <li><a href="{{ path('fe_transaction-activity') }}">Transaction activity</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Top-down culture: CEO responsibility</h2>
+                                    <p> �The single most impactful thing a CEO can do,� says Methodist Health System CEO.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2015_01_Client_Profile_Methodist_Health_System.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Getting ERM done right</h2>
+                                    <p> 3 risk management execs describe successful ERM implementation at institutions with many stakeholders.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Interracial-Couple-Handshake-In-Hallway.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Data privacy rule changes</h2>
+                                    <p> Internal audit can be key to selection and oversight of third-party data vendors.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Hospital-Sign-Exterior.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Comply with HIPAA requirements</h2>
+                                    <p> See guidance for handling confidential data and managing risk.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Reduce-risk-pen-drawing.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Complexities of compliance can be managed</h2>
+                <p>
+                    The health care industry is set in a complex and constantly changing regulatory landscape.<br/>
+                    Designing compliance strategies is equally complex. Grant Thornton professionals apply long-time experience to create industry- and business-specific plans for managing required functions and maintaining compliance in all areas. 
+                    <br/><br/>
+                    The services of our professionals range from advisory to audit to tax to health care-specific including ACA-related tax issues. They provide our clients the insight and context to make reasonable strategic decisions.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Internal audit</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Three-people-around-a-laptop.jpg') }}"/>
+                            <h2>IA grows in focus, value</h2>
+                            <p>Internal audit boosts organization effectiveness by aligning with priorities.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Violations</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Emergency-room-entrance.jpg') }}"/>
+                            <h2>Stark/False Claims</h2>
+                            <p>3 steps for staying compliant with physician arrangements.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>HIPAA rules</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Male-Hands-Working-At-Desk.jpg') }}"/>
+                            <h2>Penalties have increased</h2>
+                            <p>The HIPAA Omnibus Rule (Final Rule) raises the stakes for covered entities and their business associates.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

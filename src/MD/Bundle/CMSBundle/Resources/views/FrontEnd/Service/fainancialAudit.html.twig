@@ -1,0 +1,72 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Fainancial Audit{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_fainancial-audit') }}">Financial Audit</a></li>
+                                <li><a href="{{ path('fe_ifrs-reporting') }}">IFRS reporting</a></li>
+                                <li><a href="{{ path('fe_fresh-start-accounting') }}">Fresh start accounting</a></li>
+                                <li><a href="{{ path('fe_public-finance') }}">Public finance </a></li>
+                                <li><a href="{{ path('fe_employee-plan-audit') }}">Employee plan audit</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Beyond accounting entries </h2>
+                                    <p>  Read about our approach to financial statement and integrated audits for public and private companies, as well as international audits</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-At-Table-Wide-Shot.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Financial Statement Audit</h2>
+                <p>
+                    Grant Thornton professionals recognize that to deliver a quality financial statement audit, it's important to look beyond the accounting entries to the underlying activities and operations.
+                    <br/><br/>
+                    <strong>Public companies</strong> - For public companies, as required under the Sarbanes-Oxley Act, we conduct an integrated audit, which combines the financial statement audit with attestation of:
+                </p>
+                <ul class="lists">
+                    <li>the effectiveness of internal control over financial reporting</li>
+                    <li>management's assessment of the effectiveness of internal control over financial reporting.</li>
+                </ul>
+                <p>
+                    Grant Thornton's integrated audit uses the same consistent approach and state-of-the art tools as our financial statement audit.
+                    <br/><br/>
+                    <strong>Privately owned companies</strong> - For privately owned companies, we view the audit as the first step in developing a long-term relationship built on trust and business insight. We build on the knowledge we gain through the audit process to advise you on how to grow and improve your business.  
+                    <br/><br/>
+                    <strong>International audit</strong> - Although Grant Thornton International is a membership organization that does not practice accounting, its independent member firms share a commitment to common standards and methodologies, while providing the same high-quality service to clients.
+                    <br/><br/>
+                    Working across a wide range of industry sectors, partners and managers from Grant Thornton member firms bring sector-specific proficiency to every audit. Our professionals perform audits that stand up to the rigors of public scrutiny and are supported by state-of-the-art software and relevant technical input.
+                    <br/><br/>
+                    Grant Thornton's International Business Centers coordinate international assignments that draw on the local skills and knowledge of member firms.
+                </p>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

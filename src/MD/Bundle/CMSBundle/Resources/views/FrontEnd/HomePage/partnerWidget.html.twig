@@ -1,0 +1,11 @@
+{% for ourPartner in ourPartners %}
+    <div class="agent boxes clearfix">
+        <div class="image">
+            <img class="img-circle img-responsive img-thumbnail" src="{{ asset("uploads/ourpartners/" ~ ourPartner.id ~ "/"  ~ ourPartner.getMainImage.id) }}" alt="">
+        </div><!-- image -->
+        <div class="agent_desc">
+            <h3 class="title">{{ ourPartner.title }}</h3>
+            <p><span>{{ ourPartner.content.description|striptags|slice(0,100) }}</span></p>
+        </div><!-- agento desc -->
+    </div>      
+{% endfor %}

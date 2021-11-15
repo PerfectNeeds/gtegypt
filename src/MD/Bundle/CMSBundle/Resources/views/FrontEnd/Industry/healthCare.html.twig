@@ -1,0 +1,124 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Health Care{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}"><span>Financial services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li class="active"><a href="{{ path('fe_health-care') }}"><span>Health care <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_providers') }}">Providers</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Collaboration works for population health</h2>
+                                    <p> 12 health systems partner with others to improve community health.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_12_Improving_Community_Health.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Rev cycle success earns award for SUNY</h2>
+                                    <p> Collaboration with SUNY produces new financial structure</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Two-businessman-front.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Growing through convergence</h2>
+                                    <p> Vertical integration can be the way to move up for providers and payors.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06_Smiling-business-people-around-table B.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Best patient care, lowest possible cost</h2>
+                                    <p> Oracle's RxCI delivers actionable information. </p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Man-with-laptop-in-hardrive-room.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Grant Thornton professionals know the health care business</h2>
+                <p>
+                    Health care continues to be under the microscope of providers, policymakers, insurers and employers.Rising insurance costs, reduced Medicare/Medicaid reimbursement, unprecedented industry consolidation, and stricter regulations and legislative policies - along with increasing demands for providing the highest-quality care - have entered the life of a health care organization. Across your business spectrum, you can benefit from the extensive experience of our business advisory, tax and audit professionals relevant to health care reform challenges.
+                    <br/><br/>
+                    High among the challenges are health care reform's 3 points of impact:
+                </p>
+                <ul class="lists">
+                    <li>On providers ...<br/>
+                        Complexity of current legislation, and uncertainty about regulations and policies yet to roll out are imposing dramatic effects on the business of patient care. Health systems, hospitals, nursing homes and others feel the pressure of reassessing strategies and metrics.</li>
+                    <li>On health plan organizations ... <br/>
+                        The future has changed. Top of mind are proposed regulations on annual fees in the form of an excise tax that will carry a cost to all entities providing health insurance.</li>
+                    <li>On employers ... <br/>
+                        For many companies, employee health benefits as we know them are undergoing radical changes. A company would do well to understand the ramifications of the Affordable Care Act and be prepared for its requirements, including deciding about insurance coverage for employees.</li>
+                </ul>
+                <p>Monitoring and assessing trends, and assisting with strategic decision-making for long-term stability and growth - let us help you improve your organization's financial and operational position.</p>
+                <h2>Complexities of compliance can be managed</h2>
+                <p>
+                    The health care industry is set in a complex and constantly changing regulatory landscape.<br/>
+                    Designing compliance strategies is equally complex. Grant Thornton professionals apply long-time experience to create industry- and business-specific plans for managing required functions and maintaining compliance in all areas.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Growth</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2014_03_FB_Manufacturing_Safe.jpg') }}"/>
+                            <h2>Top-down culture is a component.</h2>
+                            <p>Top-down culture is a component.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Board governance</h1>
+                            <img src="{{ asset('bundles/fe/images/VSM_Manning_Dexter_VIDEO.jpg') }}"/>
+                            <h2>8 improvements </h2>
+                            <p>Given sweeping changes, long-haul survival starts with board assessment.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Insights</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_08_Construction_Arrow_Catastrophe.jpg') }}"/>
+                            <h2>Invitations, publications</h2>
+                            <p>Get information about events, as well as communications from industry leaders.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

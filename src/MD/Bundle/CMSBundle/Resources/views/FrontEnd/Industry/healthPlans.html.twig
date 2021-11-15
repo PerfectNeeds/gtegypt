@@ -1,0 +1,117 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Health Plans{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}"><span>Financial services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li class="active"><a href="{{ path('fe_health-care') }}"><span>Health care <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_health-it') }}">Health IT</a></li>
+                                <li class="active"><a href="{{ path('fe_health-plans') }}">Health plans</a></li>
+                                <li><a href="{{ path('fe_providers') }}">Providers</a></li>
+                                <li><a href="{{ path('fe_transaction-activity') }}">Transaction activity</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Growing through convergence</h2>
+                                    <p> Vertical integration can be the way to move up for providers and payors.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06_Smiling-business-people-around-table B.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Converging? Manage risks </h2>
+                                    <p> Take 5 opportunities for avoiding risks and reaching success.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Female-doctor-smiling-with-smiling-patient.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> $100 billion fees imposed on payors </h2>
+                                    <p> Insurers and self-insured employers will pay an estimated $100 billion in new fees over the next seven years.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_08_Folders_On_Shelf.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>  Uniting insurer, health system  </h2>
+                                    <p> An insurer and a health system affiliate to increase access to health care, improve the quality, reduce costs.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Man-talking-in-a-meeting.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Health insurers, self-insured plans facing unprecedented change</h2>
+                <p>
+                    Health plan organizations operate in an increasingly complex and rapidly evolving market. Pressures from competition, regulators, health care reform, and private and governmental purchasers make strategic, operational and infrastructure decisions more important than ever.
+                    <br/><br/>
+                    <img src="{{ asset('bundles/fe/images/HC-2013-130605_HC_Payer_Services_table_130624.jpg') }}" class="pull-right" style="width: 400px;" alt="Industries">
+                    Integration and collaboration among health plan organizations and providers create new challenges and exciting opportunities for growth. It is possible to bend the cost curve.
+                    <br/><br/>
+                    Our health plan organization clients - including national, regional and local plans - are assisted in capitalizing on strategy that drives smart growth. They enjoy a personalized, custom service differential that comes of our deep experience in commercial, MAPD, Medicaid, exchange and ASO environments. And they participate in a relationship built on collaboration, collegiality, and the fusion of leading practices and perceptive ideas.
+                </p>
+                <div class="clearfix"></div>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Privacy, risk</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Reduce-risk-pen-drawing.jpg') }}"/>
+                            <h2>Insights for participants</h2>
+                            <p>Instruction is provided for handling confidential data and for managing risk.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Containing costs</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Stethoscope.jpg') }}"/>
+                            <h2>MCO service center</h2>
+                            <p>Creating a statewide center reduces duplication.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Anti-fraud</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Hands-Signing-Document.jpg') }}"/>
+                            <h2>Enforcement hasn�t slowed </h2>
+                            <p>Providers and payors, remain vigilant. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

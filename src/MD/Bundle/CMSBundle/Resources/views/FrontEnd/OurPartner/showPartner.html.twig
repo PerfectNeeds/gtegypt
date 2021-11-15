@@ -1,0 +1,40 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}{{ entity.htmlTitle }}{% endblock %}
+
+{% block metaTag %}{{ entity.htmlMeta }}{% endblock %}
+
+{% block content %}
+<section class="generalwrapper dm-shadow clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="{{ path('fe_partner') }}">People</a></li>
+                        {#<li class="active"><a href="{{ path('fe_blog') }}">Blogs</a></li>#}
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 clearfix" style="margin-top: 10px;margin-bottom: 10px;">
+                <h2>{{ entity.title }}</h2>
+                {{ entity.content.description|raw }}
+
+            </div><!-- end content -->
+
+            <div id="right_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 clearfix" style="background:#e8e4db;margin-top: 10px;margin-bottom: 10px;">
+                <h2 style="border-bottom: 1px dotted;color: #644a90;font-size: 16px;margin-bottom: 20px;padding-bottom: 5px;font-weight: bold;margin-top:15px;">Contact Details</h2>
+                {% if entity.getMainImage != false %}
+                <img src="{{ asset("uploads/ourpartners/" ~ entity.id ~ "/"  ~ entity.getMainImage.id) }}" style="margin: 5px auto; display: block;">
+                {% endif %}
+                <h4 style="color: #644a90;font-size: 13px;font-weight: bold;">Position:<span style="color:#444;display:block;font-size: 12px;font-weight: normal;">{{ entity.position }}</span></h4>
+                <h4 style="color: #644a90;font-size: 13px;font-weight: bold;">Telephone:<span style="color:#444;display:block;font-size: 12px;font-weight: normal;">{{ entity.telephone }}</span></h4>
+                <h4 style="color: #644a90;font-size: 13px;font-weight: bold;">E-mail:<span style="color:#444;display:block;font-size: 12px;font-weight: normal;"><a href="{{ entity.email }}" style="color:#444;">{{ entity.email }}</a></span></h4>
+            </div>
+
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}

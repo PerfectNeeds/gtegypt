@@ -1,0 +1,88 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Enterprise Transformation{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_business-consulting') }}">Business consulting <i class="fa fa-angle-down pull-right"></i></a>
+                                    <ul>
+                                        <li><a href="{{ path('fe_business-analytics') }}">Business analytics</a></li>
+                                        <li class="active"><a href="{{ path('fe_enterprise-transformation') }}">Enterprise transformation</a></li>
+                                        <li><a href="{{ path('fe_finance-operations') }}">Finance operations</a></li>
+                                        <li><a href="{{ path('fe_performance-improvement') }}">Performance improvement</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Forensic, investigative and dispute services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_governance-risk-and-compliance') }}">Governance, risk and compliance <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_restructuring') }}">Restructuring and turnaround <i class="fa fa-angle-down pull-right"></i></a></li>
+                                <li><a href="#">Technology solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_transaction-advisory') }}">Transaction advisory <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Valuation <i class="fa fa-angle-right pull-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Manage programs for growth</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Two-Men-In-Building-Lobby.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Enterprise transformation</h2>
+                <p>
+                    In today’s difficult economy, the most successful companies are those that can execute key initiatives seamlessly. Having the right strategies and ideas is vital, but they are worthless if an organization is unable to achieve a successful transformation. In an era when all organizations need to focus on execution, those that can execute successfully can differentiate themselves from their competition and achieve their growth objectives.
+                    <br/><br/>
+                    Large scale transformative programs, such as ERP deployments and post merger integration efforts, fall behind schedule and nearly as many exceed their original budget – impacting overall return on investment and increasing business risk. Grant Thornton can help you plan complex programs that touch all aspects of a company to meet business objectives and ensure return on investment by improving your ability to identify, address and mitigate risks and achieve your strategic vision.
+                    <br/><br/>
+                    Our Enterprise Transformation services are designed for dynamic organizations that want to improve their execution of critical initiatives. Significant projects where we have the knowledge and experience include the following:
+                    <br/><br/>
+                    <strong>ERP Deployments</strong>: ERP projects are by nature transformative and require a high degree of organization inertia to be successful. We have deep experience with the various software packages and related workstreams.
+                    <br/><br/>
+                    <strong>Post Transactions</strong>: Whether a divestiture or acquisition, organizing and operating these projects require skill and expertise to achieve the post transaction goals and keep the business operating.
+                    <br/><br/>
+                    <strong>Prioritization and Modernization</strong>: The desire to re-engineer and re-platform older applications represents a significant challenge for companies operating on legacy systems.
+                    <br/><br/>
+                    <strong>Financial Transformation</strong>: The office of the CFO is continuing to evolve and changes to the finance organization and structure have broad impacts to a company.
+                    <br/><br/>
+                    Our methodology offers a Transformation Framework upon proven techniques for guiding complex initiatives throughout their life cycle while minimizing related management, execution and control risks. Our framework will fit large scale efforts across industries.
+                </p>
+                <ul>
+                    <li>Project, program and portfolio management: Helps clients prioritize and manage a broad set of initiatives across the organization, including setting up a Project Management Office (PMO) and defining effective governance to deliver projects on time and within budget.</li><br/>
+                    <li>Project remediation: Helps you assess a troubled project or program, recommend an approach to put the effort back on course, and lead or oversee the implementation of the remediation plan.</li>
+                </ul>
+                <p>The Grant Thornton approach to project management is:</p>
+                <ul>
+                    <li><strong>Business-driven</strong>: Understanding the business drivers behind critical initiatives and the business impact is critical to successful execution – we ask the right questions, prioritize effectively, and translate business language into viable technology and business improvements to enable the business goals of a program.</li><br/>
+                    <li><strong>Risk-sensitive</strong>: Helping you to manage risk throughout the project lifecycle through proactive issue escalation, effective communication and strong project governance.</li><br/>
+                    <li><strong>Proactive</strong>: Establishing project plans, timelines and dashboards is only part of what we do; we are in the project – our business and technology experts are embedded with your teams, leading, guiding, and proactively helping to transform an organization whether through technology or process and organization improvements.</li><br/>
+                    <li><strong>Relationship-oriented</strong>: Involving collaboration with your organization, your business leaders and your vendors to help you structure your programs, share them across the organization, or leverage your internal processes and resources.</li><br/>
+                    <li><strong>Adaptable</strong>: Scaling to your dynamic business needs and ensuring the project objectives and requirements enable your business strategies and growth.</li><br/>
+                    <li><strong>Pragmatic and rapid</strong>: Helping you to manage a successful implementation program, prioritize multiple simultaneous initiatives or even your entire project portfolio on time and on budget.</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

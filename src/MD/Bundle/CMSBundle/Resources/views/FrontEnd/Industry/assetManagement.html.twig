@@ -1,0 +1,122 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Asset Management{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li class="active"><a href="{{ path('fe_financial-services') }}"><span>Financial services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_asset-management') }}">Asset Management</a></li>
+                                <li><a href="{{ path('fe_banking') }}">Banking</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Buying well in private equity</h2>
+                                    <p> Senior industry practitioners around the globe weigh in on how private equity can deliver its value-added promises.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_06_FIS_Bond_Premium_Article.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>2015 hedge fund update</h2>
+                                    <p>The industry had its weakest year since 2011, but all core strategies delivered some gains. What's on the horizon for 2015?</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_Hedge Fund Outlook.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>2015 private equity update</h2>
+                                    <p>2014 saw healthy growth, strong stock prices and successful fundraising. But will ongoing profitability be hampered by compliance concerns?</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_PE-Outlook.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>The U.S. energy opportunity</h2>
+                                    <p>Investment in energy is trending upward, despite volatile oil prices. We take an in-depth look at the latest developments and explore private equity's impact on the industry.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Oil-pipeline.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Reg S-X updates for BDCs and RICS</h2>
+                                    <p> New guidance on consolidated financial statements for regulated investment companies that are feeder funds or funds of funds, as well as for business development companies.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_11_FIS_Investment_Company_Building.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Asset management</h2>
+                <h3>Innovative solutions to help you succeed.</h3>
+                <p>
+                    Macroeconomic pressures, an increased compliance burden and continued regulatory uncertainty are transforming the asset management industry. For firms, advisers and fund managers that can adapt to the new industry structure and meet regulator and investor expectations, there are promising opportunities but also a new set of risks.<br/>
+                    At Grant Thornton, we help dynamic organizations like yours navigate the complexities of today's business landscape, ensuring that you can respond to ever-changing regulations and investor demands. We go beyond the traditional compliance and reporting aspects of audit and tax, providing services that offer real value. We offer:
+                </p>
+                <ul class="lists">
+                    <li><strong>International resources with local, hands-on partner attention.</strong> We are where you need, but we never forget where home is.</li>
+                    <li><strong>Speed and agility</strong> to help you make decisions and resolve issues so you can maintain your competitive edge.</li>
+                </ul>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>2015 webcast series</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2014_02_NFP_Higher_Education_icon.jpg') }}"/>
+                            <h2>Save the date</h2>
+                            <p>Join us for webcasts exploring the latest hot topics, from regulatory compliance, to performance improvement, to managing risk.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Guidebook</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2014_04_FIS_HedgeFunds101.jpg') }}"/>
+                            <h2>Hedge funds 101</h2>
+                            <p>How emerging managers can raise capital, hire the best people, sustain profitability and organize for tax efficiency.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Content library</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2014_01_icon_globe_shaking hands.jpg') }}"/>
+                            <h2>Our latest thinking</h2>
+                            <p>Check out our newest white papers, surveys, articles and reports spanning top-of-mind issues in asset management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

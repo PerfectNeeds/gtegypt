@@ -1,0 +1,135 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}state-and-local-practice{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li class="active"><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}">Financial services <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li class="active"><a href="{{ path('fe_public-sector') }}"><span>Public sector <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_contract-vehicles') }}">Contract vehicles</a></li>
+                                <li><a href="{{ path('fe_government-audit') }}">Government audit</a></li>
+                                <li><a href="{{ path('fe_public-sector-services-and-solutions') }}">Public Sector services and solutions</a></li>
+                                <li class="active"><a href="{{ path('fe_state-and-local-practice') }}">State and local practice</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                        {#<li class="active"><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_internationalgrowth') }}">International growth</a></li>
+                            </ul>
+                        </li>#}
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Public Sector in Texas</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Outdoor-Highrise-Windows.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Learn more about Grant Thornton's state and local public sector practice with a major presence in Austin, TX </h2>
+                <p>
+                    <strong>About us</strong><br/>
+                    Grant Thornton's Global Public Sector (GPS) helps executives and managers at all levels of government maximize performance and efficiency in the face of tightening budgets and increased demand for services. Our public sector team members find solutions that help government leaders with their biggest issues. We help client organizations improve their performance and efficiency with effective solutions in the areas of organization assessment and business process re-engineering, strategic planning, performance management and program evaluation, activity-based costing, project management and oversight, and change management.
+                    <br/><br/>
+                    <strong>Proven experience</strong><br/>
+                    Our state and local public sector practice in Austin includes professionals with experience working directly with state agencies including Texas Health and Human Services Commission, Texas Department of Transportation, Texas Lottery Commission, Texas Commission on Environmental Quality, the Legislative Budget Board, the Department of Public Safety, and the General Land Office.
+                    <br/><br/>
+                    <strong>Specialties</strong><br/>
+                    Our core offerings are geared to help Texas public entities with Financial and Internal Audits Compliance Reviews Internal Controls Risk Assessment, and Strategic Planning. We are proud of our industry-leading audit, accounting, and advisory services and experience with major state and local agencies and other public sector entities throughout Texas. Let Grant Thornton help your organization serve your customers more efficiently and effectively. Call on us our team is available to share our experience with you.
+                    <br/><br/>
+                    <strong>Performance Transformation</strong>
+                    <br/><br/>
+                    In today's fiscally constrained environment it is more important than ever for organizations to reduce their costs and maximize performance.  Organizations face uncertainty with shrinking budgets, evolving regulations and legislative priority shifts, emerging new business practices, and disruptive technologies. Our solutions support the needs of organizations across the transformation lifecycle to build a foundation for stability, overcome barriers to change, and create, protect and restore value.<br/>
+                    We take a 360-degree view of your operation using our deep experience, direct institutional knowledge and national reach to help you achieve your mission.
+                    <br/><br/>
+                    <strong>Service Capabilities</strong>
+                </p>
+                <ul class="lists">
+                    <li>Strategic Planning</li>
+                    <li>Organization Assessment</li>
+                    <li>Business Process Re-engineering</li>
+                    <li>Change Management</li>
+                    <li>Project/Program Management</li>
+                    <li>Cost Management</li>
+                </ul>
+                <p>
+                    <strong>Grant and Contract Management</strong><br/>
+                    With shrinking budgets, a focus on accountability must take a broad, holistic view.  Grant Thornton has a proven grants management methodology to support all aspects of the grants life cycle from pre-awarded activities to post-award monitoring and oversight.
+                    <br/><br/>
+                    From securing information to controlling fraud and waste and reducing improper payments, organizations face unprecedented pressure to demonstrate accountability and stewardship when managing grants.  We rely upon our audit expertise to identify controls that may be deficient and help you identify solutions.
+                    <br/><br/>
+                    Whether your concerns are related to HIPAA, PCI, FISMA, ISO, or any other number of grants or compliance mandates, our advisors can help. 
+                    <br/><br/>
+                    <strong>Service Capabilities </strong><br/>
+                </p>
+                <ul class="lists">
+                    <li>Risk Based Compliance Monitoring</li>
+                    <li>Reconciliation</li>
+                    <li>Program/ Project Management</li>
+                    <li>Fraud, Waste, and Abuse Monitoring</li>
+                </ul>
+                <p>
+                    <strong>Information Technology Support</strong><br/>
+                    Organizations depend on information systems for nearly all aspects of their mission and operational functions.  Grant Thornton offers a variety of Information Technology support services that help organizations comply with cyber security regulations, ensure data is valid, complete and reliable, and create, manage and realize overall value from your IT organizations and processes.
+                    <br/><br/>
+                    Our team of dedicated professionals can help you improve your current information technology environment through development and implementation of innovative best practices and techniques.
+                    <br/><br/>
+                    <strong>Service Capabilities</strong>
+                </p>
+                <ul class="lists">
+                    <li>Program Management Office (PMO) </li>
+                    <li>Information Technology Independent Verification and Validation (IT IV&V)</li>
+                    <li>Business Intelligence</li>
+                    <li>Cyber Security</li>
+                    <li>Integration Management</li>
+                    <li>IT Planning</li>
+                </ul>
+                <p>
+                    <strong>Audit Services</strong><br/>
+                    Grant Thornton professionals recognize that to deliver a quality financial statement audit, it's important to look beyond the accounting entries to the underlying activities, operations, and risks. Grant Thornton is skilled in developing, implementing, and assessing internal controls that are the foundation for accurate financial management and accountability.  
+                    <br/><br/>
+                    Across a wide range of industry sectors, our partners and managers bring sector-specific proficiency to every audit and conduct audits that stand up to the rigors of public scrutiny, supported by state-of-the-art software and relevant technical input.
+                    <br/><br/>
+                    <strong>Service Capabilities</strong> 
+                </p>
+                <ul class="lists">
+                    <li>Financial Auditing</li>
+                    <li>Attestation</li>
+                    <li>Internal Controls</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

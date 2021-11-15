@@ -1,0 +1,91 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Internal Audit{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_business-consulting') }}">Business consulting <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Forensic, investigative and dispute services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li class="active"><a href="{{ path('fe_governance-risk-and-compliance') }}">Governance, risk and compliance <i class="fa fa-angle-down pull-right"></i></a>
+                                    <ul>
+                                        <li><a href="{{ path('fe_cybersecurity') }}">Cybersecurity</a></li>
+                                        <li><a href="{{ path('fe_enterprise-risk-management') }}">Enterprise risk management</a></li>
+                                        <li class="active"><a href="{{ path('fe_internal-audit') }}">Internal Audit</a></li>
+                                        <li><a href="{{ path('fe_regulatory-compliance') }}">Regulatory compliance</a></li>
+                                        <li><a href="{{ path('fe_service-organization') }}">Service organization reports</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ path('fe_restructuring') }}">Restructuring and turnaround <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Technology solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_transaction-advisory') }}">Transaction advisory <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Valuation <i class="fa fa-angle-right pull-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Internal audit and the board </h2>
+                                    <p>Partner Warren Stippich talks to Corporate Board Member about the issues facing chief audit executives</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_11_Business_people_reviewing_expenses.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Making audit reports more relevant to readers</h2>
+                                    <p> The PCAOB has proposed two new auditing standards to enhance the auditor’s reporting model.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Packet-On-Table.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Transition to the new COSO Framework </h2>
+                                    <p> The new Framework provides an opportunity to holistically reassess internal control in all its phases.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Reduce-risk-pen-drawing.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Internal audit</h2>
+                <p>
+                    Companies face the pressure of doing more with fewer resources. Every business function, including internal audit, is expected to bring value to the organization. Whether it's by reducing overall compliance costs or identifying cost containment opportunities by process improvement initiatives, management will look to internal audit to do their share.
+                    <br/><br/>
+                    Grant Thornton understands these demands and offers internal audit services that not only can help you create and implement internal controls that safeguard your business assets, but also increase the efficiency, effectiveness and overall performance of the internal audit function.
+                    <br/><br/>
+                    Our internal audit services include:
+                </p>
+                <ul>
+                    <li>Full outsourcing of internal audit</li><br/>
+                    <li>Co-sourcing with the existing internal audit function</li><br/>
+                    <li>Internal audit transformation</li><br/>
+                    <li>Information technology auditing</li><br/>
+                    <li>Process mapping and process reviews</li><br/>
+                    <li>Internal controls documentation and testing</li><br/>
+                    <li>Operational audits</li><br/>
+                    <li>Quality assurance reviews</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

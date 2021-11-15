@@ -1,0 +1,96 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Social Services{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}">Financial services <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li class="active"><a href="{{ path('fe_not-for-profit-organizations') }}"><span>Not-for-profit organizations <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_foundations') }}">Foundations</a></li>
+                                <li class="active"><a href="{{ path('fe_social-services') }}">Social services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                        {#<li class="active"><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_internationalgrowth') }}">International growth</a></li>
+                            </ul>
+                        </li>#}
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Social services organizations</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06_NFP-Angel-statue.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Beat financial crisis by changing </h2>
+                                    <p>  Promote change from within to get an edge in the fight for funding.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06_NFP-Hugging-volunteers.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> NFPs act on rev rec overhaul </h2>
+                                    <p>Gain rev rec guidance via accounting firms, task force and the five-step model.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2015_01_Two-people-at-laptop.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> State of not-for-profits in 2014 </h2>
+                                    <p> Grow and thrive by adapting and planning for a future very different from your past.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-All-business-hands-in-a-circle.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Custom tax, audit and advisory services for your social service organization </h2>
+                <p>
+                    Reductions in public funding. Flat donor activity. Increased demand for services. Your social service organization deals with significant financial and operational challenges.
+                    <br/><br/>
+                    Our nonprofit audit, tax and advisory professionals work closely with relief, community development, human services, wildlife protection and other agencies to improve organizational effectiveness.
+                    <br/><br/>
+                    Our range of mission-critical financial, operational and fiduciary solutions includes the following:
+                </p>
+                <ul class="lists">
+                    <li><strong>Audit and tax</strong> - We ensure compliance with applicable accounting standards, maintain accuracy in financial and tax reporting, and respond effectively to potential examinations, inquiries and sanctions by taxing authorities and others.</li>
+                    <li><strong>Business advisory</strong> - Our professionals have experience in strategy, governance, operations, technology, and risk management. We provide solutions that can help you increase constituent value, improve productivity, reduce risks, contain costs, increase effectiveness and streamline processing.</li>
+                    <li><strong>Revenue generation</strong> - We can assist you in identifying potential areas of revenue generation that could help mitigate impending cuts in appropriations and decreases in charitable contributions. We can also help minimize the tax effect of any revenue generated that may be unrelated to your exempt status.</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

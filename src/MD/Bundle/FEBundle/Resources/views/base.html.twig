@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="keywords" content="Grant Thornton, Egypt, Consulting (consult, consultant, consultation) , Auditing (), Feasibility study, Due diligence, Merger, CPA, Professional ,Firm , Job, Valuation, Management, {% block metaTag %}{% endblock %}"/>
+        <title>{% block title %}{% endblock %} | Grant Thornton Mohamed Hilal</title>
+        {% block stylesheet %}
+        <link href="{{ asset('bundles/fe/css/assets/css/bootstrap.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/fe/css/style.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/fe/css/demo.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('bundles/fe/css/styles.css') }}">
+        <link href="{{ asset('bundles/fe/css/component.css') }}" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic' rel='stylesheet' type='text/css'>
+        {% endblock %}
+        <link rel="shortcut icon" href="{{ asset('bundles/fe/css/assets/ico/favicon.ico') }}" type="image/x-icon">
+    </head>
+
+    <body class="demo-2 no-js">
+        <header class="header1">
+            <div class="container">
+                <div class="row header-row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="logo-wrapper clearfix">
+                            <div class="logo">
+                                <a href="{{ path('fe_home') }}" title="Home">
+                                    <img src="{{ asset('bundles/fe/images/logo.png') }}" alt="Grant Thornton">
+                                </a>
+                            </div><!-- /.site-name -->
+                        </div><!-- /.logo-wrapper -->
+                    </div>     
+                    <div class="col-lg-6 col-md-6 col-sm-12 pull-right sre">
+                        <div class="clearfix pull-right">
+                            {{ render(controller('CMSBundle:FrontEnd/Website:Website')) }}
+                            <ul class="small-navigate">
+                                <li><a href="{{ path('fe_about_us') }}">About us</a></li>
+                                <li><a href="{{ path('fe_contact') }}">Contact us</a></li>
+                                <li><a href="http://www.gti.org/" target="_blank">International</a></li>
+                            </ul>
+                        </div><!-- end social -->
+                    </div>     
+                </div><!-- end row -->
+                <nav class="navbar navbar-default fhmm" role="navigation">
+                    <div class="menudrop container">
+                        <div class="navbar-header">
+                            <button type="button" data-toggle="collapse" data-target="#defaultmenu" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        </div><!-- end navbar-header -->
+                        <div id="defaultmenu" class="navbar-collapse collapse">
+                            {% set cr = app.request.attributes.get('_route') %}
+                            {% set t =  app.request.query.get('t')  %}
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown lists" {% if ('fe_home' == cr) %}class="active"{% endif %}><a href="#" data-toggle="dropdown" class="dropdown-toggle">issues</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="col-md-12">
+                                            <ul>
+                                                <li class="title"><a href="{{ path('fe_drivingGrowth') }}">Driving growth <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_internationalgrowth') }}">International growth</a></li>
+                                                <li class="title"><a href="{{ path('fe_managingrisk') }}">Managing risk <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_cybersecurityy') }}">Cybersecurity</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_thirdpartyrisk') }}">Third-party risk</a></li>
+                                                <li class="title"><a href="{{ path('fe_mergersandacquisitions') }}">Mergers and acquisitions <i class="fa fa-angle-right"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        {#<li class="col-md-6">
+                                            <ul>
+                                                <li class="title"><a href="#">Public policy <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="sm-title"><a href="#">Policy issues</a></li>
+                                                <li class="sm-title"><a href="#">Testimony and policy activity</a></li>
+                                                <li class="sm-title"><a href="#">Washington Update</a></li>
+                                                <li class="title"><a href="#">Regulatory compliance <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="sm-title"><a href="#">Affordable Care Act</a></li>
+                                                <li class="sm-title"><a href="#">Conflict minerals</a></li>
+                                                <li class="sm-title"><a href="#">Revenue recognition</a></li>
+                                                <li class="title"><a href="#">Tax reform <i class="fa fa-angle-right"></i></a></li>
+                                            </ul>
+                                        </li>#}
+                                    </ul>
+                                </li>
+                                <li class="dropdown lists" {% if ('fe_about_us' == cr or 'fe_partner' == cr or 'fe_show_partner' == cr) %}class="active"{% endif %}><a href="#" data-toggle="dropdown" class="dropdown-toggle">industries</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="col-md-3">
+                                            <ul>
+                                                <li class="title"><a href="{{ path('fe_construction') }}">Construction <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="title"><a href="{{ path('fe_distribution') }}">Distribution <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="title"><a href="{{ path('fe_energy') }}">Energy <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="title"><a href="{{ path('fe_financial-services') }}">Financial services <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_asset-management') }}">Asset management</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_banking') }}">Banking</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-md-3">
+                                            <ul>
+                                                <li class="title"><a href="{{ path('fe_food-and-beverage') }}">Food and beverage <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="title"><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_providers') }}">Providers</a></li>
+                                                <li class="title"><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants <i class="fa fa-angle-right"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-md-3">
+                                            <ul>
+                                                <li class="title"><a href="{{ path('fe_manufacturing') }}">Manufacturing <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="title"><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_foundations') }}">Foundations</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_social-services') }}">Social services</a></li>
+                                                <li class="title"><a href="{{ path('fe_private-equity') }}">Private equity <i class="fa fa-angle-right"></i></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-md-3">
+                                            <ul>
+                                                <li class="title"><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_government-audit') }}">Government audit</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_public-sector-services-and-solutions') }}">Public Sector services and solutions</a></li>
+                                                <li class="title"><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_software-internet-and-it') }}">Software, internet and IT</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown lists"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Services</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="col-md-4">
+                                            <ul>
+                                                <li class="title"><a href="{{ path('fe_audit') }}">Audit <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_fainancial-audit') }}">Financial Audit</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_ifrs-reporting') }}">IFRS reporting</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_fresh-start-accounting') }}">Fresh start accounting</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_public-finance') }}">Public finance </a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_employee-plan-audit') }}">Employee plan audit</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-md-4">
+                                            <ul>
+                                                <li class="title"><a href="{{ path('fe_advisory') }}">Advisory <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="sm-title"><a href="#">Corporate Finance Services</a></li>
+                                                <li class="sm-title"><a href="#">Business & Management Services</a></li>
+                                                <li class="sm-title"><a href="#">Technology Solutions</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_forensic-investigative') }}">Fraud and forensic services</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_governance-risk-and-compliance') }}">Corporate governance and risk compliance</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-md-4">
+                                            <ul>
+                                                <li class="title"><a href="{{ path('fe_tax') }}">Tax <i class="fa fa-angle-right"></i></a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_compensation-and-benefits-consulting') }}">Compensation and benefits consulting</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_international-tax') }}">International tax</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_private-wealth-services') }}">Private wealth services</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_state-and-local-tax') }}">State and local tax</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_tax-accounting') }}">Tax accounting/risk advisory</a></li>
+                                                <li class="sm-title"><a href="{{ path('fe_tax-compliance') }}">Tax compliance</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li {% if ('fe_client' == cr or t == 1) %}class="active"{% endif %}><a href="{{ path('fe_contact') }}">offices</a></li>
+                                <li class="dropdown" {% if ('fe_publications' == cr or t == 3) %}class="active"{% endif %}><a href="#" data-toggle="dropdown" class="dropdown-toggle">people</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="title"><a href="{{ path('fe_partner') }}">People <i class="fa fa-angle-right"></i></a></li>
+                                        {#<li class="title"><a href="{{ path('fe_blog') }}">Blogs <i class="fa fa-angle-right"></i></a></li>#}
+                                    </ul>
+                                </li>
+                                <li class="dropdown" {% if ('fe_recruit' == cr or 'fe_recruit_create' == cr) %}class="active"{% endif %}><a href="#" data-toggle="dropdown" class="dropdown-toggle">careers</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li class="title"><a href="{{ path('fe_why-grant-thornton') }}">Why Grant Thornton <i class="fa fa-angle-right"></i></a></li>
+                                        <li class="title"><a href="{{ path('fe_for-students') }}">For students <i class="fa fa-angle-right"></i></a></li>
+                                        <li class="title"ss><a href="{{ path('fe_for-professionals') }}">For professionals <i class="fa fa-angle-right"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li {% if ('fe_publication' == cr) %}class="active"{% endif %}><a href="{{ path('fe_publication') }}">Publications</a></li>
+                            </ul><!-- end nav navbar-nav -->
+                            <div class="social pull-right">
+                                <span><a data-placement="bottom" data-toggle="tooltip" data-original-title="Linkedin" title="" target='_blank' href="https://www.linkedin.com/in/grant-thornton-egypt-21835011b/"><i class="fa fa-linkedin"></i></a></span>
+                                <span><a data-placement="bottom" data-toggle="tooltip" data-original-title="Youtube" title="" href="#"><i class="fa fa-youtube"></i></a></span>
+                            </div>
+                        </div><!-- end #navbar-collapse-1 -->
+                    </div><!-- end dm_container -->
+                </nav><!-- end navbar navbar-default fhmm -->
+            </div><!-- end container -->
+        </header><!-- end header -->
+
+        {#<a href="{{ path('fe_partners') }}">Partners</a>
+        <a href="{{ path('fe_recruit') }}">Recruit</a>#}
+
+        {% block banner %}
+        {%  endblock %}
+        {% block content %}
+        {%  endblock %}
+
+        <footer class="footer1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 footer-links-1">
+                        <div class="col-md-3" style="text-align:right;">Information for</div>
+                        <div class="col-md-9">
+                            <ul>
+                                <li><a href="{{ path('fe_career') }}">Job seekers</a></li>
+                                <li><a href="https://secure.ethicspoint.com/domain/en/report_custom.asp?clientid=15191">Ethics Hotline</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-10 footer-links-2">
+                        <div class="col-md-2" style="text-align:right;">Popular links</div>
+                        <div class="col-md-10">
+                            <ul>
+                                {#<li><a href="#">Submit RFP</a></li>#}
+                                <li><a href="{{ path('fe_contact') }}">Contact us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Site map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 footers">
+                        <p>Grant Thornton Mohamed Hilal. Copyright 2014 All rights reserved.eg. member firm of Grant Thornton International Ltd. "Grant Thornton" refers to the brand under which the Grant Thornton member firms provide audit, tax and advisory services to their clients and/or refers to one or more member firms, as the context requires. Grant Thornton LLP is a member firm of Grant Thornton International Ltd. Grant Thornton International Ltd and the member firms are not a worldwide partnership. Grant Thornton International Ltd and each of its member firms are separate legal entities. Services are delivered by the member firms. Grant Thornton International Ltd does not provide services to clients. Grant Thornton International Ltd and its member firms are not agents of, and do not obligate, one another and are not liable for one another's acts or omissions. | <a href="http://www.perfectneeds.com" target="_blank">DEVELOPED BY PERFECTNEEDS.COM</a></p>
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
+        </footer><!-- footer1 -->
+
+        {% block javascript %}
+        <script src="{{ asset('bundles/fe/js/jquery.1.7.0.min.js') }}"></script>
+        <script src="{{ asset('bundles/fe/js/bootstrap.js') }}"></script>
+        <script src="{{ asset('bundles/fe/js/jquery.parallax.js') }}"></script>
+        <script src="{{ asset('bundles/fe/js/jquery.fitvids.js') }}"></script>    
+        <script src="{{ asset('bundles/fe/js/jquery.unveilEffects.js') }}"></script>	
+        <script src="{{ asset('bundles/fe/js/retina-1.1.0.js') }}"></script>
+        <script src="{{ asset('bundles/fe/js/fhmm.js') }}"></script>
+        <script src="{{ asset('bundles/fe/js/bootstrap-select.js') }}"></script>
+        <script src="{{ asset('bundles/fe/images/fancyBox/jquery.fancybox.pack.js') }}"></script>
+        <script src="{{ asset('bundles/fe/js/application.js') }}"></script>
+        <script src="{{ asset('bundles/fe/js/jquery.flexslider.js') }}"></script>
+        <script src="{{ asset('bundles/fe/js/script.js') }}"></script>
+        <script src="{{ asset('bundles/fe/js/snap.svg-min.js') }}"></script>
+        <script>
+            $(window).load(function() {
+                $('#carousel').flexslider({
+                    animation: "slide",
+                    controlNav: true,
+                    directionNav: false,
+                    animationLoop: true,
+                    slideshow: true,
+                    itemWidth: 114,
+                    itemMargin: 0,
+                    asNavFor: '#slider'
+                });
+
+                $('#slider').flexslider({
+                    animation: "fade",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: true,
+                    sync: "#carousel"
+                });
+
+                $('#property-slider .flexslider').flexslider({
+                    animation: "fade",
+                    slideshowSpeed: 6000,
+                    animationSpeed: 1300,
+                    directionNav: true,
+                    controlNav: false,
+                    keyboardNav: true
+                });
+
+                function init() {
+                    var speed = 330,
+                            easing = mina.backout;
+
+                    [].slice.call(document.querySelectorAll('#grid > a')).forEach(function(el) {
+                        var s = Snap(el.querySelector('svg')), path = s.select('path'),
+                                pathConfig = {
+                                    from: path.attr('d'),
+                                    to: el.getAttribute('data-path-hover')
+                                };
+
+                        el.addEventListener('mouseenter', function() {
+                            path.animate({'path': pathConfig.to}, speed, easing);
+                        });
+
+                        el.addEventListener('mouseleave', function() {
+                            path.animate({'path': pathConfig.from}, speed, easing);
+                        });
+                    });
+                }
+
+                init();
+            });
+        </script>
+        {% endblock %}
+
+    </body>
+</html>

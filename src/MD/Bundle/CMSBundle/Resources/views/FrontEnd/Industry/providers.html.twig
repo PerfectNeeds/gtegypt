@@ -1,0 +1,127 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Providers{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}"><span>Financial services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li class="active"><a href="{{ path('fe_health-care') }}"><span>Health care <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_providers') }}">Providers</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Learn how to collaborate for community health</h2>
+                                    <p> Initiate a partnership, and develop goals and objectives for measureable success.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-Meeting-In-Building-Lobby_R.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Top-down culture: CEO responsibility</h2>
+                                    <p> �The single most impactful thing a CEO can do,� says Methodist Health System CEO.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2015_01_Client_Profile_Methodist_Health_System.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Revenue cycle improvements help struggling hospital</h2>
+                                    <p> A large community hospital and tertiary care center survive threat of closure.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_09_HealthCare_DrWithFiles.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>  Providers add professionals to meet demands  </h2>
+                                    <p> Advanced practice professionals are stepping up. </p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Female-Nurse-smiling-at-older-male.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Providing solutions: Addressing challenges, positioning for growth</h2>
+                <p>
+                    Mindful of business, industry and regulatory risks, providers face tough issues in an era of health care reform while working to provide quality patient care. Recognizing the five factors below can start a conversation between leaders willing and able to envision and work toward growth.
+                    <br/><br/>
+                    <strong>5 factors affecting growth:</strong>
+                    <br/><br/>
+                    <strong>1. Achieving financial and operational improvement is an urgent priority.</strong><br/>
+                    As with any business, a health care system needs to look for ways to maximize revenue, reduce costs, improve overall performance and in some instances, transform its operational design.
+                    <br/><br/>
+                    <strong>2. Merging with other hospitals and health care systems provides an opportunity to strengthen the balance sheet and draw from a larger revenue base.</strong> <br/>
+                    Consolidation must be handled carefully and strategically; M&A can be prone to failure. The health care sector is no exception.
+                    <br/><br/>
+                    <strong>3. Creation of vast amounts of data poses real challenges for health care providers trying to understand and use the information.</strong><br/>
+                    The ongoing revolution in electronic health records and the deployment of ICD-10 will only exacerbate these challenges. Hospitals and health care systems that improve their data analytics will be able to produce actionable intelligence and gain a competitive advantage.
+                    <br/><br/>
+                    <strong>4. For both health systems and physicians groups, the appeal of integration is strong.</strong><br/>
+                    For some, integration makes sense: Health systems are engaged in a talent war for physicians, who in turn are looking for greater income security. Their integration requires a systematic approach, with the infrastructure for relationship preset and tested.
+                    <br/><br/>
+                    <strong>5. The governance of tax-exempt health systems has never been under greater scrutiny.</strong><br/>
+                    As health care organizations continue to transform and become more complex, the role of governance becomes even more critical. Nine benchmarks revealed in a 2012 study by the Commonwealth Center for Governance Studies Inc. have prompted board members to take notice and for some, accelerate their focus on system-wide strategy and strategic thinking.
+                    <br/><br/>
+                    Health care is everyone's business. For those in the business of providing it, Grant Thornton Health Care professionals offer the industry-specific know-how and solutions.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Business distress</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Senior-Woman-Healthcare-Provider.jpg') }}"/>
+                            <h2>Retirement communities</h2>
+                            <p>When occupancy levels drop below breakeven, continuing care retirement communities find it difficult to honor lender and resident obligations.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Chapter 11</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Silhouette-Of-Men-Down-Long-Hallway.jpg') }}"/>
+                            <h2>Interim hospital management</h2>
+                            <p>Grant Thornton professionals served as management during bankruptcy proceedings and hospital closure that required continuation of care for patients.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Population health </h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2014_12_Improving_Community_Health.jpg') }}"/>
+                            <h2>Hospital-public collaborations </h2>
+                            <p>Report shares recommendations from 12 successful collaborations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

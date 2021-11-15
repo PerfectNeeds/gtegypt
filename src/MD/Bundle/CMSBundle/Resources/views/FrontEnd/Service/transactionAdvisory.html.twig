@@ -1,0 +1,105 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Transaction Advisory{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_business-consulting') }}">Business consulting <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Forensic, investigative and dispute services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_governance-risk-and-compliance') }}">Governance, risk and compliance <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_restructuring') }}">Restructuring and turnaround <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Technology solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li class="active"><a href="{{ path('fe_transaction-advisory') }}">Transaction advisory <i class="fa fa-angle-down pull-right"></i></a></li>
+                                <li><a href="#">Valuation <i class="fa fa-angle-right pull-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Raising the bar for fairness opinions</h2>
+                                    <p>A fairness opinion is an important step toward greater transparency and protection of stakeholder interests.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Busniessman-Business-woman-group.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Transaction disputes</h2>
+                                    <p>6 actions to take before the neutral accountant has the last word</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-Meeting-In-Building-Lobby_R.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Community banks take the lead in M&A</h2>
+                                    <p>Larger players are largely shut out of the M&A game for 2014. But for community banks, now is the ideal moment to pursue strategic acquisitions.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_05_banks globe.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>The 100-day plan</h2>
+                                    <p>Learn how critical the 100-day plan is to generating faster value from your transaction.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-At-Table-Wide-Shot.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Change that lasts</h2>
+                                    <p>Learn what's critical in setting the stage for lasting transformational change.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Businessman-looking-out-of-building.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Drive value creation from your transaction</h2>
+                <p>
+                    Mergers and acquisitions can be a fast track to growth, but success in M&A is far from a sure thing. Grant Thornton helps high-growth, dynamic companies navigate complex transactions – whether buying or selling – with speed and agility. From deal strategy, through due diligence and to the integration of a new business, we help clients solve problems, manage risk and seize opportunities to unlock their potential for growth.
+                    <br/><br/>
+                    In working with us, you can benefit from:
+                    <br/><br/>
+                    <strong>Our global reach with local know-how</strong> - We help you go wherever growth, or a deal, takes you – through Grant Thornton International Ltd member firms operating in more than 100 countries, we have a global network of professionals on the ground ready to execute on your transaction.
+                    <br/><br/>
+                    <strong>Unmatched quality</strong> - Relationships are the cornerstone of our business. Our superior client service is built on one-on-one senior partner interaction and direct access to subject matter specialists who have a thorough understanding of your business goals, strategy and approach.
+                    <br/><br/>
+                    <strong>Unequalled responsiveness</strong> - Time kills deals. Our Transactions team is accustomed to working at “deal speed” and is committed to delivering critical findings precisely when you need them. Each transaction is unique. We develop a customized approach and scope deliverable that addresses your specific needs.
+                    <br/><br/>
+                    <strong>Full-service capability</strong> - From strategy to integration, Grant Thornton has the technical and advisory capabilities to assist you with your transaction throughout the deal lifecycle.  We help you anticipate risks, manage pitfalls and assist you in taking advantage of opportunities down the road.
+                    <br/><br/>
+                    <strong>Drive value from your transaction</strong> - Grant Thornton can help you unlock the potential for growth.
+                    <br/><br/>
+                    Our services include
+                    <br/><br/>
+                    <strong>Due diligence</strong>: Our due diligence process can be your integrated, one-stop solution to help you examine the fine print and uncover all of the detailed answers to the complex questions you have about your acquisition. Our experienced team can help where you need it most and eliminate surprises.
+                    <br/><br/>
+                    <strong>Investment banking</strong>: As a recognized advisor on midsize mergers and acquisitions, we offer a range of investment banking services including sell side advisory, buy side advisory, management buyouts, restructurings and capital raising. Grant Thornton offers investment banking services through its wholly owned broker-dealer subsidiary, Grant Thornton Corporate Finance LLC.
+                    <br/><br/>
+                    <strong>Merger integration</strong>: By putting a plan in place and using an objective, experienced team to guide the process, companies can integrate their acquisitions quickly, increase the likelihood of success and create additional value. Grant Thornton’s merger integration services professionals help clients identify critical success factors and develop a roadmap for a smooth integration of the acquisition target. 
+                    <br/><br/>
+                    <strong>Tax structuring and advisory</strong>: We provide tax structuring services to assist you in determining a tax-efficient structure in which to operate your business. Tax structuring services often include analysis of the tax implications of asset versus stock purchase structures. We will also consider state and foreign tax issues when we assist you with structuring.
+                </p>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

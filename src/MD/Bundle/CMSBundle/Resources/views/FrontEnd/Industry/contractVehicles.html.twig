@@ -1,0 +1,122 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Contract Vehicles{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li class="active"><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}">Financial services <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li class="active"><a href="{{ path('fe_public-sector') }}"><span>Public sector <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_contract-vehicles') }}">Contract vehicles</a></li>
+                                <li><a href="{{ path('fe_government-audit') }}">Government audit</a></li>
+                                <li><a href="{{ path('fe_public-sector-services-and-solutions') }}">Public Sector services and solutions</a></li>
+                                <li><a href="{{ path('fe_state-and-local-practice') }}">State and local practice</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                        {#<li class="active"><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_internationalgrowth') }}">International growth</a></li>
+                            </ul>
+                        </li>#}
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Federal and state contract vehicles</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/SLC_2013_05_Interracial-Couple-Handshake-In-Hallway.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Federal contract vehicles</h2>
+                <p>
+                    Grant Thornton is the prime contractor on many Government Wide Acquisition contracts, Indefinite Delivery Indefinite Quantity contracts, and Blanket Purchase Agreement contracts that government agencies may use to purchase a variety of needed services quickly and cost effectively.
+                    <br/><br/>
+                    Grant Thornton provides services under the following General Services Administration (GSA) schedules: 
+                </p>
+                <ul class="lists">
+                    <li>Financial and Business Solutions Services Schedule (FABS) (GS-23F-8196H)</li>
+                    <li>Information Technology Services Schedule 70 (ITS) (GS-35F-5461H)</li>
+                    <li>Management, Organizational, and Business Improvement Services Schedule (MOBIS) (GS-23F-9763H) </li>
+                </ul>
+                <p>
+                    For more information on ordering from Federal Supply Schedules, go to the GSA Schedules home page at: http://www.gsa.gov/schedules or visit GSA Advantage for on-line access to products, services and solutions.
+                    <br/><br/>
+                    Grant Thornton provides services under the following Indefinite Delivery Indefinite Quantity and Blanket Purchase Agreement contracts: 
+                </p>
+                <ul class="lists">
+                    <li>TRICARE Evaluation, Analysis and Management Support  (TEAMS) (W81XWH-08-D-0027)</li>
+                    <li>GSA's Federal Supply Services Blanket Purchase Agreements (BPA) to provide Performance Management / Continuous Process Improvement services</li>
+                    <li>One Acquisition Solution for Integrated Services (OASIS)</li>
+                    <li>Department of Homeland Security (DHS) Enterprise Acquisition Gateway for Leading Edge Solutions II (EAGLE II)</li>
+                </ul>
+                <p>
+                    <strong>State contract vehicles</strong>
+                    <br/><br/>
+                    Grant Thornton is the prime contractor on many state and local contracts, Indefinite Delivery Indefinite Quantity contracts, and Blanket Purchase Agreement contracts that state and local agencies may use to purchase a variety of needed services quickly and cost effectively. These multiple award schedules can be accessed via the links below:
+                </p>
+                <ul class="lists">
+                    <li>Texas Multiple Awards Schedule (TXMAS)</li>
+                    <li>California </li>
+                    <li>Texas Department of Information Resources </li>
+                </ul>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Resources</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Iphone-On-Stock-Newspaper-Page-Screen-Glare.jpg') }}"/>
+                            <h2>Public Sector resources</h2>
+                            <p>Learn more about our team's work, and view all of our Public Sector group's content.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Thought leadership</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Bank-Building-Columns.jpg') }}"/>
+                            <h2>Surveys</h2>
+                            <p>No other firm conducts the depth of research into the challenges facing public sector leaders.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Contact us</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_3Shot-Extreme-Focus-Man-Looks-At-Woman.jpg') }}"/>
+                            <h2>Rev. rec. impact on software</h2>
+                            <p>For more information on how Grant Thornton can help, contact one of our partners or managing directors.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

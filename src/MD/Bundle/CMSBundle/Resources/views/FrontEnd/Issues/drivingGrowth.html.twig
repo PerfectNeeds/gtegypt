@@ -1,0 +1,96 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Driving Growth{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">ISSUES</a></li>
+                        <li class="active"><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_internationalgrowth') }}">International growth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_managingrisk') }}">Managing risk <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_mergersandacquisitions') }}">Mergers and acquisitions</a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>International growth<br/>needs global support</h2>
+                                    <a href="{{ path('fe_internationalgrowth') }}">See our global offices <i class="fa fa-angle-right"></i></a>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/NFP-Internation-flags-slanted.jpg') }}" alt="Issues">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>We enable your strategic growth</h2>
+                <p>
+                    <span class="pull-left">90% of companies can grow for one year.</span>Ninety percent of companies can grow for one year. Only 8% do it five years in a row. Why? Because sustained growth means new markets, new processes, new regulatory issues and new ways of operating, all of which may introduce risk and delay success. Helping you overcome challenges and manage risks is what we do best.
+                    <span class="pull-right">Only 8% do it five years in a row.</span>
+                    <br/>Whether you're a small business with big ideas, a core-market company or a multinational organization, we can help. Grant Thornton's core mission is to help dynamic organizations like yours navigate the maze of business issues, reach your strategic goals and grow.  Our fully integrated, highly specialized tax, audit and advisory professionals across 35 industries will work with you to understand your strategy, determine priorities and achieve your goals.
+                </p>
+                <h3>Various strategies for growth for companies of any size</h3>
+                <p>
+                    Whether privately held or publicly owned, Grant Thornton professionals understand what you are going through and are ready to help. 
+
+                    <br/><br/><strong>Mergers and acquisitions</strong><br/>
+                    New employees and benefit plans; warranties; escrow; regulations. There are a lot of things to think about when thinking about mergers and acquisitions. We understand what they are and how to handle them.
+
+                    <br/><br/><strong>International expansion</strong><br/>
+                    Regardless of where you are looking to expand there are potential risks. Regulation, tax liabilities and corruption policies are different for every country. Do you know what you may be getting into? We do. Read our International Business Report.
+
+                    <br/><br/><strong>Private equity investments</strong><br/>
+                    An integrated structure, extensive global capabilities and efficient service approach allow us to deliver value and drive growth for funds, investors or portfolio companies. Learn more about our private equity practice.
+
+                    <br/><br/><strong>Are you ready to unlock your potential for growth?</strong>
+                </p>
+                <a href="{{ path('fe_internationalgrowth') }}" style="margin-bottom: 15px;" class="pages-link">We help organizations grow internationally. Here's how. <i class="fa fa-angle-right pull-right"></i></a>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Food and beverage</h1>
+                            <img src="{{ asset('bundles/fe/images/FB_Manufacturing_Arrows.jpg') }}"/>
+                            <h2>High hopes, timid growth plans</h2>
+                            <p>Two-thirds of food professionals who took the survey showed a positive outlook for 2014, likely fueled by leaner, more cost-effective operations.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Grow online sales</h1>
+                            <img src="{{ asset('bundles/fe/images/channel-diversity.jpg') }}"/>
+                            <h2>Avoid channel conflict</h2>
+                            <p>Survey found executives in manufacturing, distribution and retail often anger customers in existing channels when they start selling online.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Building partnerships</h1>
+                            <img src="{{ asset('bundles/fe/images/NFP-Professor-teaching-classroom.jpg') }}"/>
+                            <h2>Industry-academia relationships</h2>
+                            <p>We offer best practices for an optimized partnering model for industry and academia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

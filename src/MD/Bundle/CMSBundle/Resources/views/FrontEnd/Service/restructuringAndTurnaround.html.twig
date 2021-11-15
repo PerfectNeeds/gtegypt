@@ -1,0 +1,72 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Restructuring and turnaround{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_business-consulting') }}">Business consulting <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Forensic, investigative and dispute services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_governance-risk-and-compliance') }}">Governance, risk and compliance <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li class="active"><a href="{{ path('fe_restructuring') }}">Restructuring and turnaround <i class="fa fa-angle-down pull-right"></i></a></li>
+                                <li><a href="#">Technology solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_transaction-advisory') }}">Transaction advisory <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Valuation <i class="fa fa-angle-right pull-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Holistic approach to complex restructuring challenges</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Mens-Legs-Reflected-On-Floor.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Restructuring and turnaround</h2>
+                <p>
+                    For underperforming companies, companies in transition and their stakeholders, we evaluate the financial and operational issues adversely affecting performance and assess the strategic alternatives. We'll develop and execute comprehensive plans to address these challenges and help you take advantage of existing opportunities.
+                    <br/><br/>
+                    We take a 360-degree view of your situation using our deep experience, industry specialization and global reach to help you get to the core of the issue with a full-service portfolio of capabilities.
+                    <br/><br/>
+                    <strong>Service capabilities</strong>
+                </p>
+                <ul>
+                    <li>Cash flow, liquidity management and forecasting</li>
+                    <li>Crisis and interim management</li>
+                    <li>Financial advisory services to companies and parties in transition and distress</li>
+                    <li>Financial modeling</li>
+                    <li>Fresh Start Accounting</li>
+                    <li>International expansion or issues/Global market entry</li>
+                    <li>Serve as liquidating trustee or receiver</li>
+                    <li>PBGC-related situations</li>
+                    <li>Process improvement</li>
+                    <li>363 sales</li>
+                    <li>Strategic assessment</li>
+                    <li>Working capital management</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

@@ -1,0 +1,186 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}services-and-solutions{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li class="active"><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}">Financial services <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li class="active"><a href="{{ path('fe_public-sector') }}"><span>Public sector <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_government-audit') }}">Government audit</a></li>
+                                <li class="active"><a href="{{ path('fe_public-sector-services-and-solutions') }}">Public Sector services and solutions</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                        {#<li class="active"><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_internationalgrowth') }}">International growth</a></li>
+                            </ul>
+                        </li>#}
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2> 2014 Acquisition Policy Survey </h2>
+                                    <p> A Closing Window: Are we missing the opportunity for change?</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_12_ADV_DRM.jpg') }}" alt="Industries">
+                            </li>
+                            {#<li>
+                                <div class="banner_data">
+                                    <h2>2014 Federal CFO Survey</h2>
+                                    <p> Driving collaboration and innovation: Achieving the CFO mission in uncertain times</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_US-Congress-Building.jpg') }}" alt="Industries">
+                            </li>#}
+                            <li>
+                                <div class="banner_data">
+                                    <h2> 2014 State CIO survey </h2>
+                                    <p> Charting the course: Leading collaboration during uncertain times.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Man-with-cloud-diagram.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Survey of Defense Financial Management Executives</h2>
+                                    <p> How do financial managers within military establishments work smarter to get better results with fewer resources?</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_11_Business_people_reviewing_expenses.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Public Sector services and solutions</h2>
+                <p>
+                    Our professionals deliver objective solutions and services that will help meet financial management requirements, improve organizational performance, manage cost and performance and effectively implement IT investments. Our services and solutions include:
+                </p>
+                <div class="col-md-6 col-sm-12">
+                    <div class="col-md-12">
+                        <p><strong>Financial Management and Audit</strong></p>
+                        <ul class="lists">
+                            <li>Accounting & budgeting </li>
+                            <li>Activity based costing and management </li>
+                            <li>Budget formulation and execution </li>
+                            <li>Budgetary control reviews </li>
+                            <li>Financial analysis & modeling </li>
+                            <li>Financial systems</li>
+                            <li>Internal controls</li>
+                            <li>Policies and procedures</li>
+                            <li>Reporting & operations support </li>
+                            <li>Risk assessment</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <p><strong>IT Services</strong></p>
+                        <ul class="lists">
+                            <li>Business intelligence  </li>
+                            <li>Data conversion and testing  </li>
+                            <li>Data integration  </li>
+                            <li>Data mining </li>
+                            <li>Data warehousing </li>
+                            <li>Executive dashboards </li>
+                            <li>IT planning </li>
+                            <li>IT security and controls </li>
+                            <li>Program/integration management </li>
+                            <li>Software selection and implementation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="col-md-12">
+                        <p><strong>Government Transformation</strong></p>
+                        <ul class="lists">
+                            <li>Balanced scorecard</li>
+                            <li>Benchmarking </li>
+                            <li>Business process improvement/lean </li>
+                            <li>Business process reengineering </li>
+                            <li>Change management </li>
+                            <li>Human capital </li>
+                            <li>Improving reporting and analysis</li>
+                            <li>Independent verification and validation (IV&V) </li>
+                            <li>Organizational assessment & design </li>
+                            <li>Process automation </li>
+                            <li>Process simplification and standardization </li>
+                            <li>Strategic planning</li>
+                            <li>Training</li>
+                            <li>Value analysis</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <p><strong>Solutions</strong></p>
+                        <ul class="lists">
+                            <li>Manage and reduce costs</li>
+                            <li>Ensure integrity of grant spending </li>
+                            <li>Enhance CFO organization performance </li>
+                            <li>Improve decision making through analytics </li>
+                            <li>Ensure project success with mature program management </li>
+                            <li>Transparency and integrity with financial reporting </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <p><strong>Government Infrastructure & Project Finance</strong></p>
+                        <ul class="lists">
+                            <li>Public/Private Partnership</li>
+                            <li>Valuation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Resources</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Iphone-On-Stock-Newspaper-Page-Screen-Glare.jpg') }}"/>
+                            <h2>Public Sector resources</h2>
+                            <p>Learn more about our team's work, and view all of our Public Sector group's content.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Thought leadership</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Bank-Building-Columns.jpg') }}"/>
+                            <h2>Surveys</h2>
+                            <p>No other firm conducts the depth of research into the challenges facing public sector leaders.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Contact us</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_3Shot-Extreme-Focus-Man-Looks-At-Woman.jpg') }}"/>
+                            <h2>Rev. rec. impact on software</h2>
+                            <p>For more information on how Grant Thornton can help, contact one of our partners or managing directors.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

@@ -1,0 +1,65 @@
+{% set cr = app.request.attributes.get('_route') %}
+{#<li {% if ('faqcategory' == cr or 'faqcategory_edit' == cr or 'faqcategory_new' == cr or 'faq' == cr or 'faq_edit' == cr or 'faq_new' == cr ) %}class="active"{% endif %}>
+    <a href="{{ path('faqcategory') }}">
+        <i class="fa fa-question icon-sidebar"></i>Faq
+    </a>
+</li>#}
+{#<li {% if ('blogcategory' == cr or 'blogcategory_edit' == cr or 'blogcategory_new' == cr or 'blog' == cr or 'blog_edit' == cr or 'blog_new' == cr ) %}class="active"{% endif %}>
+    <a href="{{ path('blogcategory') }}">
+        <i class="fa fa-rss icon-sidebar"></i>News
+    </a>
+</li>#}
+{#{% if is_granted('ROLE_SUPER_ADMIN') %}
+    <li {% if ('menu' == cr or 'menu_edit' == cr or 'menu_new' == cr ) %}class="active"{% endif %}>
+        <a href="{{ path('menu') }}">
+            <i class="fa fa-list icon-sidebar"></i>Menu
+        </a>
+    </li>
+{% endif %}#}
+<li {% if ('dynamicpage' == cr or 'dynamicpage_edit' == cr or 'dynamicpage_new' == cr ) %}class="active"{% endif %}>
+    <a href="{{ path('dynamicpage') }}">
+        <i class="fa fa-paperclip icon-sidebar"></i>Dynamic Page
+    </a>
+</li>
+{#<li {% if ('publication' == cr or 'publication_edit' == cr or 'publication_new' == cr ) %}class="active"{% endif %}>
+    <a href="{{ path('publication') }}">
+        <i class="fa fa-print icon-sidebar"></i>Publication
+    </a>
+</li>
+<li {% if ('client' == cr or 'client_edit' == cr or 'client_new' == cr ) %}class="active"{% endif %}>
+    <a href="{{ path('client') }}">
+        <i class="fa fa-users icon-sidebar"></i>Our Clients
+    </a>
+</li>#}
+<li {% if ('ourpartner' == cr or 'ourpartner_edit' == cr or 'ourpartner_new' == cr ) %}class="active"{% endif %}>
+    <a href="{{ path('ourpartner') }}">
+        <i class="fa fa-check-circle icon-sidebar"></i>Our Partner
+    </a>
+</li>
+<li {% if ('currentvacancy' == cr or 'currentvacancy_edit' == cr or 'currentvacancy_new' == cr ) %}class="active"{% endif %}>
+    <a href="{{ path('currentvacancy') }}">
+        <i class="fa fa-laptop icon-sidebar"></i>Current Vacancies
+    </a>
+</li>
+<li {% if ('careerapplication' == cr or 'careerapplication_edit' == cr or 'careerapplication_new' == cr ) %}class="active"{% endif %}>
+    <a href="{{ path('careerapplication') }}">
+        <i class="fa fa-group icon-sidebar"></i>Career Application
+    </a>
+</li>
+{% if is_granted('ROLE_SUPER_ADMIN') %}
+    <li {% if ('user' == cr or 'user_edit' == cr or 'user_new' == cr ) %}class="active"{% endif %}>
+        <a href="{{ path('user') }}">
+            <i class="fa fa-user icon-sidebar"></i>User
+        </a>
+    </li>
+{% endif %}
+<li {% if ('website' == cr or 'website_edit' == cr or 'website_new' == cr ) %}class="active"{% endif %}>
+    <a href="{{ path('website') }}">
+        <i class="fa fa-cloud icon-sidebar"></i>Websites
+    </a>
+</li>
+<li {% if ('banner' == cr or 'banner_edit' == cr or 'banner_new' == cr ) %}class="active"{% endif %}>
+    <a href="{{ path('banner') }}">
+        <i class="fa fa-cloud icon-sidebar"></i>Banner
+    </a>
+</li>

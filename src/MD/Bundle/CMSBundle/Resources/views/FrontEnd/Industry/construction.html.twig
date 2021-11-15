@@ -1,0 +1,80 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Construction{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li class="active"><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}">Financial services <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                        {#<li class="active"><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_internationalgrowth') }}">International growth</a></li>
+                            </ul>
+                        </li>#}
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Succession planning in 10 steps</h2>
+                                    <p>Succession planning is not an one-time event. It's an ongoing process that you need to start now.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_09_construction_site_handing_over_keys.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Why not all leases are created equal</h2>
+                                    <p>Is there a single accounting model that faithfully represents the economic substance of all leases?</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_08_Pen_On_Ledger.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Heed construction fraud red flags</h2>
+                                    <p>Protect your higher education institution against 10 common schemes.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_09_construction_site_handing_over_keys.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>We know the nuts and bolts of the construction industry</h2>
+                <p>With the real estate market rebounding, the construction industry is looking for ways to keep growing. Our professionals work with general contractors and subcontractors, road builders, heavy construction firms, architecture and engineering firms, design/build companies, and suppliers to improve operations, processes and internal controls. In addition to traditional audit and tax services, we help clients with complex issues, such as:</p>
+                <ul>
+                    <li>Government regulation - increasing regulation and scrutiny add complexities and costs</li>
+                    <li>Repair regulations - when companies can deduct payments as repairs, versus capitalizing them, it may have a major impact on construction projects.</li>
+                    <li>Industry consolidation - there are opportunities to grow through acquisition and enter new markets with expanded services and capabilities.</li>
+                    <li>Fraud and false claims - you may want to enhance or establish new internal controls, corporate policies and screening procedures for vendors, suppliers and staff.</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

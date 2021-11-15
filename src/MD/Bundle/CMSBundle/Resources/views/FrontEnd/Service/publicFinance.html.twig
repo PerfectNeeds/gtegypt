@@ -1,0 +1,63 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}public-finance{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_fainancial-audit') }}">Financial Audit</a></li>
+                                <li><a href="{{ path('fe_ifrs-reporting') }}">IFRS reporting</a></li>
+                                <li><a href="{{ path('fe_fresh-start-accounting') }}">Fresh start accounting</a></li>
+                                <li class="active"><a href="{{ path('fe_public-finance') }}">Public finance </a></li>
+                                <li><a href="{{ path('fe_employee-plan-audit') }}">Employee plan audit</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Chart a course through complex transactions </h2>
+                                    <p>  Learn about four of our related services </p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Stock-Ticker-On-Building-Low-Angle-Lens-Flare.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Public Finance</h2>
+                <p>
+                    Grant Thornton's professionals can help you navigate complicated financing transactions, required arbitrage rebate compliance regulations and commercial defeasance transactions.
+                    <br/><br/>
+                    Our services include the following:
+                </p>
+                <ul class="lists">
+                    <li>Verification - We will verify your numbers prior to pricing by comparing the schedules with the pertinent documents to make sure the components of your transaction are in working order. Our verification reports are accepted by major investment banking firms, bond counsels, rating agencies and all major municipal bond insurance companies.</li>
+                    <li>Arbitrage rebate compliance - We will calculate your arbitrage rebate liability and summarize the results in a report supported by a customized transaction model.</li>
+                    <li>Loan defeasance - Legal documents related to collateral defeasance and rating agencies often require a defeasing borrower to provide the trustee with written verification from an independent certified public accountant. The verification includes schedules prepared by the accountant, which compare projections of cash flow from the defeasance collateral to the payment schedule for the defeased loan.</li>
+                    <li>Bond yielding monitoring - We will deliver an agreed-upon procedures report supported by a customized transaction model, which includes a calculation of the issue's bond yield for a given computation period and an analysis of this yield versus the actual yield on the escrow securities. Your organization needs bond yield monitoring if it has issued a percentage of LIBOR swap as part of a synthetic fixed-rate advance refunding transaction, and the actual payments and receipts for the transaction will change over time from the closing date to the computation dates.</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

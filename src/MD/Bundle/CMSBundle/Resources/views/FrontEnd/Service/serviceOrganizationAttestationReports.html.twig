@@ -1,0 +1,107 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Service organization attestation reports{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_business-consulting') }}">Business consulting <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Forensic, investigative and dispute services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li class="active"><a href="{{ path('fe_governance-risk-and-compliance') }}">Governance, risk and compliance <i class="fa fa-angle-down pull-right"></i></a>
+                                    <ul>
+                                        <li><a href="{{ path('fe_cybersecurity') }}">Cybersecurity</a></li>
+                                        <li><a href="{{ path('fe_enterprise-risk-management') }}">Enterprise risk management</a></li>
+                                        <li><a href="{{ path('fe_internal-audit') }}">Internal Audit</a></li>
+                                        <li><a href="{{ path('fe_regulatory-compliance') }}">Regulatory compliance</a></li>
+                                        <li class="active"><a href="{{ path('fe_service-organization') }}">Service organization reports</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ path('fe_restructuring') }}">Restructuring and turnaround <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Technology solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_transaction-advisory') }}">Transaction advisory <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Valuation <i class="fa fa-angle-right pull-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>  New COSO links IT and business process </h2>
+                                    <p>COSO 2013 recognizes the importance of technology in achieving operations and compliance objectives. Principle 11 addresses IT controls.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HCM_2013_06-Reduce-rish-pen-drawing.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>The risk continuum</h2>
+                                    <p>When mitigating risk with third-party service organizations, ask yourself: What level of assurance do you need?</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Male-Hands-Drawing-Tablet.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Data warehouse finds a SOC 2 fit</h2>
+                                    <p> If security, availability and confidentiality are the issues our client cared about, why use SOC 1?</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HCM_2013_06-Empty-hardrive-room_R.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Service organization attestation reports</h2>
+                <p>
+                    As a service organization, you know how important it is to produce a report for your customers and their auditors that instills confidence and enhances their trust in your services. Grant Thornton Advisory professionals can help you determine which report(s) will satisfy your customers’ needs and provide relevant information to your customers and customers’ auditors that will be a business benefit to you.
+                    <br/><br/>
+                    <a href="http://www.aicpa.org/soc"><img src="{{ asset('bundles/fe/images/SOC-Marks_2c_Web.jpg') }}" class="pull-left" style="width: 100px;margin-right:20px;"></a>
+                    We provide Service Organization ControlTM (SOC) reports and other special attestation reports to accommodate specific needs. If you have multiple reporting needs, we can assess your situation and come up with a solution to satisfy your various compliance and reporting mandates.
+                    <br/><br/>
+                    We offer:
+                </p>
+                <ul>
+                    <li>deep knowledge of service organization control reports to help you provide your customers the right report(s)</li><br/>
+                    <li>recommendations on improvement so you can strengthen internal control</li><br/>
+                    <li>ability to perform multiple audits and deliver multiple reports in one compressed testing period for you to gain efficiencies and cost savings, as well as experience less intrusion</li><br/>
+                    <li>quality service and value for fees so you receive an exceptional client experience</li><br/>
+                    <li>on-time, information-rich reports that can increase your customers' confidence in your services.</li><br/>
+                </ul>
+                <p>Featured services include:</p>
+                <ul class="lists">
+                    <li>Readiness assessments</li><br/>
+                    <li>SOC 1 or SSAE 16 report, formerly known as SAS 70</li><br/>
+                    <li>SOC 2 report based on the Trust Services Principles (TSP) - Security, Availability, Processing Integrity, Confidentiality or Privacy</li><br/>
+                    <li>SOC 3 report based on TSP for general use</li><br/>
+                    <li>Agreed upon procedures (AUP) covered under AT 201</li><br/>
+                    <li>Other reports, covered under AT 601, to demonstrate compliance with specific regulations, for example
+                        <ul>
+                        <li>Health Information Portability and Accountability Act (HIPAA)</li><br/>
+                        <li>The Gramm Leach Bliley Act (GLBA)</li><br/>
+                        <li>Federal Information Security Management Act (FISMA)</li><br/>
+                        <li>International Organization for Standardization (ISO)</li>
+                        </ul>
+                    </li><br/>
+                    <li>PCI DSS compliance</li>
+                </ul>
+                <p>The SOC Logo is a proprietary trademark and service mark of the AICPA, which reserves all rights.</p>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

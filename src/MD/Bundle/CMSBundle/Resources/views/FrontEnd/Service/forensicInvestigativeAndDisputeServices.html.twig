@@ -1,0 +1,111 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Forensic, investigative and dispute services{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="#">Corporate Finance Services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Business & Management Services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Technology Solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li class="active"><a href="{{ path('fe_forensic-investigative') }}">Fraud and forensic services</a></li>
+                                <li><a href="{{ path('fe_governance-risk-and-compliance') }}">Corporate governance and risk compliance</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Raising the bar for fairness opinions</h2>
+                                    <p>A fairness opinion is an important step toward greater transparency and protection of stakeholder interests.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Busniessman-Business-woman-group.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Avoid pitfalls that kill sale</h2>
+                                    <p>Handshakes and signatures are fine, but a surprising number of deals to buy or sell a business fall apart because of misunderstandings over common accounting terms.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Interracial-Couple-Handshake-In-Hallway.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> In-house counsel lack resources</h2>
+                                    <p>The 2014 Corporate General Counsel Survey reveals how resource-strapped in-house counsel battle regulations, cybercrime and litigation.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Diverse-business-people-smiling.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Budget cuts don't slow Medicare fraud enforcement</h2>
+                                    <p>Despite government budget cuts, health care providers and private payors cannot afford to relax compliance vigilance.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_07_Magnifying_Glass_Binary_Data.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Resolving problems quickly to get you back on your way to growth</h2>
+                <p>
+                    Our forensic, investigative and dispute services professionals help companies:
+                </p>
+                <ul class="lists">
+                    <li>Respond to allegations of financial fraud, waste and abuse</li>
+                    <li>Implement, monitor and investigate federal anti-money laundering and anti-corruption regulations</li>
+                    <li>Comply with federal settlement or deferred prosecution agreements acting as independent forensic monitors</li>
+                    <li>Address post-closing pricing and earn-out disputes</li>
+                    <li>Prepare or respond to litigation and ADR as consultants or experts</li>
+                    <li>Collect, process, host and analyze big data</li>
+                    <li>Communicate with regulators and stakeholders in connection with inquiries and investigations</li>
+                </ul>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Prepare for cyberattacks</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Reduce-risk-pen-drawing.jpg') }}"/>
+                            <h2>Breaches cost unprepared companies more money</h2>
+                            <p>You can't just sit around and hope a breach won't happen. You must be proactive.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Case studies</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Three-people-around-a-laptop.jpg') }}"/>
+                            <h2>Deep forensic knowledge </h2>
+                            <p>Learn more about our experience in helping our clients with forensic accounting, investigations and disputes.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Expert witness guidance</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Older-man-sitting-at-desk-with-laptop.jpg') }}"/>
+                            <h2>Guide for communication</h2>
+                            <p>Grant Thornton Partner Brad Preber provides strategies for financial expert witnesses as they face litigation reporting and testimony.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

@@ -1,0 +1,87 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Distribution{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li class="active"><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}">Financial services <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li><a href="{{ path('fe_not-for-profit-organizations') }}">Not-for-profit organizations <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                        {#<li class="active"><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_internationalgrowth') }}">International growth</a></li>
+                            </ul>
+                        </li>#}
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Battle for the middle</h2>
+                                    <p>Distributors being cut out of the "middle man" role are upping their game to stay competitive. Our survey captures the industry's state of mind.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Cargo-person-with-cargo-crates.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> How to grow sustainably </h2>
+                                    <p>We've put together numbers, best practices and real-world tips on how to get started on the path to responsible corporate citizenship.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_10_CIP_IBR-CSR-tree.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Survey: How distributors pursue growth</h2>
+                                    <p>Distributors are upbeat and looking for ways to grow, from hiring more sales staff and adding inventory to ramping up e-commerce and pursuing vending solutions.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_05_distribution-growth.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Stuck with piles of data? Here's what to do</h2>
+                                    <p>Too much data. Too few ways to use it meaningfully. We've identified roadblocks and solutions for each stage in your analytics program.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_02_Survey_Report_Promo.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Helping you keep commerce moving</h2>
+                <p>The distribution industry is moving at lightning pace as companies look for faster and better ways to get products into the hands of consumers. Our industry-specialized team helps distributors address existing and emerging challenges, including:</p>
+                <ul>
+                    <li>Third-party risk - identifying, measuring and monitoring third-party relationships is critical to maintaining the integrity of your business.</li>
+                    <li>Repair regulations - the new tangible property regulations may provide distributors with tax benefits this year and into the future.</li>
+                    <li>Leveraging data - companies need processes to identify and analyze business intelligence data to determine cost to serve, customer profitability and service offering profitability.</li>
+                    <li>Threat of disintermediation - protect your business against disintermediation by differentiating your products and services.</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

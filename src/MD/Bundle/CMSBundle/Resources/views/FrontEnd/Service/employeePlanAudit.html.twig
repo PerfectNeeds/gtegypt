@@ -1,0 +1,94 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}employee-benefit-plan-audits{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_fainancial-audit') }}">Financial Audit</a></li>
+                                <li><a href="{{ path('fe_ifrs-reporting') }}">IFRS reporting</a></li>
+                                <li><a href="{{ path('fe_fresh-start-accounting') }}">Fresh start accounting</a></li>
+                                <li><a href="{{ path('fe_public-finance') }}">Public finance </a></li>
+                                <li class="active"><a href="{{ path('fe_employee-plan-audit') }}">Employee plan audit</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Navigating benefit plan audits</h2>
+                                    <p> Seven ways we help steer through complexity</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-Meeting-In-Building-Lobby_R.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Employee Benefit Plan Audit</h2>
+                <p>
+                    We know that your plans' operations are carried out by many internal departments and third-party service providers, yet overall fiduciary responsibility lies with plan officers who are not necessarily involved in the plan's daily operations. We understand these complexities and can lead the way.
+                    <br/><br/>
+                    An employee benefit plan audit must do more than substantiate financial statements; it must also address plan operations including helping to assess whether the plan is operating according to the plan document and amendments.
+                    <br/><br/>
+                    We deliver:
+                </p>
+                <ul class="lists">
+                    <li>dedicated employee benefit plan professionals</li>
+                    <li>strong technical knowledge of GAAP and ERISA requirements</li>
+                    <li>truly independent review and insight</li>
+                    <li>significant understanding of how to mitigate risks and adhere to regulatory requirements</li>
+                    <li>a methodical approach that results in timely filing of Form 5500s without fire drills</li>
+                    <li>continuity from year to year to enhance efficiencies</li>
+                    <li>integration and constant communication with compensation and benefits professionals.</li>
+                </ul>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Benefits survey</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Older-man-on-wall-street.jpg') }}"/>
+                            <h2>Retirement benefit costs</h2>
+                            <p>Eighty percent of employers surveyed say competitive bidding for plan vendors is effective.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Deadline</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Hands-Signing-Document.jpg') }}"/>
+                            <h2>New fee for health care reform due July 31 </h2>
+                            <p>Certain employers who sponsor self-insured health plans must pay a new fee by July 31.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Employer tax</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Female-Hands-On-Laptop-Stethoscope-Around-Neck.jpg') }}"/>
+                            <h2>Health benefit changes</h2>
+                            <p>Avoid the three situations in which an employer might face a penalty tax.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

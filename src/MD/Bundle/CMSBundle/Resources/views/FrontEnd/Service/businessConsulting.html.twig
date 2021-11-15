@@ -1,0 +1,92 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Business Consulting{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_business-consulting') }}">Business consulting <i class="fa fa-angle-down pull-right"></i></a>
+                                    <ul>
+                                        <li><a href="{{ path('fe_business-analytics') }}">Business analytics</a></li>
+                                        <li><a href="{{ path('fe_enterprise-transformation') }}">Enterprise transformation</a></li>
+                                        <li><a href="{{ path('fe_finance-operations') }}">Finance operations</a></li>
+                                        <li><a href="{{ path('fe_performance-improvement') }}">Performance improvement</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Forensic, investigative and dispute services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_governance-risk-and-compliance') }}">Governance, risk and compliance <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_restructuring') }}">Restructuring and turnaround <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Technology solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_transaction-advisory') }}">Transaction advisory <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Valuation <i class="fa fa-angle-right pull-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>2014 Acquisition Policy Survey</h2>
+                                    <p> A Closing Window: Are we missing the opportunity for change?</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Group-Meeting-In-Building-Lobby_R.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Moving to the cloud</h2>
+                                    <p>Before the rush to gain functionality, take a ground-level view of the cloud’s impact on finance and accounting.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_09_ADV_Cloud.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Advanced analytics transforms organizations</h2>
+                                    <p>How does predictive and prescriptive analytics transform the finance function with groundbreaking decision support?</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Man-sitting-down-with-laptop.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>2014 State CIO survey</h2>
+                                    <p> Charting the course: Leading collaboration during uncertain times.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Man-with-cloud-diagram.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Change that lasts</h2>
+                                    <p>Learn what's critical in setting the stage for lasting transformational change.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Businessman-looking-out-of-building.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Helping dynamic companies improve efficiencies, manage initiatives & achieve business outcomes</h2>
+                <p>
+                    Organizations are facing uncertain financial markets, global competition, evolving regulation, emerging business models and disruptive technologies. By adapting to these changes faster than their competitors, our clients can unlock their potential for growth.
+                    <br/><br/>
+                    Specifically, our business consulting capabilities help dynamic companies improve efficiencies, manage initiatives and achieve business outcomes. Our solutions support the needs of organizations across the growth lifecycle, helping build a foundation for growth, overcome barriers to growth and create, protect and restore value. We can help identify opportunities, execute growth strategies, manage risk, improve performance and leverage technology.
+                </p>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

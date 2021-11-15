@@ -1,0 +1,122 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Governance Risk And Compliance{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="#">Corporate Finance Services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Business & Management Services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Technology Solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Fraud and forensic services</a></li>
+                                <li class="active"><a href="{{ path('fe_governance-risk-and-compliance') }}">Corporate governance and risk compliance</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Manage your data</h2>
+                                    <p>Are you controlling your data or is it controlling you? Let good data governance practices put you in the driver's seat.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_12_ADV_DRM.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Is our risk function keeping pace with growth? </h2>
+                                    <p>An investment manager with approximately $100 billion in AUM has grown quickly, putting pressure on its existing SOX and internal audit infrastructure.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_09_Top_three_bank_risks_icon.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Risk assessment component presents opportunities</h2>
+                                    <p> The new COSO Framework presents an excellent opportunity to define and achieve important operational, reporting and compliance objectives.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-People-in-a-business-meeting.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Good governance for bank products </h2>
+                                    <p>It's up to boards and management to drive the risk mitigation planning process.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2014_09_FIS_BankGovernanceArticle.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Governance, risk and compliance</h2>
+                <p>
+                    Regulatory enactments are constantly changing the corporate governance landscape. Organizations are held accountable for accuracy and integrity in their business operations, and they must have effective and reliable governance and compliance procedures in place. Grant Thornton helps companies:
+                    <img src="{{asset ('bundles/fe/images/3B_2013_05_Group-In-Conference-Room.jpg') }}" class="pull-right" alt=""/>
+                </p>
+                <ul class="lists">
+                    <li>understand and comply with regulatory requirements</li><br/>
+                    <li>implement the right corporate governance framework in regard to these regulations</li><br/>
+                    <li>establish appropriate compliance practices</li>
+                </ul>
+                <p>
+                    Our services include:<br/><br/>
+                    Internal audit - Assess your control environment and safeguard business assets and processes, including those that protect data and IT systems.
+                    <br/><br/>
+                    Enterprise risk management (ERM) - Manage and optimize risks by strategically identifying, analyzing, overseeing and monitoring the potential risks to an organization. This approach enables a company to determine how much uncertainty and risk are acceptable to continue to add value to the organization.
+                    <br/><br/>
+                    Sarbanes-Oxley (SOX) consulting - Comply with the financial disclosure and internal control requirements of the Sarbanes-Oxley Act of 2002 and related Securities and Exchange Commission (SEC) rules.
+                    <br/><br/>
+                    Cybersecurity - Assess your organization's requirements around security, privacy and protection.
+                    <br/><br/>
+                    Service organization attestation reports - Produce a report for your customers and their auditors that instills confidence and enhances their trust in your services.
+                    <br/><br/>
+                    Regulatory compliance - Review and assess your regulatory compliance processes, assess the regulatory concerns and recommend the necessary improvements required to successfully satisfy regulatory mandates.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Integrity</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Group-At-Table-Wide-Shot.jpg') }}"/>
+                            <h2>Monitor third parties</h2>
+                            <p>We can help you mitigate the risk of third-party relationships and protect the integrity of your business while you pursue growth.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Guidance</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Standing-Woman-Leading-Meeting-Men-At-Table.jpg') }}"/>
+                            <h2>Transition to the new COSO Framework</h2>
+                            <p>The new Framework provides an opportunity to holistically reassess internal control in all its phases.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Newsletter</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_12_Newsletter_CorporateGovernor.jpg') }}"/>
+                            <h2>Addressing governance</h2>
+                            <p>CorporateGovernor helps management, internal audit executives and boards of directors understand today's governance issues.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

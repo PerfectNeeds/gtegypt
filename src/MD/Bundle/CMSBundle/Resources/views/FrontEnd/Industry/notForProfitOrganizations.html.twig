@@ -1,0 +1,114 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Not-for-profit organizations{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}">Financial services <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li class="active"><a href="{{ path('fe_not-for-profit-organizations') }}"><span>Not-for-profit organizations <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_foundations') }}">Foundations</a></li>
+                                <li><a href="{{ path('fe_social-services') }}">Social services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Better budgeting through centralizing</h2>
+                                    <p> But watch for trade-offs like a narrow focus on separate academic units.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Male-Female-Hands-At-Laptop-Woman-Gestures-To-Screen.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Realistic compensation is key to achieving mission</h2>
+                                    <p> Valuable employees who are properly compensated are essential to your mission. Read what others are doing to keep a reasonable administrative to mission ratio.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_NFP_Comp_Benefits_Survey2.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>NFPs act on rev rec overhaul</h2>
+                                    <p> Gain rev rec guidance via accounting firms, task force and the five-step model.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2015_01_Two-people-at-laptop.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> A tax guide for foundations </h2>
+                                    <p> Our guidance covers issues you're likely to encounter.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Older-man-sitting-at-desk-with-laptop.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Heed construction fraud red flags</h2>
+                                    <p> Protect your higher education institution against 10 common schemes.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_09_construction_site_handing_over_keys.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Resources and skills to help you deliver on your mission</h2>
+                <p>
+                    Grant Thornton's Not-for-Profit practice - serving about 40% of the Forbes top 100 largest U.S. charities - is unrivaled among professional services firms. Here are just a few reasons why:
+                </p>
+                <ul class="lists">
+                    <li><strong>Fully dedicated team.</strong> We have more fully dedicated not-for-profit professionals - from staff to partner - than most accounting firms. The not-for-profit industry is not a sideline business for us; it's one of our core strategic industry segments. This means that your needs are serviced by the industry's most qualified professionals.</li>
+                    <li><strong>100% integrated. </strong>Our Not-for-Profit practice consists of audit, tax and advisory professionals working together within the same administrative structure. If you need help in more than one area, we can seamlessly and promptly allocate the necessary resources.</li>
+                    <li><strong>National skills with local attention. </strong>We offer you access to national resources with the hands-on partner and manager attention you would expect from a more local or regional firm.</li>
+                    <li><strong>Timely service delivery.</strong> We've built our teams and workflows around the specific demands of our clients and the not-for-profit industry to make sure we deliver our services on time.</li>
+                </ul>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Content library</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_08_Careers_IconCompassArrows.jpg') }}"/>
+                            <h2>Our latest thinking</h2>
+                            <p>Check out a chronological list of articles, white papers and reports spanning top-of-mind issues in nonprofit.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Stay in touch </h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Hands-Signing-Document.jpg') }}"/>
+                            <h2>Board and Executive Institute </h2>
+                            <p>Stay on top of the latest business trends in accounting, regulatory, legal and operational issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

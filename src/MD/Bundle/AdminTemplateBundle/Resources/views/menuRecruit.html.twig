@@ -1,0 +1,11 @@
+{% set cr = app.request.attributes.get('_route') %}
+    <li {% if ('cms_dashboard' == cr) %}class="active"{% endif %}>
+        <a href="{{ path('cms_dashboard') }}">
+            <i class="fa fa-dashboard icon-sidebar"></i>Dashboard
+        </a>
+    </li>
+    <li {% if ('careerapplication' == cr or 'careerapplication_edit' == cr or 'careerapplication_new' == cr ) %}class="active"{% endif %}>
+        <a href="{{ path('careerapplication') }}">
+            <i class="fa fa-group icon-sidebar"></i>Career Application
+        </a>
+    </li>

@@ -1,0 +1,95 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Why Grant Thornton{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="{{ path('fe_career') }}">CAREERS</a></li>
+                        <li class="active"><a href="{{ path('fe_why-grant-thornton') }}"><span>Why Grant Thornton</span></a></li>
+                        <li><a href="{{ path('fe_for-students') }}"><span>Students</span></a></li>
+                        <li><a href="{{ path('fe_for-professionals') }}"><span>Experienced professionals</span></a></li>
+                        <li><a href="{{ path('fe_our-stories') }}"><span>Our stories</span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>People and culture</h2>
+                                    <p> Our unique culture sets us apart. </p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/2014_07-People-Culture.jpg') }}" alt="Careers">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Career development</h2>
+                                    <p> Training, coaching and support to reach your goals</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/2014_07-Career_development.jpg') }}" alt="Careers">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Diverse experience </h2>
+                                    <p>  Flexibility and agility that fits the whole you  </p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/2014_07-Diversity.jpg') }}" alt="Careers">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>It's more than just a job. It's an experience.</h2>
+                <p>
+                    <img src="{{ asset('bundles/fe/images/Approach Circles.jpg') }}" class="pull-right" style="margin-bottom: 20px;">
+                    When you join Grant Thornton, you are getting more than just a job; you are becoming part of the Grant Thornton experience. What is the Grant Thornton experience? It's about building a healthy, high-performance culture where people feel valued, respected and encouraged to contribute all their unique abilities. At the heart of it all, it is based on three core principles:
+                </p>
+                <ul>
+                    <li>People and culture</li>
+                    <li>Career development</li>
+                    <li>Diverse experience</li>
+                </ul>
+                <a href="{{ path('fe_recruit') }}" style="margin-bottom: 15px;clear:both;" class="pages-link">submit your resume<i class="fa fa-angle-right pull-right"></i></a>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Diversity and inclusion</h1>
+                            <img src="{{ asset('bundles/fe/images/3BDiversityInclusion.jpg') }}"/>
+                            <h2>Building stronger, more creative teams</h2>
+                            <p>We strive for diversity by encouraging our employees to contribute everything that makes them unique.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Working for a cause</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_Baltimore.jpg') }}"/>
+                            <h2>Building stronger, more creative teams</h2>
+                            <p>Grant Thornton is a place where you can be true to yourself and still be a part of something bigger.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Good work adds up</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_Awards.jpg') }}"/>
+                            <h2>We did it again</h2>
+                            <p>A survey of elite international university students listed us in the top 50 world’s most attractive employers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

@@ -1,0 +1,78 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Performance Improvement{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_business-consulting') }}">Business consulting <i class="fa fa-angle-down pull-right"></i></a>
+                                    <ul>
+                                        <li><a href="{{ path('fe_business-analytics') }}">Business analytics</a></li>
+                                        <li><a href="{{ path('fe_enterprise-transformation') }}">Enterprise transformation</a></li>
+                                        <li><a href="{{ path('fe_finance-operations') }}">Finance operations</a></li>
+                                        <li class="active"><a href="{{ path('fe_performance-improvement') }}">Performance improvement</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Forensic, investigative and dispute services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_governance-risk-and-compliance') }}">Governance, risk and compliance <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_restructuring') }}">Restructuring and turnaround <i class="fa fa-angle-down pull-right"></i></a></li>
+                                <li><a href="#">Technology solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_transaction-advisory') }}">Transaction advisory <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Valuation <i class="fa fa-angle-right pull-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Improve operations to enhance performance</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Two-businessman-front.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Helping you improve operations to enhance performance and profitability</h2>
+                <p>
+                    As today’s organizations grow in size and complexity, processes that were once successful often become cumbersome and inefficient. To maintain growth, organizations must remain flexible, agile and profitable. This requires sustainable performance across the enterprise to support the evolving needs of the business. 
+                    <br/><br/>
+                    You must respond not only to the rapid pace of technology innovation, but also to the evolving needs of customers and stakeholders. You need to understand how to get more from your limited resources — people, processes and technology. We help you optimize processes by leveraging technology as a business tool and considering impact to your people — all to help achieve your growth goals and reduce risk.
+                    <br/><br/>
+                    The Grant Thornton LLP approach to performance improvement:
+                </p>
+                <ul>
+                    <li><strong>Business-driven</strong>: focused on aligning technology and process with the desired business outcomes, both current and future state, while creating efficiencies and reducing cost</li><br/>
+                    <li><strong>Focused on results</strong>: delivering quick wins and prioritizing to deliver measurable results to the bottom line</li><br/>
+                    <li><strong>Industry-driven</strong>: rooted in best practices to improve competitive advantage in your industry, including financial services, health care, not-for-profit, manufacturing and life sciences</li><br/>
+                    <li><strong>Risk-mitigating</strong>: understanding the role of process and controls in reducing overall risk and driving transparency for key business stakeholders</li>
+                </ul>
+                <p>Our performance improvement services are designed to help organizations that want to enhance profitability and align resources to achieve growth.</p>
+                <ul>
+                    <li><strong>Process redesign</strong>: Improve organizational processes related to IT, finance, customer and supply chain with a comprehensive assessment focused on driving out inefficiencies, redundancies and costs.</li><br/>
+                    <li><strong>Profitability improvement</strong>: Improve profitability as well as support profitability programs that are already deployed across the enterprise. The approach includes focusing first on creating efficiencies and improving productivity. Next, we deliver world-class performance reporting solutions to help organizations execute effective planning, budgeting and forecasting programs using tools and information to make meaningful decisions.</li><br/>
+                    <li><strong>Supply chain visibility</strong>: Provide insight into the entire supply chain to reduce risk, improve performance and identify opportunities for improvement and cost reduction, including vendor assessments, strategic sourcing, spend management, sustainability and corporate responsibility, ongoing monitoring, and business intelligence around supply chain operations.</li><br/>
+                    <li><strong>IT management</strong>: Help clients maximize the value from their IT function through IT strategy and planning, improving efficiency of IT processes and helping our clients take advantage of emerging technologies (cloud computing, mobility, social media and business analytics) while also mitigating any potential risks to the business.</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

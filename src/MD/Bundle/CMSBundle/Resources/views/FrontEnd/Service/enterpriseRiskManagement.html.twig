@@ -1,0 +1,94 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Enterprise risk management{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_business-consulting') }}">Business consulting <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_forensic-investigative') }}">Forensic, investigative and dispute services <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li class="active"><a href="{{ path('fe_governance-risk-and-compliance') }}">Governance, risk and compliance <i class="fa fa-angle-down pull-right"></i></a>
+                                    <ul>
+                                        <li><a href="{{ path('fe_cybersecurity') }}">Cybersecurity</a></li>
+                                        <li class="active"><a href="{{ path('fe_enterprise-risk-management') }}">Enterprise risk management</a></li>
+                                        <li><a href="{{ path('fe_internal-audit') }}">Internal Audit</a></li>
+                                        <li><a href="{{ path('fe_regulatory-compliance') }}">Regulatory compliance</a></li>
+                                        <li><a href="{{ path('fe_service-organization') }}">Service organization reports</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{{ path('fe_restructuring') }}">Restructuring and turnaround <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Technology solutions <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="{{ path('fe_transaction-advisory') }}">Transaction advisory <i class="fa fa-angle-right pull-right"></i></a></li>
+                                <li><a href="#">Valuation <i class="fa fa-angle-right pull-right"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Manage risk while providing value</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/SLC_2013_05_Group-At-Table-Wide-Shot.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>In-house counsel lack resources </h2>
+                                    <p> The 2014 Corporate General Counsel Survey reveals how resource-strapped in-house counsel battle regulations, cybercrime and litigation.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Diverse-business-people-smiling.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> Advancing ERM at your institution </h2>
+                                    <p> Strong enterprise risk management programs can give colleges and universities the edge they need to remain competitive and attractive to students, faculty and staff.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06_NFP-Professor-teaching-classroom.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Minimize corruption risk in China</h2>
+                                    <p>Multinational corporations are realizing that understanding and addressing fraud risks is one of the keys to successfully operating in China.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Group-of-flags.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Enterprise risk management</h2>
+                <p>
+                    BuIn today’s ever-changing business environment of market complexity, globalization and increasing investor expectations, managing risks while providing value is more important than ever before. All organizations – big or small, public or private – have risks that they must manage proactively to succeed in today’s marketplace.
+                    <br/><br/>
+                    Enterprise risk management (ERM) serves as the leading approach to managing and optimizing risks, strategically identifying, analyzing, overseeing and monitoring the potential risks to an organization. This approach enables a company to determine how much uncertainty and risk are acceptable to continue to add value to the organization.
+                    <br/><br/>
+                    Grant Thornton’s ERM methodology is customizable to a company’s particular situation or need. We ask specific, probing questions about current risk management processes to help develop a strategy that works:
+                </p>
+                <ul>
+                    <li>What are your company’s strategic objectives, risk management philosophy, risk appetite and risk tolerance?</li><br/>
+                    <li>How does your management identify strategic, operational, reporting, compliance and other risks?</li><br/>
+                    <li>How does management assess risks and how they respond to risks, e.g., avoid, reduce, share or accept?</li><br/>
+                    <li>What controls are in place to help ensure management’s risk responses are carried out?</li><br/>
+                    <li>How does management monitor these controls?</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

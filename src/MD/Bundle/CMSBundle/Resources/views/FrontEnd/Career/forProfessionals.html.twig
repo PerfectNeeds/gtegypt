@@ -1,0 +1,81 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}For Professionals{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="{{ path('fe_career') }}">CAREERS</a></li>
+                        <li><a href="{{ path('fe_why-grant-thornton') }}"><span>Why Grant Thornton</span></a></li>
+                        <li><a href="{{ path('fe_for-students') }}"><span>Students</span></a></li>
+                        <li class="active"><a href="{{ path('fe_for-professionals') }}"><span>Experienced professionals</span></a></li>
+                        <li><a href="{{ path('fe_our-stories') }}"><span>Our stories</span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Why join Grant Thornton?</h2>
+                                    <p> Sal Fira makes a tangible impact on his clients' businesses, while keeping his clients and his family happy.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06_Fira_Sal_VIDEO.jpg') }}" alt="Careers">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Ready to grow with us?</h2>
+                                    <p> Submit your resume and create a personal profile to get started.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/780_ReadyToGrowWithUs.jpg') }}" alt="Careers">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Your unique experiences can lead you to new pathways for growth</h2>
+                <p>
+                    You've already achieved professional success, but you're looking for new challenges. Are you ready for more exposure to clients, a broader scope of responsibility and a vibrant work culture? Our people exude a sense of accountability, and are dedicated to delivering excellence and making a difference every day. If you're looking for a different career opportunity and the ability to shape your future, Grant Thornton is the firm for you.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>It's more than a job</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_ItsMoreThanAJob.jpg') }}"/>
+                            <h2>It's an experience</h2>
+                            <p>Find out why you should choose us.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Hiring process</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_07_Careers_New_Hire.jpg') }}"/>
+                            <h2>Ready for a new opportunity?</h2>
+                            <p>Our hiring process will help you find the right match.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Career mobility</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_CareerMobility.jpg') }}"/>
+                            <h2>We won't tie you down</h2>
+                            <p>Mobility expands your career with secondments, transfers and technical rotations - and grows your leadership skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

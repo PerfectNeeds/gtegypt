@@ -1,0 +1,98 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}State And Local Tax{% endblock %}
+
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">SERVICES</a></li>
+                        <li><a href="{{ path('fe_advisory') }}"><span>Advisory Services <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li><a href="{{ path('fe_audit') }}"><span>Audit <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_tax') }}"><span>Tax <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_compensation-and-benefits-consulting') }}">Compensation and benefits consulting</a></li>
+                                <li><a href="{{ path('fe_international-tax') }}">International tax</a></li>
+                                <li><a href="{{ path('fe_private-wealth-services') }}">Private wealth services</a></li>
+                                <li class="active"><a href="{{ path('fe_state-and-local-tax') }}">State and local tax</a></li>
+                                <li><a href="{{ path('fe_tax-accounting') }}">Tax accounting/risk advisory</a></li>
+                                <li><a href="{{ path('fe_tax-compliance') }}">Tax compliance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>2014 SALT predictions: How we did</h2>
+                                    <p> Check out what our SALT professionals predicted last year and what the outcomes actually were.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_08_Planning_Photo_WhiteBoard.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>10 SALT predictions for 2015</h2>
+                                    <p> See if you agree with our state and local tax predictions based on our professionals' reasoning.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_09_BusinessSunnyOutlook.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>SALT Alerts </h2>
+                                    <p>Search the most recent SALT Alerts</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Man-talking-in-a-meeting.jpg') }}" alt="Services">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>State and Local Thinking</h2>
+                                    <p> Read State and Local Thinking newsletter for a roundup of the latest SALT developments nationwide.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Outdoor-Highrise-Windows.jpg') }}" alt="Services">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>State and Local Tax</h2>
+                <p>
+                    Grant Thornton's State and Local Tax professionals provide a complete range of services to help you manage your taxes at all of your operating locations. Whether you need assistance with credits and incentives, income and franchise taxes, property taxes, unclaimed property taxes, sales and use taxes, tax controversy support or other areas, our professionals will help.
+                    <br/><br/>
+                    Services include the following:
+                </p>
+                <ul class="lists">
+                    <li><strong>Credits and incentives analysis</strong> - Examination of your company and assistance in uncovering state and local nonincome tax incentives such as training grants, sales tax sharing agreements, enterprise zone benefits, cash grant and below-market interest rate financing, property tax abatement and sales tax credits/exemptions.</li>
+                    <li><strong>Income and franchise tax services</strong> - Creation and implementation of practical tax-saving strategies and corporate structures to comply with state tax requirements and reduce state tax burdens. Resources to mount an effective defense in the event of an audit.</li>
+                    <li><strong>Property tax services</strong> - Reduction of property taxes through property assessment analysis, accelerating depreciation, tracking assets and unbundling of equipment purchases. Property tax training services, property tax policies and procedures, personal property tax appeal, negotiation and value reduction, accrual analysis and forecasting, identification and filing of exemptions and abatements, review of inventory and fixed asset records, inspection of asset purchases, and transfers and dispositions to determine appropriate reporting and tax consequences.</li>
+                    <li><strong>Sales and use tax services</strong> - Identification of tax overpayments or significant exposure for underpayments while reducing administrative burden. Review of the existing compliance system and taxability determinants, preparation and delivery of compliance manuals, training of employees tailored to company tax compliance needs, implementation of software compliance systems, audit defense and negotiations with the states, and reverse sales and use tax audits.
+                        <ul>
+                            <li><strong>Sales tax automation</strong> - Assistance with project management, provision of a sales tax perspective to technical resources, identification of weaknesses in current processes, development and enhancement of internal controls, provision of training and documentation for new processes and systems, and expedition of state and local tax audits.</li>
+                            <li><strong>Sales tax process reviews</strong> - Identification of weaknesses in your current processes, measurement of the accuracy of your current processes, assessment of internal controls, preparation for a 404 review, more-accurate reserves forecasting, identification of areas of overpayment or underpayment, reduction of audit assessments, reduction of audit cycles and improvement in tax personnel efficiency.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Unclaimed property compliance (escheat)</strong> - Identification and reduction of unclaimed property and compliance with reporting requirements.</li>
+                    <li>Special areas such as: 
+                        <ul>
+                            <li><strong>Tax controversy assistance</strong> - Identification of tax overpayments, help in negotiating with auditors and representation in formal state administrative hearings.</li>
+                            <li><strong>Legislative and regulatory assistance</strong> - Support of or challenges to legislative and regulatory initiatives and design of policies to reduce the impact and compliance burdens of regulatory changes.</li>
+                            <li><strong>Health care tax recovery</strong> - Identification of and filing for any unclaimed tax reductions or exemptions for hospitals and clinics.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

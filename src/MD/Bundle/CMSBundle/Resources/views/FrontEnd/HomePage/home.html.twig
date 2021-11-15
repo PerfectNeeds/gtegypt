@@ -1,0 +1,107 @@
+{% extends 'FEBundle::base-home.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block banner %}
+    {{ render(controller('CMSBundle:FrontEnd/Banner:Banner' , {'placment' : 1 })) }}
+{%endblock %}
+
+{% block content %}
+<div class="wrapper"> <!-- Start of Wrapper -->
+
+    <section class="secondwrapper dm-shadow clearfix home-news">
+        <div class="container">       
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                        {#{% for blog in blogs %}
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <article class="blog-wrap">
+                            <h2>{{ blog.title }}</h2>
+                            {% if blog.getMainImage %}
+                            <div class="ImageWrapper blog-media">
+                                <img class="img-responsive" style="height:169px;width:100%;" src="{{ asset("uploads/blog/" ~ blog.id ~ "/"  ~ blog.getMainImage.id) }}" alt="{{ blog.title }}" title="{{ blog.title }}">
+                            </div><!-- end blog media -->
+                                    {% else %}
+                            <div class="ImageWrapper blog-media">
+                                <img class="img-responsive" style="height:169px;width:100%;" src="{{ asset('bundles/fe/images/placeholder.png') }}" alt="">
+                            </div><!-- end blog media -->
+                                    {% endif %}
+                            <p>{{ blog.content.brief|slice(0,100) }} ...</p>
+                            <a href="{{ path('fe_show_blog',{'htmlSlug':blog.htmlSlug}) }}" class="btn btn-primary btn-xs">read more</a>
+                        </article><!-- end blog wrap -->
+                    </div><!-- end col-lg-4 -->
+                        {% endfor %}#}
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3">
+                        <article class="blog-wrap">
+                            <h2>Why Grant Thornton</h2>
+                            <div class="ImageWrapper blog-media">
+                                <img class="img-responsive" src="{{ asset('bundles/fe/images/Desk.jpg') }}" alt="">
+                            </div><!-- end blog media -->
+{#                            <p>Think beyond financial reporting</p>#}
+                            <a href="{{ path('fe_why-grant-thornton') }}" style="margin-top:10px;display:inline-block" class="btn-primary btn-xs">Read More <i class="fa fa-angle-right"></i></a>
+                        </article><!-- end blog wrap -->
+                    </div><!-- end col-lg-4 -->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <article class="blog-wrap links">
+                            <h2>Information for:</h2>
+                            <a href="{{ path('fe_recruit') }}" class="btn-block btn-primary btn-xs">Submit your CV <i class="fa fa-angle-right pull-right"></i></a>
+                        </article><!-- end blog wrap -->
+                    </div><!-- end col-lg-4 -->
+                </div><!-- end col7 -->
+            </div><!-- end row -->
+        </div><!-- end dm_container -->  
+    </section><!-- end secondwrapper -->
+
+    <section class="generalwrapper clearfix" style='padding-top:40px;'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Audit</h1>
+                            <img src="{{ asset('bundles/fe/images/se2.jpg') }}"/>
+                            {#<h2>Our latest thinking</h2>
+                            <p>Check out our newest white papers, surveys, articles and reports spanning top-of-mind issues in the financial services industry.</p>#}
+                            <a href="{{ path('fe_audit') }}" style="margin-top:10px;display:inline-block">Read More <span class="glyphicon glyphicon-arrow-right"></span></a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Advisory</h1>
+                            <img src="{{ asset('bundles/fe/images/Building.jpg') }}"/>
+                            {#<h2>State and local tax updates</h2>
+                            <p>Check out our comprehensive base of alerts from all states to find the ones relevant to you.</p>#}
+                            <a href="{{ path('fe_advisory') }}" style="margin-top:10px;display:inline-block">Read More <span class="glyphicon glyphicon-arrow-right"></span></a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Tax</h1>
+                            <img src="{{ asset('bundles/fe/images/se.jpg') }}"/>
+                            {#<h2>Here's what to do</h2>
+                            <p>Too much data. Too few ways to use it meaningfully. We've identified roadblocks and solutions for each stage in your analytics program.</p>#}
+                            <a href="{{ path('fe_tax') }}" style="margin-top:10px;display:inline-block">Read More <span class="glyphicon glyphicon-arrow-right"></span></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div><!-- end row -->
+        </div><!-- end dm_container -->  
+    </section><!-- end generalwrapper -->
+
+</div> <!-- End Of Wrapper -->
+{% endblock %}
+
+{% block javascript %}
+    {{ parent() }}
+<script src="{{ asset('bundles/fe/js/home.js') }}"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        jQuery('.lightbox').lightbox();
+    });
+</script>
+{% endblock %}

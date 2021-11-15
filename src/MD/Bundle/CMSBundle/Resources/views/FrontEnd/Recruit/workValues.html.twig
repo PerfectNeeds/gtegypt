@@ -1,0 +1,57 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}{{ page.htmlTitle }}{% endblock %}
+
+{% block metaTag %}{{ page.htmlMeta }}{% endblock %}
+{% block content %}
+    <section class="post-wrapper-top dm-shadow clearfix">
+        <div class="container">
+            <div class="post-wrapper-top-shadow">
+                <span class="s1"></span>
+            </div>
+            <div class="col-lg-12">
+                <h2>{{ page.title }}</h2>
+            </div>
+        </div>
+    </section><!-- end post-wrapper-top -->
+
+    {% set cr = app.request.attributes.get('_route') %}
+    <section class="generalwrapper dm-shadow clearfix">
+        <div class="container">
+            <div class="row">
+                <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix">
+                    <div class="widget cats_widget clearfix">
+                        <ul class="real-estate-cats-widget effect-slide-left in" style="transition: all 0.7s ease-in-out 0s;" data-effect="slide-left">
+                            <li><a href="{{ path('fe_employmet_at_gt') }}">Employmet at GT Egypt</a></li>
+                            <li class="active"><a href="{{ path('fe_work_values') }}">Work Ethics and Values</a></li>
+                            <li><a href="{{ path('fe_partner') }}">Current Vacacnies</a></li>
+                            <li><a href="{{ path('fe_recruit') }}">Generaci application Form</a></li>
+                        </ul>
+                    </div><!-- end widget -->
+                </div><!-- #left_sidebar -->
+
+                <div id="content" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 clearfix">
+
+                    <p>{{ page.content.description|raw }}</p>
+
+                </div><!-- end content -->
+
+                <div id="right_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 last clearfix">
+                    <div class="widget clearfix">
+                        <div class="agents_widget" style="background-color: #f0f0f0;padding: 15px;">
+                            <div class="title"><h3><i class="fa fa-phone"></i> Contact Details</h3></div>
+                            <p><i class="fa fa-external-link"></i> Grant Thornton (Mohamed Hilal) <br/> 
+                                87 Ramsis Street, Cairo, Egypt</p>
+                            <p><i class="fa fa-envelope"></i> <a href="mailto:info@gtegypt.org">info@gtegypt.org</a> <br/>
+                                <i class="fa fa-phone-square"></i> +2 (02) 25770785<br/>
+                                <i class="fa fa-phone-square"></i> +2 (02) 25744810 </p>
+                        </div><!-- end of agents_widget -->
+                    </div><!-- end of widget -->
+                </div><!-- end sidebar -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end generalwrapper -->
+
+{% endblock %}
+

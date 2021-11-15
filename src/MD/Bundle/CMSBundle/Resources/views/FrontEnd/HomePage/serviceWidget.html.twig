@@ -1,0 +1,7 @@
+{% for service in services %}
+    {% if service.getFirstMenuItems and service.getFirstMenuItems.url %}
+    <li>
+        <a href="{{ service.getFirstMenuItems.url }}?t=2">{{ service.name }}</a>
+    </li>
+{% endif %}
+{% endfor %}

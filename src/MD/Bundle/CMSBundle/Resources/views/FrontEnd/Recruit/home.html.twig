@@ -1,0 +1,91 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Application Form{% endblock %}
+
+{% block content %}
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="{{ path('fe_career') }}">CAREERS</a></li>
+                        <li class="active"><a href="{{ path('fe_why-grant-thornton') }}"><span>Why Grant Thornton</span></a></li>
+                        <li><a href="{{ path('fe_for-students') }}"><span>Students</span></a></li>
+                        <li><a href="{{ path('fe_for-professionals') }}"><span>Experienced professionals</span></a></li>
+                        <li><a href="{{ path('fe_our-stories') }}"><span>Our stories</span></a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="margin-top: 20px;">
+                <p>Please Submit you cv @ <a href="mailto:recruitment@eg.gt.com">recruitment@eg.gt.com</a></p>
+                {% if errors is defined %}
+                <div class="row">
+                    <div class="container" style="margin:20px auto;">
+                        <div role="alert" class="alert alert-danger">{{ errors }}</div>
+                    </div>
+                </div> 
+                {% endif %}
+                <form id="commentForm" method="POST" {{form_enctype(upload_form)}}>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[positionName]" type="text" {% if recruit is defined %} value="{{ recruit.positionName }}" {% elseif positionName is defined %} value="{{ positionName }}" {% endif %} class="form-control" placeholder="Position Applied For" required></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[positionCode]" type="text" {% if recruit is defined %} value="{{ recruit.positionCode }}" {% elseif positionCode is defined %} value="{{ positionCode }}" {% endif %} class="form-control" placeholder="Job Code (IF Avilable)"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[fullName]" type="text" {% if recruit is defined %}value="{{ recruit.fullName }}"{% endif %} class="form-control" placeholder="Full Name" required></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[gender]" type="text" {% if recruit is defined %}value="{{ recruit.gender }}"{% endif %} class="form-control" placeholder="Gender"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[lastPosition]" type="text" {% if recruit is defined %}value="{{ recruit.lastPosition }}"{% endif %} class="form-control" placeholder="Last Position" required=""></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[company]" type="text" {% if recruit is defined %}value="{{ recruit.company }}"{% endif %} class="form-control" placeholder="Companies"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[education]" type="text" {% if recruit is defined %}value="{{ recruit.education }}"{% endif %} class="form-control" placeholder="Education"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[certificate]" type="text" {% if recruit is defined %}value="{{ recruit.certificate }}"{% endif %} class="form-control" placeholder="Certificates"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[yearsEx]" type="text" {% if recruit is defined %}value="{{ recruit.yearsEx }}"{% endif %} class="form-control" placeholder="Total Years of Experince"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[sector]" type="text" {% if recruit is defined %}value="{{ recruit.sector }}"{% endif %} class="form-control" placeholder="Sector"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[lastSalary]" type="text" {% if recruit is defined %}value="{{ recruit.lastSalary }}"{% endif %} class="form-control" placeholder="Last Salary"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[expectedSalary]" type="text" {% if recruit is defined %}value="{{ recruit.expectedSalary }}"{% endif %} class="form-control" placeholder="Expected Salary"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[email]" type="email" {% if recruit is defined %} value="{{ recruit.email }}"{% endif %} class="form-control" placeholder="Email" required></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><textarea name="data[address]" rows="2" cols="20" class="form-control" placeholder="Address" required>{% if recruit is defined %}{{ recruit.address }}{% endif %}</textarea></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><input name="data[city]" type="text" {% if recruit is defined %} value="{{ recruit.city }}"{% endif %} class="form-control" placeholder="City" required></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <select name="data[country]" class="ddl form-control">
+                                <option>Country</option>
+                                    {% for country in countries %}
+                                        {% if recruit is defined and country.id == recruit.country %}
+                                            {% set selectCountry = 'selected="selected"' %}
+                                        {% else %}
+                                            {% set selectCountry = '' %}
+                                        {% endif %}
+                                <option {{ selectCountry }} value="{{ country.id }}">{{ country.name }}</option>
+                                    {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="g-recaptcha" data-sitekey="6Lc-9hkUAAAAAI6Vuy4Kjp3-98jLSBLLHKxV8Up5"></div>
+                        </div>
+                    </div> 
+                    <div class="row uploads" style="border-top:1px solid #54287f;padding-top:10px;margin-top:10px;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 browse">Upload CV</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 upload_btn">{{ form_widget(upload_form.file) }}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="submit" class="btn btn-primary"  value="Submit Application" style="margin:10px auto; display:block">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div><!-- container -->
+</section>
+{% endblock %}
+
+{% block javascript %}
+    {{ parent()}}
+<script type="text/javascript" src="{{ asset('bundles/fe/js/jquery.validate.js') }}"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript">
+    $(function() {
+        // validate the comment form when it is submitted
+        $("#commentForm").validate();
+    });
+</script>
+{% endblock %}

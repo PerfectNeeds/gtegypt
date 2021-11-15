@@ -1,0 +1,102 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Managing Risk{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">ISSUES</a></li>
+                        <li><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-right pull-right"></i></span></a></li>
+                        <li class="active"><a href="{{ path('fe_managingrisk') }}">Managing risk <i class="fa fa-angle-down pull-right"></i></a>
+                            <ul>
+                                <li><a href="{{ path('fe_cybersecurityy') }}">Cybersecurity</a></li>
+                                <li><a href="{{ path('fe_thirdpartyrisk') }}">Third-party risk</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_mergersandacquisitions') }}">Mergers and acquisitions</a></li>
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Risk vs. Cost: Balance for hedge fund administration</h2>
+                                    <p>This presentation can help you determine how you can engage the right mix of resources.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_07_Coin_Toss.jpg') }}" alt="Issues">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Risk assessment component presents opportunities</h2>
+                                    <p>The new COSO Framework presents an excellent opportunity to define and achieve important operational, reporting and compliance objectives.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-People-in-a-business-meeting.jpg') }}" alt="Issues">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Advancing ERM at your institution</h2>
+                                    <p>Strong enterprise risk management programs can give colleges and universities the edge they need to remain competitive and attractive to students, faculty and staff.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06_NFP-Professor-teaching-classroom.jpg') }}" alt="Issues">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>CAEs create value despite compliance burden</h2>
+                                    <p>Chief audit executives find ways to continue adding strategic value even in the current compliance-heavy environment.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_11_Business_people_reviewing_expenses.jpg') }}" alt="Issues">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>Managing and optimizing risks</h2>
+                <p>
+                    In today's ever-changing business environment of market complexity, globalization and increasing investor expectations, managing risks while providing value is more important than ever before. All organizations - big or small, public or private - have risks that they must manage proactively to succeed in today's marketplace.
+                    <br/><br/>
+                    Organizations need a strong approach to managing and optimizing risks, strategically identifying, analyzing, overseeing and monitoring their potential risks. Taking an enterprise-wide approach enables a company to determine how much uncertainty and risk are acceptable to continue to add value to the organization.
+                </p>
+                <div class="ads">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Corruption risk</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06_NFP-International-flags.jpg') }}"/>
+                            <h2>Follow the money</h2>
+                            <p>Learn from our client, a global manufacturer, the best practices for managing global corruption risk.</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Corporate tax</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_06-Diverse-business-people-smiling.jpg') }}"/>
+                            <h2>How to strengthen your corporate tax function</h2>
+                            <p>Using technology, controls and a secure data system can help develop an effective tax function.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="home-services">
+                            <h1>Managing risk</h1>
+                            <img src="{{ asset('bundles/fe/images/3B_2013_05_Male-Hands-Working-At-Desk.jpg') }}"/>
+                            <h2>New regulatory risks</h2>
+                            <p>Commodities and derivatives trading operations: A framework for identifying and managing regulatory risk.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+

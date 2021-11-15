@@ -1,0 +1,100 @@
+{% extends 'FEBundle::base.html.twig' %}
+
+{% block title %}Foundations{% endblock %}
+
+{% block metaTag %}{% endblock %}
+{% block content %}
+
+<section class="generalwrapper clearfix">
+    <div class="container">
+        <div class="row">
+            <div id="left_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 first clearfix" style="padding-right: 0px;">
+                <div class="widget cats_widget clearfix">
+                    <ul class="real-estate-cats-widget">
+                        <li class="star"><a href="#">INDUSTRIES</a></li>
+                        <li><a href="{{ path('fe_construction') }}">Construction</a></li>
+                        <li><a href="{{ path('fe_distribution') }}">Distirbution</a></li>
+                        <li><a href="{{ path('fe_energy') }}">Energy</a></li>
+                        <li><a href="{{ path('fe_financial-services') }}">Financial services <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_food-and-beverage') }}">Food and beverage</a></li>
+                        <li><a href="{{ path('fe_health-care') }}">Health care <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_hospitality-and-restaurants') }}">Hospitality and restaurants</a></li>
+                        <li><a href="{{ path('fe_manufacturing') }}">Manufacturing</a></li>
+                        <li class="active"><a href="{{ path('fe_not-for-profit-organizations') }}"><span>Not-for-profit organizations <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li class="active"><a href="{{ path('fe_foundations') }}">Foundations</a></li>
+                                <li><a href="{{ path('fe_social-services') }}">Social services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('fe_private-equity') }}">Private equity</a></li>
+                        <li><a href="{{ path('fe_public-sector') }}">Public sector <i class="fa fa-angle-right pull-right"></i></a></li>
+                        <li><a href="{{ path('fe_technology') }}">Technology <i class="fa fa-angle-right pull-right"></i></a></li>
+                        {#<li class="active"><a href="{{ path('fe_drivingGrowth') }}"><span>Driving growth <i class="fa fa-angle-down pull-right"></i></span></a>
+                            <ul>
+                                <li><a href="{{ path('fe_internationalgrowth') }}">International growth</a></li>
+                            </ul>
+                        </li>#}
+                    </ul>
+                </div><!-- end widget -->
+            </div><!-- #left_sidebar -->
+
+            <div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12 clearfix" style="padding-left: 0px;">
+                <div id="property-slider" class="clearfix">
+                    <div class="flexslider pages-slides">
+                        <ul class="slides pages-banner">
+                            <li>
+                                <div class="banner_data">
+                                    <h2>Foundations</h2>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_05_Building-Block-House-Being-Built.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> A tax guide for foundations </h2>
+                                    <p> Our guidance covers issues you are likely to encounter.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-Older-man-sitting-at-desk-with-laptop.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2>2-tier taxes discourage, complicate</h2>
+                                    <p> Foundations have reason to hope for a simpler flat tax rate on net investment income.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_07_Man_Magnifying_Clipboard.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> NFPs act on rev rec overhaul </h2>
+                                    <p> Gain rev rec guidance via accounting firms, task force and the five-step model.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2015_01_Two-people-at-laptop.jpg') }}" alt="Industries">
+                            </li>
+                            <li>
+                                <div class="banner_data">
+                                    <h2> State of not-for-profits in 2014 </h2>
+                                    <p> Grow and thrive by adapting and planning for a future very different from your past.</p>
+                                </div>
+                                <img src="{{ asset('bundles/fe/images/HC_2013_06-All-business-hands-in-a-circle.jpg') }}" alt="Industries">
+                            </li>
+                        </ul><!-- end slides -->
+                    </div><!-- end flexslider -->
+                </div><!-- end property-slider -->
+            </div><!-- end content -->
+            <div class="col-md-9 col-sm-9 col-xs-12 pages-data">
+                <h2>We know how to help your foundation conduct effective philanthropy</h2>
+                <p>
+                    Your foundation is as unique as the people and organizations that have created it. Whether established and managed by a single family or a major corporation, supporting the arts, community service or health care organizations, your foundation is committed to effective philanthropy.
+                    <br/><br/>
+                    Our audit, tax and advisory professionals are fully dedicated to the nonprofit industry and know how to help foundations improve organizational effectiveness, preserve and expand their endowments, and distribute grants and funds. We provide guidance in a range of financial, operational and fiduciary matters, including the following:
+                </p>
+                <ul class="lists">
+                    <li><strong>Audit and tax</strong> - We ensure compliance with accounting, financial reporting and tax reporting standards (including IRS Forms 990-PF and 990-T), provide guidance to appropriately respond to inquiries or examinations by taxing authorities and others, and address other matters that can affect tax-exempt status. We also ensure compliance with the myriad filings that exist at the federal, state and international level.</li>
+                    <li><strong>Business advisory</strong> - Our professionals have experience in strategy, governance, operations, technology, and risk management. We provide solutions that can help increase constituent value, improve productivity, reduce risks, contain costs, increase effectiveness and streamline processing.</li>
+                </ul>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end generalwrapper -->
+
+{% endblock %}
+
